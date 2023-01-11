@@ -1,8 +1,8 @@
 title: lin.nvim
 description: Lin Rongbin's Neovim Distribution
 theme: just-the-docs
-
-url: https://linrongbin16.github.io/lin.nvim.dev
+baseurl: "/lin.nvim.dev"
+url: "https://linrongbin16.github.io"
 
 logo: "/assets/logos/neovim-mark.png"
 favicon_ico: "/assets/favicons/favicon.ico"
@@ -53,3 +53,17 @@ heading_anchors: true
 
 # Color scheme
 color_scheme: dark
+
+# Callouts
+callouts:
+  warning:
+    title: Warning
+    color: red
+  highlight:
+    color: yellow
+  note:
+    color: purple
+  important:
+    color: blue
+  new:
+    color: green
