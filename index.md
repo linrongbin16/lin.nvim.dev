@@ -3,7 +3,7 @@ title: Home
 layout: home
 ---
 
-# lin.nvim : Lin Rongbin's Neovim Distribution
+# lin.nvim: Lin Rongbin's Neovim Distribution
 
 {: .note }
 
