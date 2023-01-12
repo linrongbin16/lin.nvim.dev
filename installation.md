@@ -17,6 +17,8 @@ nav_order: 3
 
 Both neovim and its community are under active development, the [latest neovim stable version](https://github.com/neovim/neovim/wiki/Installing-Neovim) is always recommended. No effort is spent on maintaining backward compatibility.
 
+---
+
 ## Linux/macOS
 
 ```bash
@@ -45,7 +47,15 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 >    - MacOS: use _brew_ as package installer, please install [Xcode](https://guide.macports.org/chunked/installing.html) and [homebrew](https://brew.sh/) as pre-requirements.
 >    - Other \*NIX systems such as Gentoo, BSD are not supported yet.
 
+---
+
 ## Windows
+
+{: .note-title }
+
+> Notice
+>
+> Use a package manager (such as [chocolatey](https://chocolatey.org/) and [scoop](https://scoop.sh/)) could be a better choice, just make sure they're available in _$env:PATH_.
 
 1. Install [Visual Studio](https://www.visualstudio.com/) with below 2 components:
 
@@ -56,11 +66,11 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 2. Install [64-bit Git for Windows Setup](https://git-scm.com/downloads) with below 3 options:
 
    - In **_Select Components_**, select **_Associate .sh files to be run with Bash_**.
-     {% include image.html src="/assets/installations/install-windows-git1.png" alt="install-windows-git1.png" %}
+     {% include image.html src="/assets/installations/install-windows-git1.png" alt="install-windows-git1.png" width="60%" %}
    - In **_Adjusting your PATH environment_**, select **_Use Git and optional Unix tools from the Command Prompt_**.
-     {% include image.html src="/assets/installations/install-windows-git2.png" alt="install-windows-git2.png" %}
+     {% include image.html src="/assets/installations/install-windows-git2.png" alt="install-windows-git2.png" width="60%" %}
    - In **_Configuring the terminal emulator to use with Git Bash_**, select **_Use Windows's default console window_**. After this step, _git.exe_ and Linux built-in commands(such as _bash.exe_, _cp.exe_, _mv.exe_, _ls.exe_) will be available in _$env:PATH_.
-     {% include image.html src="/assets/installations/install-windows-git3.png" alt="install-windows-git3.png" %}
+     {% include image.html src="/assets/installations/install-windows-git3.png" alt="install-windows-git3.png" width="60%" %}
 
 3. Install other 64-bit dependencies:
 
@@ -88,11 +98,40 @@ cd $env:USERPROFILE\.vim
 
 > Notice
 >
-> 1. If you are using WSL, _C:\Windows\System32\bash.exe_ could lead you to WSL instead of the _bash.exe_ from [Git for Windows](https://git-scm.com/). Make sure the git path is ahead of _C:\Windows\System32_, so git bash will be first detected (_wsl.exe_ could connect to WSL as well so no need to worry about losing _C:\Windows\System32\bash.exe_).
->    {% include image.html src="/assets/installations/install-windows-git-path.png" alt="install-windows-git-path.png" %}
-> 2. Disable Windows App alias _python.exe_ and _python3.exe_, it could lead you to the wrong python from Windows Store.
->    {% include image.html src="/assets/installations/install-windows-app-alias.png" alt="install-windows-app-alias.png" %}
+> If you are using WSL, _C:\Windows\System32\bash.exe_ could lead you to WSL instead of the _bash.exe_ from [Git for Windows](https://git-scm.com/). Make sure the git path is ahead of _C:\Windows\System32_, so git bash will be first detected (_wsl.exe_ could connect to WSL as well so no need to worry about losing _C:\Windows\System32\bash.exe_).
+> {% include image.html src="/assets/installations/install-windows-git-path.png" alt="install-windows-git-path.png" width="60%" %}
+
+{: .note-title}
+
+> Notice
+>
+> Disable Windows App alias _python.exe_ and _python3.exe_, it could lead you to the wrong python from Windows Store.
+> {% include image.html src="/assets/installations/install-windows-app-alias.png" alt="install-windows-app-alias.png" width="60%" %}
+
+---
 
 ## More Options
+
+_install.sh_ (and _install.ps1_) provides 3 installation modes:
+
+- Full mode: default mode, it installs all features for the best experience, which consumes unignorable CPU, memory, disk and graphics.
+- Limit mode: for low-performance devices such as old PC. With `./install.sh --limit`, it disables extra highlights, color schemes, language support and other editing enhancements.
+- Basic mode: for extremely restricted environment such as production environment, which has limited network access or lack of authentication. With `./install.sh --basic`, it disables everything except one basic vim setting file.
+
+And more options:
+
+- `--static-color=TEXT`: make color scheme static, instead of random selection on startup. For example: `--static-color=darkblue`.
+- `--disable-color`: disable extra color schemes, and random selection on startup.
+- `--disable-highlight`: disable extra highlights. Such as RGB and mark under cursor, etc.
+- `--disable-language`: disable language support. Such as auto-complete and language servers, etc.
+- `--disable-editing`: disable editing enhancements. Such as easy comments, cursor motion, etc.
+- `--disable-plugin=TEXT`: disable specific vim plugin in format 'organization/repository', this is a multiple option. For example: `--disable-plugin=RRethy/vim-hexokinase --disable-plugin=alvan/vim-closetag`.
+
+Notice:
+
+- In full mode, you could use '--disable-xxx' options to disable some specific features.
+- Option '--disable-highlight --disable-color --disable-language --disable-editing' is equivalent to '--limit'.
+
+---
 
 ## Upgrade
