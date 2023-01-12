@@ -114,24 +114,36 @@ cd $env:USERPROFILE\.vim
 
 _install.sh_ (and _install.ps1_) provides 3 installation modes:
 
-- Full mode: default mode, it installs all features for the best experience, which consumes unignorable CPU, memory, disk and graphics.
+- Full mode: default mode, it installs all features for the best experience, while consumes unignorable CPU, memory, disk and graphics.
 - Limit mode: for low-performance devices such as old PC. With `./install.sh --limit`, it disables extra highlights, color schemes, language support and other editing enhancements.
-- Basic mode: for extremely restricted environment such as production environment, which has limited network access or lack of authentication. With `./install.sh --basic`, it disables everything except one basic vim setting file.
+- Basic mode: for extremely restricted environment such as production server, which has limited network access or lack of authentication. With `./install.sh --basic`, it disables everything except one basic vim setting file.
 
 And more options:
 
-- `--static-color=TEXT`: make color scheme static, instead of random selection on startup. For example: `--static-color=darkblue`.
+- `--static-color`: use static color scheme, instead of random selection on startup. For example: `--static-color=darkblue`.
 - `--disable-color`: disable extra color schemes, and random selection on startup.
-- `--disable-highlight`: disable extra highlights. Such as RGB and mark under cursor, etc.
-- `--disable-language`: disable language support. Such as auto-complete and language servers, etc.
-- `--disable-editing`: disable editing enhancements. Such as easy comments, cursor motion, etc.
-- `--disable-plugin=TEXT`: disable specific vim plugin in format 'organization/repository', this is a multiple option. For example: `--disable-plugin=RRethy/vim-hexokinase --disable-plugin=alvan/vim-closetag`.
+- `--disable-highlight`: disable extra highlights. Such as highlighting RGB, words under cursor, etc.
+- `--disable-language`: disable language support. Such as auto-complete, formatters, linters, etc.
+- `--disable-editing`: disable extra editing enhancements. Such as easy comments, cursor motion, etc.
+- `--disable-plugin`: disable specific plugin in format _org/repo_, this is a multiple option. For example: `--disable-plugin=RRethy/vim-hexokinase --disable-plugin=alvan/vim-closetag`.
 
 Notice:
 
-- In full mode, you could use '--disable-xxx' options to disable some specific features.
-- Option '--disable-highlight --disable-color --disable-language --disable-editing' is equivalent to '--limit'.
+- You could use `--disable-xxx` to disable some specific features.
+- Option `--disable-highlight --disable-color --disable-language --disable-editing` is equivalent to `--limit`.
 
 ---
 
 ## Upgrade
+
+For distribution, please re-install by:
+
+```bash
+cd ~/.vim && git pull origin master && ./install.sh
+```
+
+For vim plugins, please update in neovim:
+
+```vim
+:PlugUpdate!
+```
