@@ -36,6 +36,7 @@ nav_order: 4
 In this section, vim editing modes are specified with:
 
 <!-- alphabet emoji: https://emojicombos.com/emoji-letters -->
+<!-- complete emoji list: https://dev.to/nikolab/complete-list-of-github-markdown-emoji-markup-5aia -->
 
 - **🅽**: normal mode.
 - **🆅**: visual/select mode.
