@@ -16,7 +16,7 @@ nav_order: 1
 
 Aim to be out-of-box, IDE-like editing experience, high performance, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
 
-Solve these issues:
+Solved these issues:
 
 - Time-cost configurations: all behaviors follow the community's best practices and most popular editors (just like [vscode](https://code.visualstudio.com/)).
 - Lack of developing support: language server protocol(LSP) is supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), and [a bunch of language servers](/lin.nvim.dev/appendix/#embedded-lsp-servers) are embedded.

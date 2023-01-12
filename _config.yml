@@ -7,7 +7,7 @@ url: "https://linrongbin16.github.io"
 permalink: pretty
 
 # Logo/favicon
-logo: "/assets/logos/neovim-mark.png"
+# logo: "/assets/logos/neovim-mark.png"
 favicon_ico: "/assets/favicons/favicon.ico"
 
 search_enabled: true
