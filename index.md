@@ -14,6 +14,10 @@ nav_order: 1
   <img alt="start-ui.png" src="https://raw.githubusercontent.com/linrongbin16/lin.nvim.dev/main/assets/demos/ui/start-ui.png" width="85%">
 </p>
 
+<p align="center">
+  <video src="https://raw.githubusercontent.com/linrongbin16/lin.nvim.dev/main/assets/demos/ui/main-demo-v5.mp4" width="95%"></video>
+</p>
+
 ---
 
 Aim to be out-of-box, IDE-like editing experience, high performance, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
