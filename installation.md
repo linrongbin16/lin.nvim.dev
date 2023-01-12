@@ -47,11 +47,19 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 
 ## Windows
 
-1.  Install [Visual Studio](https://www.visualstudio.com/) with below 2 components:
-    - .NET Desktop Development
-    - Desktop development with C++
+1. Install [Visual Studio](https://www.visualstudio.com/) with below 2 components:
 
-{% include image.html src="/assets/installations/install-windows-visual-studio2.png" alt="install-windows-visual-studio2.png" %}
+   - .NET Desktop Development
+   - Desktop development with C++
+     {% include image.html src="/assets/installations/install-windows-visual-studio2.png" alt="install-windows-visual-studio2.png" %}
+
+2. Install [64-bit Git for Windows Setup](https://git-scm.com/downloads) with below 3 options:
+   - In **_Select Components_**, select **_Associate .sh files to be run with Bash_**.
+     {% include image.html src="/assets/installations/install-windows-git1.png" alt="install-windows-git1.png" %}
+   - In **_Adjusting your PATH environment_**, select **_Use Git and optional Unix tools from the Command Prompt_**.
+     {% include image.html src="/assets/installations/install-windows-git2.png" alt="install-windows-git2.png" %}
+   - In **_Configuring the terminal emulator to use with Git Bash_**, select **_Use Windows's default console window_**. After this step, _git.exe_ and Linux built-in commands(such as _bash.exe_, _cp.exe_, _mv.exe_, _ls.exe_) will be available in _$env:PATH_.
+     {% include image.html src="/assets/installations/install-windows-git3.png" alt="install-windows-git3.png" %}
 
 ## More Options
 
