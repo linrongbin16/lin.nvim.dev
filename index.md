@@ -10,13 +10,7 @@ nav_order: 1
 
 > _A highly configured [neovim](https://neovim.io/) distribution integrated with tons of utilities for development, inspired by [spf13-vim](https://github.com/spf13/spf13-vim)._
 
-<p align="center">
-  <img alt="start-ui.png" src="https://raw.githubusercontent.com/linrongbin16/lin.nvim.dev/main/assets/demos/ui/start-ui.png" width="85%">
-</p>
-
-<p align="center">
-  <video src="https://raw.githubusercontent.com/linrongbin16/lin.nvim.dev/main/assets/demos/ui/main-demo-v5.mp4" width="95%"></video>
-</p>
+{% include youtube.html id="zCfSekdZiIg" %}
 
 ---
 
