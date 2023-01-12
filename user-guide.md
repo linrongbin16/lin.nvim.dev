@@ -37,6 +37,7 @@ In this section, vim editing modes are specified with:
 
 <!-- alphabet emoji: https://emojicombos.com/emoji-letters -->
 <!-- complete emoji list: https://dev.to/nikolab/complete-list-of-github-markdown-emoji-markup-5aia -->
+<!-- complete emoji list 2: https://gist.github.com/rxaviers/7360908 -->
 
 - **🅽**: normal mode.
 - **🆅**: visual/select mode.
@@ -153,15 +154,26 @@ Install other nerd fonts and configure in _~/.vim/settings.vim_ to customize.
 
 Supported by:
 
-- [nvim-lspconfig]() for LSP configuration.
-- [nvim-cmp]() for complete engine, and its sources: [cmp-nvim-lsp](), [cmp-buffer](), [cmp-path](), [cmp-path](), [LuaSnip](), [cmp_luasnip](), [friendly-snippets]().
-- [mason.nvim]() for LSP server manager, and its extensions: [mason-lspconfig.nvim](), [mason-null-ls]().
-- [null-ls.nvim]() for extra formatters/linters.
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) for LSP servers configuration.
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) for complete engine, and its sources:
+  - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+  - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
+  - [cmp-path](https://github.com/hrsh7th/cmp-path)
+  - [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
+  - [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+  - [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+  - [friendly-snippets](rafamadriz/friendly-snippets)
+- [mason.nvim](https://github.com/williamboman/mason.nvim) for LSP server manager, and its extensions:
+  - [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
+  - [mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim).
+- [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) for extra formatters/linters.
 
 ### Code Complete
 
 - `<C-n>`/`<Down>` **🅸** - Navigate to next(👇) suggestion.
 - `<C-p>`/`<Up>` **🅸** - Navigate to previous(👆) suggestion.
+- `<C-u>` **🅸** - Scroll up(👆) the suggestion docs.
+- `<C-d>` **🅸** - Scroll down(👇) the suggestion docs.
 - `<TAB>`/`<CR>` **🅸** - Confirm current suggestion.
 - `<ESC>`/`<C-[>` **🅸** - Close suggestion.
 - `<C-f>` **🅸** - Navigate to next(👉) snippet placeholder.
@@ -185,8 +197,16 @@ Supported by:
 
 ### Code Format
 
+Code format runs on file save asynchronous by default.
+
+If you need to forcibly trigger code format, please use below synchronous code format:
+
 - `<Leader>cf` **🅽** - Format code on whole buffer.
 - `<Leader>cf` **🆅** - Format selected code.
+
+If you need to save file without code format, please use:
+
+- `:noa w` **🅽** - Save file without _vim's autocmd_.
 
 ### Code Actions
 
@@ -201,7 +221,9 @@ Supported by:
 
 ### Manage LSP Servers
 
-By default, [a bunch of language servers](#embedded-language-servers) are already embedded. But sooner or later you need to manage these LSP servers yourself, the manager is supported by [mason.nvim](https://github.com/williamboman/mason.nvim). Please try `:Mason` command in neovim for more information.
+By default, [a bunch of language servers](/lin.nvim.dev/appendix/#embedded-language-servers) are already embedded. But sooner or later you need to manage these LSP servers yourself.
+
+LSP server manager is supported by [mason.nvim](https://github.com/williamboman/mason.nvim). Please try `:Mason` command in neovim for more information.
 
 To ensure LSP servers and formatters embedded, [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) (for LSP servers), [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) and [mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim) (for formatters/linters) are introduced as well.
 
