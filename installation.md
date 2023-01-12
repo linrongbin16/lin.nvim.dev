@@ -33,10 +33,9 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 >    - [Git](https://git-scm.com/).
 >    - [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim).
 >    - C/C++ tool chain([clang](https://clang.llvm.org/)/[gcc](https://gcc.gnu.org/), [make](https://www.gnu.org/software/make/), [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/), [autoconf](https://www.gnu.org/software/autoconf/), [automake](https://www.gnu.org/software/automake/) and [cmake](https://cmake.org/)).
->    - [Python3](https://www.python.org/)(Python2 is not supported) and some pip packages.
->    - [Node.js](https://nodejs.org/), [yarn](https://yarnpkg.com/) and some npm packages.
->    - [Go](https://go.dev/).
->    - [Rust](https://www.rust-lang.org/) and some modern commands: [fd](https://github.com/sharkdp/fd), [rg](https://github.com/BurntSushi/ripgrep), [bat](https://github.com/sharkdp/bat), etc.
+>    - [Python3](https://www.python.org/)(Python2 is not supported) and some pip packages([pynvim](https://pypi.org/project/pynvim/), [click](https://pypi.org/project/click/)).
+>    - [Node.js](https://nodejs.org/), [yarn](https://yarnpkg.com/) and some npm packages([neovim](https://www.npmjs.com/package/neovim), [yarn](https://www.npmjs.com/package/yarn)).
+>    - [Rust](https://www.rust-lang.org/) and some modern commands([fd](https://github.com/sharkdp/fd), [rg](https://github.com/BurntSushi/ripgrep), [bat](https://github.com/sharkdp/bat)).
 >    - [Curl](https://curl.se/), [wget](https://www.gnu.org/software/wget/), [unzip](https://linux.die.net/man/1/unzip) and [gzip](https://www.gnu.org/software/gzip/).
 >    - [Universal-ctags](https://github.com/universal-ctags/ctags).
 >    - [Hack nerd font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip).
@@ -74,15 +73,14 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 
 3. Install other 64-bit dependencies:
 
-   - [Neovim](https://github.com/neovim/neovim/releases/latest)(_nvim-win64.msi_): add _nvim.exe_ to _$env:PATH_.
-   - [CMake](https://github.com/Kitware/CMake/releases/latest)(_cmake-{x.y.z}-windows-x86_64.msi_): add _cmake.exe_ to _$env:PATH_.
-   - [Make-for-win32](https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81-bin.zip/download)(_make-{x.y}-bin.zip_): add _make.exe_ to _$env:PATH_.
-   - [Python3](https://www.python.org/downloads/windows/)(_python-{x.y.z}-amd64.exe_): manually copy _python.exe_ as _python3.exe_, then add _python3.exe_ to _$env:PATH_ (since windows python3 installer only provide _python.exe_).
-   - [Rust](https://www.rust-lang.org/tools/install) (_rustup-init.exe (64-bit)_): add _rustc.exe_, _cargo.exe_ to _$env:PATH_.
-   - [Go](https://go.dev/dl/) (_go{x.y.z}.windows-amd64.msi_): add _go.exe_ to _$env:PATH_.
-   - [Node.js](https://nodejs.org/en/download/) (_node-v{x.y.z}-x64.msi_): add _node.exe_, _npm.exe_ to _$env:PATH_.
-   - [7-zip](https://www.7-zip.org/): add _7z.exe_ to _$env:PATH_.
-   - [Universal-ctags](https://github.com/universal-ctags/ctags-win32/releases) (_ctags-p{x.y.d.z}-x64.zip_): add _ctags.exe_, _readtags.exe_ to _$env:PATH_.
+   - [Neovim - _nvim-win64.msi_](https://github.com/neovim/neovim/releases/latest): add _nvim.exe_ to _$env:PATH_.
+   - [CMake - _cmake-{x.y.z}-windows-x86_64.msi_](https://github.com/Kitware/CMake/releases/latest): add _cmake.exe_ to _$env:PATH_.
+   - [Make-for-win32 - _make-{x.y}-bin.zip_](https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81-bin.zip/download): add _make.exe_ to _$env:PATH_.
+   - [Python3 - _python-{x.y.z}-amd64.exe_](https://www.python.org/downloads/windows/): manually copy _python.exe_ as _python3.exe_, then add _python3.exe_ to _$env:PATH_ (since windows python3 installer only provide _python.exe_).
+   - [Rust - _rustup-init.exe (64-bit)_](https://www.rust-lang.org/tools/install): add _rustc.exe_, _cargo.exe_ to _$env:PATH_.
+   - [Node.js - _node-v{x.y.z}-x64.msi_](https://nodejs.org/en/download/): add _node.exe_, _npm.exe_ to _$env:PATH_.
+   - [7-zip - _7z{x}-x64.exe_](https://www.7-zip.org/): add _7z.exe_ to _$env:PATH_.
+   - [Universal-ctags - _ctags-p{x.y.d.z}-x64.zip_](https://github.com/universal-ctags/ctags-win32/releases): add _ctags.exe_, _readtags.exe_ to _$env:PATH_.
 
 4. Install [Hack NFM](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip) font.
 

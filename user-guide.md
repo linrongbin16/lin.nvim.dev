@@ -31,6 +31,7 @@ nav_order: 4
   - [Better Repeat](#better-repeat)
   - [Better Matching](#better-matching)
   - [Auto Pair and Close HTML Tag](#auto-pair-and-close-html-tag)
+- [Manage Plugins](#manage-plugins)
 - [Customization](#customization)
 
 In this section, vim editing modes are specified with:
@@ -98,18 +99,18 @@ Configure these key mappings in _~/.vim/settings.vim_.
 
 ### File Explorer
 
-Supported by [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua). Please refer to [:help nvim-tree.view.mappings](https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt) for default key mappings. A few keys add for convenience:
+Supported by [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua). Please use _g?_ to toggle help in nvim-tree, or refer to [:help nvim-tree.view.mappings](https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt) for default key mappings. A few keys are added for convenience:
 
 1. Navigation:
    - `h` **🅽** - Collapse directory.
    - `l` **🅽** - Expand directory or open file.
 2. Copy/paste/cut:
-   - `C` **🅽** - Copy file/directory into an internal clipboard, just like in Windows ctrl+c.
-   - `X` **🅽** - Cut file/directory into an internal clipboard, just like in Windows ctrl+x.
-   - `V` **🅽** - Paste file/directory from an internal clipboard to current directory, just like in Windows ctrl+v.
+   - `C` **🅽** - Copy file/directory into an internal clipboard, just like _ctrl+c/cmd+c_ in other editors.
+   - `X` **🅽** - Cut file/directory into an internal clipboard, just like _ctrl+x/cmd+c_ in other editors.
+   - `V` **🅽** - Paste file/directory from an internal clipboard to current cursor, just like _ctrl+v/cmd+v_ in other editors.
 3. Adjust width:
-   - `<M-.>`/`<M-Right>`/`<C-.>`/`<C-Right>` **🅽** - Make explorer bigger size.
-   - `<M-,>`/`<M-Left>`/`<C-,>`/`<C-Left>` **🅽** - Make explorer smaller size.
+   - `<M-.>`/`<M-Right>`/`<C-.>`/`<C-Right>` **🅽** - Make explorer bigger(👉).
+   - `<M-,>`/`<M-Left>`/`<C-,>`/`<C-Left>` **🅽** - Make explorer smaller(👈).
 
 Configure these key mappings in _~/.vim/repository/kyazdani42/nvim-tree.lua.vim_.
 
@@ -223,7 +224,7 @@ If you need to save file without code format, please use:
 
 By default, [a bunch of language servers](/lin.nvim.dev/appendix/#embedded-language-servers) are already embedded. But sooner or later you need to manage these LSP servers yourself.
 
-LSP server manager is supported by [mason.nvim](https://github.com/williamboman/mason.nvim). Please try `:Mason` command in neovim for more information.
+LSP server management is supported by [mason.nvim](https://github.com/williamboman/mason.nvim). Please try `:Mason` command in neovim for more information.
 
 To ensure LSP servers and formatters embedded, [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) (for LSP servers), [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) and [mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim) (for formatters/linters) are introduced as well.
 
