@@ -147,3 +147,9 @@ For vim plugins, please update in neovim:
 ```vim
 :PlugUpdate!
 ```
+
+---
+
+## Next
+
+- See [User Guide](/lin.nvim.dev/user-guide) to get start.

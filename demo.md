@@ -27,4 +27,4 @@ Float Terminal
 
 ## Next
 
-- See [Installation](/lin.nvim.dev/installation) to get start.
+- See [Installation](/lin.nvim.dev/installation) if you're interested.
