@@ -29,17 +29,7 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 
 > Notice
 >
-> 1. _install.sh_ will detect and install below dependencies with system package manager if not exists:
->    - [Git](https://git-scm.com/).
->    - [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim).
->    - C/C++ tool chain([clang](https://clang.llvm.org/)/[gcc](https://gcc.gnu.org/), [make](https://www.gnu.org/software/make/), [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/), [autoconf](https://www.gnu.org/software/autoconf/), [automake](https://www.gnu.org/software/automake/) and [cmake](https://cmake.org/)).
->    - [Python3](https://www.python.org/)(Python2 is not supported) and some pip packages([pynvim](https://pypi.org/project/pynvim/), [click](https://pypi.org/project/click/)).
->    - [Node.js](https://nodejs.org/), [yarn](https://yarnpkg.com/) and some npm packages([neovim](https://www.npmjs.com/package/neovim), [yarn](https://www.npmjs.com/package/yarn)).
->    - [Rust](https://www.rust-lang.org/) and some modern commands([fd](https://github.com/sharkdp/fd), [rg](https://github.com/BurntSushi/ripgrep), [bat](https://github.com/sharkdp/bat)).
->    - [Curl](https://curl.se/), [wget](https://www.gnu.org/software/wget/), [unzip](https://linux.die.net/man/1/unzip) and [gzip](https://www.gnu.org/software/gzip/).
->    - [Universal-ctags](https://github.com/universal-ctags/ctags).
->    - [Hack nerd font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip).
-> 2. Supported platforms for now:
+> 1. _install.sh_ will detect and install third-party [dependencies](/lin.nvim.dev/appendix/#dependencies) with system package manager if not exists. For now supported platforms are:
 >    - Debian/ubuntu based Linux: use _apt_ and _snap_ as installer.
 >    - Fedora/centos based Linux: use _dnf_ as installer.
 >    - Archlinux based Linux: use _pacman_ as installer.
