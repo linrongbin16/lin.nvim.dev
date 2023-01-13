@@ -2,6 +2,7 @@
 layout: default
 title: User Guide
 nav_order: 4
+has_children: true
 ---
 
 # User Guide
@@ -11,6 +12,8 @@ nav_order: 4
   - [Ctrl+? Cmd+? Keys](#ctrl-cmd-keys)
 - [UI](#ui)
   - [File Explorer](#file-explorer)
+  - [Tabline](#tabline)
+  - [GUI Font](#gui-font)
 - [IDE-like Editing Features](#ide-like-editing-features)
   - [Code Complete](#code-complete)
   - [Symbols](#symbols)
@@ -18,7 +21,6 @@ nav_order: 4
   - [Code Format](#code-format)
   - [Code Actions](#code-actions)
   - [Git](#git)
-  - [Manage LSP Servers](#manage-lsp-servers)
 - [Search](#search)
   - [Text Search](#text-search)
   - [File Search](#file-search)
@@ -153,21 +155,7 @@ Install other nerd fonts and configure in _~/.vim/settings.vim_ to customize.
 
 ## IDE-like Editing Features
 
-Supported by:
-
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) for LSP servers configuration.
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) for complete engine, and its sources:
-  - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
-  - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
-  - [cmp-path](https://github.com/hrsh7th/cmp-path)
-  - [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
-  - [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-  - [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
-  - [friendly-snippets](rafamadriz/friendly-snippets)
-- [mason.nvim](https://github.com/williamboman/mason.nvim) for LSP server manager, and its extensions:
-  - [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
-  - [mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim).
-- [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) for extra formatters/linters.
+Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) and a bunch of other plugins, please see [Manage LSP Servers](/lin.nvim.dev/manage-lsp-servers) for more details.
 
 ### Code Complete
 
@@ -220,38 +208,7 @@ If you need to save file without code format, please use:
 - `[c` **🅽** - Go to previous(👆) git chunk in current buffer.
 - `<Leader>gb` **🅽** - Toggle git blame info on current line.
 
-### Manage LSP Servers
-
-By default, [a bunch of language servers](/lin.nvim.dev/appendix/#embedded-language-servers) are already embedded. But sooner or later you need to manage these LSP servers yourself.
-
-LSP server management is supported by [mason.nvim](https://github.com/williamboman/mason.nvim). Please try `:Mason` command in neovim for more information.
-
-To ensure LSP servers and formatters embedded, [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) (for LSP servers), [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) and [mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim) (for formatters/linters) are introduced as well.
-
-To simplify the setup for all above plugins, all you need is to define 4 components in below configurations:
-
-1. LSP server (used by _mason-lspconfig.nvim_ for ensure installation). For example `clangd`, `pyright`. Please refer to [mason-lspconfig.nvim - Available LSP servers](https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers) for more LSP servers .
-2. Configuration for lspconfig (used by [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)). Usually it's just an empty table `{}`.
-3. (Optional) Extra formatter/linter (used by _mason-null-ls.nvim_ for ensure installation). For example `eslint`, `prettierd`, `black`. Please refer to [mason-lspconfig.nvim - Available Null-ls sources](https://github.com/jay-babu/mason-null-ls.nvim#available-null-ls-sources) for more mason-null-ls sources.
-4. (Optional) Extra null-ls sources (used by _null-ls.nvim_ to enable the sources). For example `null_ls.builtins.code_actions.eslint`, `null_ls.builtins.formatting.prettierd`, `null_ls.builtins.formatting.black`. Please refer to [null-ls.nvim - BUILTINS.md](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) for more null-ls builtin sources.
-
-Let's see how to configure LSP server and formatter for python in real world:
-
-```lua
-local lsp_servers = {
-    python = {
-        "pyright",  -- 1. LSP server
-        {},         -- 2. lspconfig
-        {"black", "isort"},     -- formatters
-        {
-            null_ls.builtins.formatting.black, -- sources for null-ls
-            null_ls.builtins.formatting.isort
-        }
-    },
-}
-```
-
-You could add new or configure embedded LSP servers in _~/.vim/lsp-settings.vim_.
+You could configure key mappings in _~/.vim/repository/hrsh7th/nvim-cmp.vim_, add new or configure embedded LSP servers in _~/.vim/lsp-settings.vim_.
 
 ---
 
