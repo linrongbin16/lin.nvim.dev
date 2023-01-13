@@ -208,7 +208,7 @@ If you need to save file without code format, please use:
 - `[c` **🅽** - Go to previous(👆) git chunk in current buffer.
 - `<Leader>gb` **🅽** - Toggle git blame info on current line.
 
-You could configure key mappings in _~/.vim/repository/hrsh7th/nvim-cmp.vim_, add new or configure embedded LSP servers in _~/.vim/lsp-settings.vim_.
+You could configure these key mappings in _~/.vim/repository/hrsh7th/nvim-cmp.vim_, add new or configure embedded LSP servers in _~/.vim/lsp-settings.vim_.
 
 ---
 
