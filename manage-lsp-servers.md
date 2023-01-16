@@ -36,12 +36,9 @@ Here're some examples:
 
 ```lua
 local embeded_servers = {
-    -- clang
-    "clangd",
-    -- cmake
-    "cmake",
-    -- python
-    "pyright",
+    "clangd",   -- c/c++
+    "cmake",    -- cmake
+    "pyright",  -- python
 }
 local embeded_extras = {
     -- js/ts
