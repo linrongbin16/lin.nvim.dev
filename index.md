@@ -2,6 +2,7 @@
 title: Home
 layout: home
 nav_order: 1
+has_children: true
 ---
 
 # lin.nvim: Lin Rongbin's Neovim Distribution
@@ -23,6 +24,8 @@ Solved these issues:
 - Difficulties on plugin: all [plugins](/lin.nvim.dev/appendix/#plugins) are carefully selected and configured for the best performance and editing experience, following most modern editors (again, just like vscode).
 - Duplicate installations: one line command for different OS and machines (not on Windows for now), following the same behavior.
 - Naive UI - Pretty color schemes, icons, file explorer, tabs and status are integrated.
+
+Please see [Philosophy](/lin.nvim.dev/philosophy) for more thoughts.
 
 ---
 

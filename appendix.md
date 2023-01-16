@@ -134,10 +134,14 @@ nav_order: 5
 - Vim: vimls
 - XML: lemminx
 
+---
+
 # Extra Formatter/Linter/Diagnostic/CodeAction
 
 - Javascript/typescript/html/css/markdown/graphql/etc: prettierd, eslint_d
 - Python: black, isort
+
+---
 
 # Reference
 
