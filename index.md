@@ -15,7 +15,7 @@ has_children: true
 
 ---
 
-Aim to be out-of-box, IDE-like editing experience, performant, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
+Aim to be out-of-box, IDE-like editing features, performant, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
 
 Solved these issues:
 
