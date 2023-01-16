@@ -4,7 +4,15 @@ title: Appendix
 nav_order: 5
 ---
 
-# Dependencies
+# Appendix
+
+- [Dependencies](#dependencies)
+- [Plugins](#plugins)
+- [LSP Servers](#lsp-servers)
+- [Extra Formatter/Linter/Diagnostic/CodeAction](#extra-formatterlinterdiagnosticcodeaction)
+- [Reference](#reference)
+
+## Dependencies
 
 - [Git](https://git-scm.com/).
 - [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim).
@@ -18,7 +26,7 @@ nav_order: 5
 
 ---
 
-# Plugins
+## Plugins
 
 - Infrastructure
 
@@ -113,7 +121,7 @@ nav_order: 5
 
 ---
 
-# LSP Servers
+## LSP Servers
 
 - C/C++: clangd
 - CMake: cmake
@@ -136,14 +144,14 @@ nav_order: 5
 
 ---
 
-# Extra Formatter/Linter/Diagnostic/CodeAction
+## Extra Formatter/Linter/Diagnostic/CodeAction
 
 - Javascript/typescript/html/css/markdown/graphql/etc: prettierd, eslint_d
 - Python: black, isort
 
 ---
 
-# Reference
+## Reference
 
 - [mason.nvim - Mason Package Index](https://github.com/williamboman/mason.nvim/blob/main/PACKAGES.md)
 - [mason-lspconfig.nvim - Available LSP servers](https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers)
