@@ -21,7 +21,7 @@ Performance should always be first priority, even integrated with tons of things
 
 ## IDE Features
 
-UI/file-explorer/highlights/auto-complete/code-format/diagnostics/etc, these IDE features are extremely desired.
+UI/file-explorer/highlights/auto-complete/code-format/diagnostics/etc, these IDE features are in a chronic of starvation.
 
 ## Concise and Efficiency
 
