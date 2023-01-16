@@ -8,7 +8,7 @@ nav_order: 3
 
 {: .note }
 
-> _[neovide](https://neovide.dev/) is highly recommended as a high-performance neovim GUI client._
+> _[neovide](https://neovide.dev/) is highly recommended as a performant neovim GUI client._
 
 - [Linux/macOS](#linuxmacos)
 - [Windows](#windows)
@@ -29,7 +29,7 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 
 > Notice
 >
-> 1. _install.sh_ will detect and install third-party [dependencies](/lin.nvim.dev/appendix/#dependencies) with system package manager if not exists. For now supported platforms are:
+> 1. _install.sh_ will install [third-party dependencies](/lin.nvim.dev/appendix/#dependencies) with system package manager if not exists. For now supported platforms are:
 >    - Debian/ubuntu based Linux: use _apt_ and _snap_ as installer.
 >    - Fedora/centos based Linux: use _dnf_ as installer.
 >    - Archlinux based Linux: use _pacman_ as installer.
@@ -45,6 +45,8 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 > Notice
 >
 > Use a package manager (such as [chocolatey](https://chocolatey.org/) and [scoop](https://scoop.sh/)) could be a better choice, just make sure they're available in _$env:PATH_.
+
+0. Enable Windows Developer Mode.
 
 1. Install [Visual Studio](https://www.visualstudio.com/) with below 2 components:
 

@@ -10,6 +10,7 @@ has_children: true
 - [Global Key Mappings](#global-key-mappings)
   - [Hot Keys](#hot-keys)
   - [Ctrl+? Cmd+? Keys](#ctrl-cmd-keys)
+  - [Enhanced Copy/Paste](#enhanced-copypaste)
 - [UI](#ui)
   - [File Explorer](#file-explorer)
   - [Tabline](#tabline)
@@ -33,6 +34,7 @@ has_children: true
   - [Better Repeat](#better-repeat)
   - [Better Matching](#better-matching)
   - [Auto Pair and Close HTML Tag](#auto-pair-and-close-html-tag)
+  - [Highlight Words](#highlight-words)
 - [Manage Plugins](#manage-plugins)
 - [Customization](#customization)
 
@@ -60,7 +62,8 @@ Meta-key (_M_), alt-key (_A_) (on Windows/Linux), and command-key (_D_) (on macO
 - `F2` **🅽** - Toggle undo-tree.
 - `F3` **🅽** - Toggle structure outlines(tags).
 - `F4` **🅽** - Switch between C/C++ headers and sources.
-- `F7` **🅽** - Toggle git blame on current line.
+- `F7` **🅽** - Enable/disable highlighting word marks, see [Highlight Words](#highlight-words).
+- `<S-F7>` **🅽** - Clear all highlighting word marks.
 - `F8` **🅽** - Open markdown preview.
 - `F9` **🅽** - Toggle terminal.
 - `F10` **🅽** - Toggle buffers explorer.
@@ -87,6 +90,8 @@ For macOS, cmd+? follows the same behavior(ctrl+? works as well):
 - `<D-s>` **🅽** **🆅** **🅸** - Same as `<C-s>`.
 - `<D-y>` **🅽** **🆅** **🅸** - Same as `<C-y>`.
 - `<D-z>` **🅽** **🆅** **🅸** - Same as `<C-z>`.
+
+### Enhanced Copy/Paste
 
 Copy/paste across different vim instances through remote ssh could be difficult, so introduce two shortcuts using local cache:
 
@@ -208,12 +213,105 @@ If you need to save file without code format, please use:
 - `[c` **🅽** - Go to previous(👆) git chunk in current buffer.
 - `<Leader>gb` **🅽** - Toggle git blame info on current line.
 
-You could configure these key mappings in _~/.vim/repository/hrsh7th/nvim-cmp.vim_, add new or configure embedded LSP servers in _~/.vim/lsp-settings.vim_.
+Configure these key mappings in _~/.vim/repository/hrsh7th/nvim-cmp.vim_, or configure embedded LSP servers in _~/.vim/lsp-settings.vim_.
+
+---
+
+### Search
+
+Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](https://github.com/ojroques/nvim-lspfuzzy). All fzf commands are renamed with the prefix _Fzf_, for example `:Files` are renamed to `:FzfFiles`, `:Rg` are renamed to `:FzfRg`.
+
+#### Text Search
+
+- `<Space>r` **🅽** - Search text by self-defined command `:LinFzfRg`.
+- `<Space>w` **🅽** - Search word under cursor by self-defined command `:LinFzfRgCWord`.
+- `<Space>ln` **🅽** - Search lines on current buffer by `:FzfLines`.
+- `<Space>tg` **🅽** - Search tags by `:FzfTags`.
+
+#### History Search
+
+- `<Space>sh` **🅽** - Search searched history by `:FzfHistory/`.
+- `<Space>ch` **🅽** - Search vim command history by `:FzfHistory:`.
+
+#### File Search
+
+- `<Space>f`/`<C-p>` **🅽** - Search files by `:FzfFiles`.
+- `<Space>b` **🅽** - Search opened buffers by `:FzfBuffers`.
+- `<Space>hf` **🅽** - Search history files (v:oldfiles) and opened buffers by `:FzfHistory`.
+
+#### Git Search
+
+- `<Space>gc` **🅽** - Search git commits by `:FzfCommits`.
+- `<Space>gf` **🅽** - Search files in git repository by `:FzfGFile`.
+- `<Space>gs` **🅽** - Search files in git status by `:FzfGFiles?`.
+
+#### Other Search
+
+- `<Space>mk` **🅽** - Search marks by `:FzfMarks`.
+- `<Space>mp` **🅽** - Search normal mode vim key mappings by `:FzfMaps`.
+- `<Space>cm` **🅽** - Search vim commands by `:FzfCommands`.
+- `<Space>ht` **🅽** - Search help tags by `:FzfHelptags`.
+
+Configure these key mappings in _~/.vim/repository/junegunn/fzf.vim.vim_.
+
+## Editing Enhancement
+
+#### Easy Comment
+
+Support by [Comment.nvim](https://github.com/numToStr/Comment.nvim).
+
+#### Cursor Motion
+
+Support by [hop.nvim](https://github.com/phaazon/hop.nvim).
+
+- `<Leader>f{char}` **🅽** - Move by a single {char}.
+- `<Leader>s{char}{char}` **🅽** - Move by two consequent {char}{char}.
+- `<Leader>w` **🅽** - Move by word.
+- `<Leader>l` **🅽** - Move by line.
+
+#### Word Movement
+
+Better movement respects words that missing whitespaces.
+
+Support by [vim-wordmotion](https://github.com/chaoren/vim-wordmotion).
+
+- `,w`/`,W` **🅽** - word/WORD forward(👉), exclusive.
+- `,b`/`,B` **🅽** - word/WORD backward(👈), exclusive.
+- `,e`/`,E` **🅽** - Forward to the end of word/WORD, inclusive.
+- `,ge`/`,gE` **🅽** - Backward to the end of word/WORD, inclusive.
+
+#### Better Repeat
+
+Better repeat(`.`) operation.
+
+Supported by [vim-repeat](https://github.com/tpope/vim-repeat).
+
+#### Better Matching
+
+Better matching for brackets, parentheses, HTML tags, if-endif, etc.
+
+Supported by [vim-matchup](https://github.com/andymass/vim-matchup).
+
+#### Auto Pair and Close HTML Tag
+
+Auto pair brackets and close html tags.
+
+Supported by [nvim-autopairs](https://github.com/windwp/nvim-autopairs) and [vim-closetag](https://github.com/alvan/vim-closetag).
+
+#### Highlight Words
+
+Highlight all the words with different colors.
+
+Supported by [vim-mark](https://github.com/inkarkat/vim-mark).
+
+- `<Leader>m` **🅽** **🆅** - Mark/clear mark under cursor.
+- `<Leader>*` **🅽** - Navigate to next(👇) mark.
+- `<Leader>#` **🅽** - Navigate to previous(👆) mark.
 
 ---
 
 ## Next
 
-- See [Embedded LSP Servers](/lin.nvim.dev/appendix/#embedded-lsp-servers).
-- See [Embedded Formatters/Linters](/lin.nvim.dev/appendix/#embedded-formatters-linters).
-- See [Plugin List](/lin.nvim.dev/appendix/#plugins).
+- See [Installed Plugins](/lin.nvim.dev/appendix/#plugins).
+- See [Installed LSP Servers](/lin.nvim.dev/appendix/#lsp-servers).
+- See [Installed Formatters/Linters/etc](/lin.nvim.dev/appendix/#formatters-linters).
