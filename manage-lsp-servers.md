@@ -75,4 +75,4 @@ local embeded_extras = {
 > 1. The first is a string for a valid mason package name, it will be ensure-installed through mason-null-ls. Please refer to [mason-null-ls Available Null-ls sources](https://github.com/jay-babu/mason-null-ls.nvim#available-null-ls-sources) for all packages.
 > 2. The second is another array with related null-ls source configs. They will be registered in null-ls, and working through null-ls LSP server. Please refer to [null-ls BUILTINS](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) for all null-ls builtin configs.
 
-You could configure all embedded LSP servers in _~/.vim/lsp-settings.vim_.
+Configure all embedded LSP servers in _~/.vim/lsp-settings.vim_.
