@@ -35,7 +35,6 @@ has_children: true
   - [Better Matching](#better-matching)
   - [Auto Pair and Close HTML Tag](#auto-pair-and-close-html-tag)
   - [Highlight Words](#highlight-words)
-- [Manage Plugins](#manage-plugins)
 - [Customization](#customization)
 
 In this section, vim editing modes are specified with:
@@ -158,6 +157,8 @@ Support by [barbar.nvim](https://github.com/romgrk/barbar.nvim).
 
 Install other nerd fonts and configure in _~/.vim/settings.vim_ to customize.
 
+---
+
 ## IDE-like Editing Features
 
 Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) and a bunch of other plugins, please see [Manage LSP Servers](/lin.nvim.dev/manage-lsp-servers) for more details.
@@ -254,6 +255,8 @@ Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and
 
 Configure these key mappings in _~/.vim/repository/junegunn/fzf.vim.vim_.
 
+---
+
 ## Editing Enhancement
 
 #### Easy Comment
@@ -310,8 +313,25 @@ Supported by [vim-mark](https://github.com/inkarkat/vim-mark).
 
 ---
 
+## Customization
+
+_init.vim_ will load below components:
+
+- _lua/plugins.lua_ - Vim plugins managed by [packer.nvim](https://github.com/wbthomason/packer.nvim). Please see [Plugins](/lin.nvim.dev/appendix/#plugins) to find all plugins installed in this distribution.
+- _standalone_ directory - Pure vim settings for basic neovim behavior.
+- _repository_ and _lua/repository_ directory - Plugin settings for each installed plugin, these settings will be included by _init.vim_.
+- _lsp-settings.vim_ - LSP server management.
+- _color-settings.vim_ - Color scheme management.
+- _settings.vim_ - Other settings include GUI font, global key mappings, etc.
+
+To add/remove plugins, please configure _lua/plugins.lua_, related settings under _repository_ and _lua/repository_ directory, and modify _init.vim_.
+
+For basic install mode, the _init.vim_ is _standalone/basic.vim_, no more else, see [More Options](#more-options).
+
+---
+
 ## Next
 
 - See [Installed Plugins](/lin.nvim.dev/appendix/#plugins).
 - See [Installed LSP Servers](/lin.nvim.dev/appendix/#lsp-servers).
-- See [Installed Formatters/Linters/etc](/lin.nvim.dev/appendix/#formatters-linters).
+- See [Installed Formatter/Linter/Diagnostic/CodeAction](/lin.nvim.dev/appendix/#extra-formatterlinterdiagnosticcodeaction).
