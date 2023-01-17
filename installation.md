@@ -50,16 +50,16 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 
    - .NET Desktop Development
    - Desktop development with C++
-     {% include image.html src="/assets/installations/install-windows-visual-studio2.png" alt="install-windows-visual-studio2.png" width="95%" %}
+     {% include nest-image.html src="/assets/installations/install-windows-visual-studio2.png" alt="install-windows-visual-studio2.png" width="95%" %}
 
 2. Install [64-bit Git for Windows Setup](https://git-scm.com/downloads) with below 3 options:
 
    - In **_Select Components_**, select **_Associate .sh files to be run with Bash_**.
-     {% include image.html src="/assets/installations/install-windows-git1.png" alt="install-windows-git1.png" width="60%" %}
+     {% include nest-image.html src="/assets/installations/install-windows-git1.png" alt="install-windows-git1.png" width="70%" %}
    - In **_Adjusting your PATH environment_**, select **_Use Git and optional Unix tools from the Command Prompt_**.
-     {% include image.html src="/assets/installations/install-windows-git2.png" alt="install-windows-git2.png" width="60%" %}
+     {% include nest-image.html src="/assets/installations/install-windows-git2.png" alt="install-windows-git2.png" width="70%" %}
    - In **_Configuring the terminal emulator to use with Git Bash_**, select **_Use Windows's default console window_**. After this step, _git.exe_ and Linux built-in commands(such as _bash.exe_, _cp.exe_, _mv.exe_, _ls.exe_) will be available in _$env:PATH_.
-     {% include image.html src="/assets/installations/install-windows-git3.png" alt="install-windows-git3.png" width="60%" %}
+     {% include nest-image.html src="/assets/installations/install-windows-git3.png" alt="install-windows-git3.png" width="70%" %}
 
 3. Install other 64-bit dependencies:
 
@@ -87,14 +87,14 @@ cd $env:USERPROFILE\.vim
 > Notice
 >
 > If you are using WSL, _C:\Windows\System32\bash.exe_ could lead you to WSL instead of the _bash.exe_ from [Git for Windows](https://git-scm.com/). Make sure the git path is ahead of _C:\Windows\System32_, so git bash will be first detected (_wsl.exe_ could connect to WSL as well so no need to worry about losing _C:\Windows\System32\bash.exe_).
-> {% include image.html src="/assets/installations/install-windows-git-path.png" alt="install-windows-git-path.png" width="60%" %}
+> {% include nest-image.html src="/assets/installations/install-windows-git-path.png" alt="install-windows-git-path.png" width="70%" %}
 
 {: .note-title}
 
 > Notice
 >
 > Disable Windows App alias _python.exe_ and _python3.exe_, it could lead you to the wrong python from Windows Store.
-> {% include image.html src="/assets/installations/install-windows-app-alias.png" alt="install-windows-app-alias.png" width="60%" %}
+> {% include nest-image.html src="/assets/installations/install-windows-app-alias.png" alt="install-windows-app-alias.png" width="70%" %}
 
 ---
 
