@@ -56,4 +56,4 @@ Trying to cover IDE features, but not be one.
 
 All is about editing itself, no compiling/packaging/debugging.
 
-There're some flashy and wow plugins, but only pain-point-resolver stays, not to mention ones that seriously drag cursor and typing.
+There're some flashy and wow plugins, but only pain-point-killer stays, not to mention ones that seriously drag cursor and typing.
