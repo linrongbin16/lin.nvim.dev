@@ -48,7 +48,7 @@ UI/file-explorer/highlights/auto-complete/code-format/diagnostics/etc, these IDE
 >
 > 1. &gt; 500 stars.
 > 2. Last commit in 1 year.
-> 3. For duplicate ports/variants, keep the one has more active updates or more stars.
+> 3. For duplicate ports/variants, keep the one has more stars, more active updates or newer features.
 
 ## Concise and Efficiency
 
