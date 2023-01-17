@@ -10,7 +10,7 @@ has_children: true
 - [Global Key Mappings](#global-key-mappings)
   - [Hot Keys](#hot-keys)
   - [Ctrl+? Cmd+? Keys](#ctrl-cmd-keys)
-  - [Enhanced Copy/Paste](#enhanced-copypaste)
+  - [Biscuits](#biscuits)
 - [UI](#ui)
   - [File Explorer](#file-explorer)
   - [Tabline](#tabline)
@@ -90,12 +90,16 @@ For macOS, cmd+? follows the same behavior(ctrl+? works as well):
 - `<D-y>` **🅽** **🆅** **🅸** - Same as `<C-y>`.
 - `<D-z>` **🅽** **🆅** **🅸** - Same as `<C-z>`.
 
-### Enhanced Copy/Paste
+### Biscuits
 
-Copy/paste across different vim instances through remote ssh could be difficult, so introduce two shortcuts using local cache:
+Copy/paste across different vim instances through remote ssh could be difficult, introduce two shortcuts using local cache:
 
 - `<Leader>y` **🆅** - Copy selected text to cache.
 - `<Leader>p` **🅽** - Paste from cache to current cursor.
+
+Easier way to _nohlsearch_:
+
+- `<C-l>` **🅽** - Execute command `:nohlsearch`.
 
 Configure these key mappings in _~/.vim/settings.vim_.
 
