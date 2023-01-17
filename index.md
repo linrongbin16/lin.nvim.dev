@@ -29,7 +29,7 @@ Taking different OS/machines into account, it would be a time killer.
 
 > Note
 >
-> The installer (_install.sh_, _install.ps1_) should depend less and more customizable.
+> The installer (_install.sh_, _install.ps1_) should depend less and custom more.
 > Besides git and neovim itself, there're still some third-party dependencies can't be given up:
 >
 > - Programming languages:
