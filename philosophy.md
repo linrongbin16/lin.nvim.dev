@@ -17,14 +17,15 @@ Taking different OS/machines into account, it would be a time killer.
 
 > Note
 >
-> Besides git and neovim itself, third-party dependencies greately enhanced capabilities:
+> The installer (_install.sh_, _install.ps1_) should depend less and more customizable.
+> Besides git and neovim itself, there're still some third-party dependencies can't be given up:
 >
-> - Below programming languages are installed as dependecies:
->   - C/C++ tool chain: as a pre-requirement for other programming languages.
+> - Programming languages:
+>   - C/C++ tool chain: as a pre-requirement for other things.
 >   - Python3/Pip: for vim plugins and LSP.
 >   - Node/Npm: for vim plugins and LSP.
 >   - Rust/Cargo: for rg/fd/bat, as greate enhancements for fzf.
-> - Curl/wget: download tools for _install.sh_(_install.ps1_) itself.
+> - Curl/wget: download tools for installer itself.
 > - Unzip/gzip/7-zip: for LSP management.
 > - Universal-ctags: tags.
 > - Hack nerd font: patched-font with icons.
