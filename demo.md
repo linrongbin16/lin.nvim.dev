@@ -39,6 +39,14 @@ nav_order: 2
 
 ---
 
+## Colors and Highlights
+
+### Cursor Word
+
+{% include youtube.html id="C6RfmXEzB6o" %}
+
+---
+
 ## Next
 
 - See [Installation](/lin.nvim.dev/installation) if you're interested.
