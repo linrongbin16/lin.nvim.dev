@@ -269,7 +269,9 @@ Support by [Comment.nvim](https://github.com/numToStr/Comment.nvim).
 
 #### Cursor Motion
 
-Support by [hop.nvim](https://github.com/phaazon/hop.nvim).
+Support by [hop.nvim](https://github.com/phaazon/hop.nvim) and [leap.nvim](https://github.com/ggandor/leap.nvim).
+
+These keys are mapped for hop:
 
 - `<Leader>f{char}` **🅽** - Move by a single {char}.
 - `<Leader>s{char}{char}` **🅽** - Move by two consequent {char}{char}.
