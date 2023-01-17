@@ -133,7 +133,7 @@ cd ~/.vim && git pull origin master && ./install.sh
 For vim plugins, please update in neovim:
 
 ```vim
-:PlugUpdate!
+:PackerSync
 ```
 
 ---

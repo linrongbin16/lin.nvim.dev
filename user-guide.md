@@ -21,6 +21,7 @@ has_children: true
   - [Diagnostics](#diagnostics)
   - [Code Format](#code-format)
   - [Code Actions](#code-actions)
+  - [Workspace](#workspace)
   - [Git](#git)
 - [Search](#search)
   - [Text Search](#text-search)
@@ -334,14 +335,17 @@ Supported by [vim-mark](https://github.com/inkarkat/vim-mark).
 
 _init.vim_ will load below components:
 
-- _lua/plugins.lua_ - Vim plugins managed by [packer.nvim](https://github.com/wbthomason/packer.nvim). Please see [Plugins](/lin.nvim.dev/appendix/#plugins) for the complete plugin list.
-- _standalone_ directory - Pure vim settings for basic neovim behavior.
-- _repository_ and _lua/repository_ directory - Plugin settings for each installed plugin, these settings will be included by _init.vim_.
-- _xxx-settings.vim_ - Custom settings for color schemes, LSP servers, hot keys, etc.
+- _lua/plugins.lua_ - Plugins managed by [packer.nvim](https://github.com/wbthomason/packer.nvim), see [Plugins](/lin.nvim.dev/appendix/#plugins) for the complete list.
+- _config/\*.vim_ - Pure vim settings.
+- _lua/constants.lua_ - Settings used across multiple plugins.
+- _repository/\**/*.vim_ and _lua/repository/\**/*.lua_ - Settings for each installed plugin.
+- _colorschemes.vim_ - Color schemes.
+- _lua/lspservers.lua_ - LSP servers.
+- _settings.vim_ - Other settings.
 
-To add/remove plugins, please configure _lua/plugins.lua_, related settings under _repository_ and _lua/repository_ directory, and modify _init.vim_.
+To add/remove plugins, please configure _lua/plugins.lua_, and related settings under _repository_/_lua/repository_ directory, then load from _init.vim_.
 
-For basic install mode, the _init.vim_ is _standalone/basic.vim_, no more else, see [More Options](#more-options).
+For basic install mode, the _init.vim_ is _config/basic.vim_, no more else, see [More Options](/lin.nvim.dev/installation#more-options).
 
 ---
 
