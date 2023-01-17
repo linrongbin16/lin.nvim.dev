@@ -204,7 +204,7 @@ Code format runs on file save asynchronous by default.
 
 If you need to forcibly trigger code format, please use below synchronous code format:
 
-- `<Leader>cf` 🅝 🅧 - Format code on current buffer(in normal mode) or selected code(in visual mode).
+- `<Leader>cf` 🅝 🅧 - Format code in current buffer(in normal mode) or selected code(in visual mode).
 
 If you need to save file without code format, please use:
 
@@ -230,14 +230,14 @@ Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and
 
 #### Text Search
 
-- `<Space>r` 🅝 - Search text by self-defined command `:LinFzfRg`.
-- `<Space>w` 🅝 - Search word under cursor by self-defined command `:LinFzfRgCWord`.
-- `<Space>ln` 🅝 - Search lines on current buffer by `:FzfLines`.
+- `<Space>r` 🅝 - Live grep by self-defined `:LinFzfRg`.
+- `<Space>w` 🅝 - Search word under cursor by self-defined `:LinFzfRgCWord`.
+- `<Space>ln` 🅝 - Search lines on opened buffers by `:FzfLines`.
 - `<Space>tg` 🅝 - Search tags by `:FzfTags`.
 
 #### History Search
 
-- `<Space>sh` 🅝 - Search searched history by `:FzfHistory/`.
+- `<Space>sh` 🅝 - Search searching history by `:FzfHistory/`.
 - `<Space>ch` 🅝 - Search vim command history by `:FzfHistory:`.
 
 #### File Search
@@ -249,15 +249,17 @@ Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and
 #### Git Search
 
 - `<Space>gc` 🅝 - Search git commits by `:FzfCommits`.
-- `<Space>gf` 🅝 - Search files in git repository by `:FzfGFile`.
-- `<Space>gs` 🅝 - Search files in git status by `:FzfGFiles?`.
+- `<Space>gf` 🅝 - Search `git ls-files` files by `:FzfGFile`.
+- `<Space>gs` 🅝 - Search `git status` files by `:FzfGFiles?`.
 
 #### Other Search
 
-- `<Space>mk` 🅝 - Search marks by `:FzfMarks`.
-- `<Space>mp` 🅝 - Search normal mode vim key mappings by `:FzfMaps`.
+- `<Space>mk` 🅝 - Search vim marks by `:FzfMarks`.
+- `<Space>mp` 🅝 - Search vim key mappings by `:FzfMaps`.
 - `<Space>cm` 🅝 - Search vim commands by `:FzfCommands`.
-- `<Space>ht` 🅝 - Search help tags by `:FzfHelptags`.
+- `<Space>ht` 🅝 - Search vim helptags by `:FzfHelptags`.
+- `<Space>cs` 🅝 - Search vim colorschemes by `:FzfColors`.
+- `<Space>ft` 🅝 - Search vim filetypes by `:FzfFiletypes`.
 
 Configure these key mappings in _~/.vim/repository/junegunn/fzf.vim.vim_.
 
