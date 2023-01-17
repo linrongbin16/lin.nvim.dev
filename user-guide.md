@@ -317,12 +317,10 @@ Supported by [vim-mark](https://github.com/inkarkat/vim-mark).
 
 _init.vim_ will load below components:
 
-- _lua/plugins.lua_ - Vim plugins managed by [packer.nvim](https://github.com/wbthomason/packer.nvim). Please see [Plugins](/lin.nvim.dev/appendix/#plugins) to find all plugins installed in this distribution.
+- _lua/plugins.lua_ - Vim plugins managed by [packer.nvim](https://github.com/wbthomason/packer.nvim). Please see [Plugins](/lin.nvim.dev/appendix/#plugins) for the complete plugin list.
 - _standalone_ directory - Pure vim settings for basic neovim behavior.
 - _repository_ and _lua/repository_ directory - Plugin settings for each installed plugin, these settings will be included by _init.vim_.
-- _lsp-settings.vim_ - LSP server management.
-- _color-settings.vim_ - Color scheme management.
-- _settings.vim_ - Other settings include GUI font, global key mappings, etc.
+- _xxx-settings.vim_ - Custom settings for color schemes, LSP servers, hot keys, etc.
 
 To add/remove plugins, please configure _lua/plugins.lua_, related settings under _repository_ and _lua/repository_ directory, and modify _init.vim_.
 
