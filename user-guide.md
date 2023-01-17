@@ -191,12 +191,13 @@ Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](htt
 - `gr` 🅝 - Go to references.
 - `K` 🅝 - Show hover information.
 - `<C-k>` 🅝 - Show signature help.
-- `<Leader>rs` 🅝 - Rename symbol.
+- `<Leader>rn` 🅝 - Rename symbol.
 
 ### Diagnostics
 
 - `[d` 🅝 - Go to previous(👆) diagnostic location.
 - `]d` 🅝 - Go to next(👇) diagnostic location.
+- `<Leader>df` 🅝 - Open diagnostic float window.
 
 ### Code Format
 
@@ -213,6 +214,12 @@ If you need to save file without code format, please use:
 ### Code Actions
 
 - `<Leader>ca` 🅝 🅧 - Run code actions under cursor(in normal mode) or in selected code(in visual mode).
+
+### Workspace
+
+- `<Leader>wa` 🅝 - Add current folder to workspace.
+- `<Leader>wr` 🅝 - Remove current folder from workspace.
+- `<Leader>wl` 🅝 - List all workspaces.
 
 ### Git
 
