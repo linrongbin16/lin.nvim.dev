@@ -15,8 +15,6 @@ nav_order: 3
 - [More Options](#more-options)
 - [Upgrade](#upgrade)
 
-Both neovim and its community are under active development, the [latest neovim stable version](https://github.com/neovim/neovim/wiki/Installing-Neovim) is always recommended. No effort is spent on maintaining backward compatibility.
-
 ---
 
 ## Linux/macOS

@@ -74,6 +74,12 @@ As one of the biggest advantages of neovim, performance should always be first p
 
 There're some flashy and wow plugins, but only pain-point-killer stays, not to mention ones that seriously drag cursor and typing.
 
+### Compatibility
+
+Both neovim and its community are under active development, the [latest neovim stable version](https://github.com/neovim/neovim/wiki/Installing-Neovim) is always recommended.
+
+No effort is spent on maintaining backward compatibility.
+
 ---
 
 ## Next
