@@ -45,9 +45,9 @@ UI/file-explorer/highlights/auto-complete/code-format/diagnostics/etc, these IDE
 >
 > Most popurlar color schemes are picked from [vimcolorschemes.com/top](https://vimcolorschemes.com/top) and [awesome-neovim#colorscheme](https://www.trackawesomelist.com/rockerBOO/awesome-neovim/readme/#colorscheme), following below rules:
 >
-> 1. > 500 stars.
+> 1. &gt; 500 stars.
 > 2. Last commit in 1 year.
-> 3. If multiple ports/variants are duplicated, keep the one has more active updates or more stars.
+> 3. For duplicate ports/variants, keep the one has more active updates or more stars.
 
 ## Concise and Efficiency
 
