@@ -50,7 +50,7 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 
    - .NET Desktop Development
    - Desktop development with C++
-     {% include image.html src="/assets/installations/install-windows-visual-studio2.png" alt="install-windows-visual-studio2.png" %}
+     {% include image.html src="/assets/installations/install-windows-visual-studio2.png" alt="install-windows-visual-studio2.png" width="95%" %}
 
 2. Install [64-bit Git for Windows Setup](https://git-scm.com/downloads) with below 3 options:
 

@@ -8,19 +8,34 @@ nav_order: 2
 
 - [UI](#ui)
 
+## IDE Features
+
+Auto-Complete
+
+{% include youtube.html id="0W_vmla99Cs" %}
+
+Diagnostics
+
+{% include image.html src="/assets/demos/ide-features/python-diagnostics.jpg" alt="python-diagnostics.jpg" width="95%" %}
+
+---
+
 ## UI
 
 File explorer, undo tree and structure outlines
+
 {% include youtube.html id="TmF3G3xkks8" %}
 
 ---
 
 Tabline
+
 {% include youtube.html id="dXw0kt0Dn7M" %}
 
 ---
 
 Float Terminal
+
 {% include youtube.html id="amYAbVrF1Eo" %}
 
 ---
