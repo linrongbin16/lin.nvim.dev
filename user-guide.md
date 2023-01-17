@@ -15,7 +15,7 @@ has_children: true
   - [File Explorer](#file-explorer)
   - [Tabline](#tabline)
   - [GUI Font](#gui-font)
-- [IDE-like Editing Features](#ide-like-editing-features)
+- [IDE Features](#ide-features)
   - [Code Complete](#code-complete)
   - [Symbols](#symbols)
   - [Diagnostics](#diagnostics)
@@ -163,9 +163,9 @@ Install other nerd fonts and configure in _~/.vim/settings.vim_ to customize.
 
 ---
 
-## IDE-like Editing Features
+## IDE Features
 
-Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) and a bunch of other plugins, please see [Manage LSP Servers](/lin.nvim.dev/manage-lsp-servers) for more details.
+Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) and many other plugins, please see [Manage LSP Servers](/lin.nvim.dev/manage-lsp-servers) for more details.
 
 ### Code Complete
 
