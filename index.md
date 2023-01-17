@@ -2,7 +2,7 @@
 title: Home
 layout: home
 nav_order: 1
-has_children: true
+<!-- has_children: true -->
 ---
 
 # lin.nvim: Lin Rongbin's Neovim Distribution
@@ -17,15 +17,62 @@ has_children: true
 
 Aim to be out-of-box, IDE-like editing features, performant, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
 
-Solved these issues:
+## Philosophy
 
-- Time-cost configurations: all behaviors follow the community's best practices and most popular editors (just like [vscode](https://code.visualstudio.com/)).
-- Lack of language support: language server protocol(LSP) is supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) and [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim), with [a bunch of language servers](/lin.nvim.dev/appendix/#lsp-servers) embedded.
-- Difficulties on plugin: all [plugins](/lin.nvim.dev/appendix/#plugins) are carefully selected and configured for the best performance and editing experience, following most modern editors (again, just like vscode).
-- Duplicate installations: one line command for different OS and machines (not on Windows for now), following the same behavior.
-- Naive UI - Pretty color schemes, icons, file explorer, tabs and status are integrated.
+### No-Manual
 
-Please see [Philosophy](/lin.nvim.dev/philosophy) for more thoughts.
+Installing neovim with plugins/configs/LSP becomes heavy manual work.
+
+Taking different OS/machines into account, it would be a time killer.
+
+{: .note-title}
+
+> Note
+>
+> The installer (_install.sh_, _install.ps1_) should depend less and more customizable.
+> Besides git and neovim itself, there're still some third-party dependencies can't be given up:
+>
+> - Programming languages:
+>   - C/C++ tool chain: as a pre-requirement for other things.
+>   - Python3/Pip: for vim plugins and LSP.
+>   - Node/Npm: for vim plugins and LSP.
+>   - Rust/Cargo: for rg/fd/bat, as greate enhancements for fzf.
+> - Curl/wget: download tools for installer itself.
+> - Unzip/gzip/7-zip: for LSP management.
+> - Universal-ctags: tags.
+> - Hack nerd font: patched-font with icons.
+
+### IDE Features
+
+Feed IDE features that are in a chronic of starvation:
+
+- Modern UI(icons, file explorer, tabs, etc).
+- More colors and highlights.
+- Searching.
+- Auto-complete.
+- Code-format.
+- Diagnostics.
+- ...
+
+{: .note-title}
+
+> Note
+>
+> Most popurlar color schemes are picked from [vimcolorschemes.com/top](https://vimcolorschemes.com/top) and [awesome-neovim#colorscheme](https://www.trackawesomelist.com/rockerBOO/awesome-neovim/readme/#colorscheme), following below rules:
+>
+> 1. &gt; 500 stars.
+> 2. Last commit in 1 year.
+> 3. For duplicate ports/variants, keep the one has more stars, more active updates or newer features.
+
+### Focus
+
+Trying to cover IDE features, but not be one.
+
+All is about editing itself, no compiling/packaging/debugging.
+
+As one of the biggest advantages of neovim, performance should always be first priority, even integrated with tons of things.
+
+There're some flashy and wow plugins, but only pain-point-killer stays, not to mention ones that seriously drag cursor and typing.
 
 ---
 

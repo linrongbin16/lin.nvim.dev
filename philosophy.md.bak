@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Philosophy
-nav_order: 1
-parent: Home
+<!-- nav_order: 1 -->
+<!-- parent: Home -->
 ---
 
 # Philosophy
 
-## Reduce Duplications
+## No-Manual
 
 Installing neovim with plugins/configs/LSP becomes heavy manual work.
 
@@ -30,11 +30,9 @@ Taking different OS/machines into account, it would be a time killer.
 > - Universal-ctags: tags.
 > - Hack nerd font: patched-font with icons.
 
-## Performant
+## Performance
 
-Performance and scalability are the biggest advantages of neovim(actually far more performant than vscode from subjective feeling, with the same function of plugins).
-
-Performance should always be first priority, even integrated with tons of things.
+As one of the biggest advantages of neovim, performance should always be first priority, even integrated with tons of things.
 
 ## IDE Features
 
@@ -50,7 +48,7 @@ UI/file-explorer/highlights/auto-complete/code-format/diagnostics/etc, these IDE
 > 2. Last commit in 1 year.
 > 3. For duplicate ports/variants, keep the one has more stars, more active updates or newer features.
 
-## Concise and Efficiency
+## Focus
 
 Trying to cover IDE features, but not be one.
 
