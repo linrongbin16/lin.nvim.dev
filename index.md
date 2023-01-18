@@ -7,6 +7,8 @@ nav_order: 1
 
 # lin.nvim: Lin Rongbin's Neovim Distribution
 
+> Leave vim behind, this is the next generation of [lin.vim](https://github.com/linrongbin16/lin.vim).
+
 A highly configured [neovim](https://neovim.io/) distribution integrated with tons of utilities for development, inspired by [spf13-vim](https://github.com/spf13/spf13-vim).
 
 Aim to be out-of-box, with IDE features, performant, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
