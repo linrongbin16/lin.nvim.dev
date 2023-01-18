@@ -27,6 +27,7 @@ has_children: true
 - [Search](#search)
   - [Text Search](#text-search)
   - [File Search](#file-search)
+  - [LSP Search](#lsp-search)
   - [Git Search](#git-search)
   - [Other Search](#other-search)
 - [Movement](#movement)
@@ -67,7 +68,7 @@ Meta-key (_M_), alt-key (_A_) (on Windows/Linux), and command-key (_D_) (on macO
 - `F2` 🅽 - Toggle undo-tree.
 - `F3` 🅽 - Toggle structure outlines(tags).
 - `F4` 🅽 - Switch between C/C++ header and source.
-- `F7` 🅽 - Enable/disable highlighting word marks, see [demo](/lin.nvim.dev/demo/#highlight-words).
+- `F7` 🅽 - Enable/disable highlighting word marks, see [demo](/lin.nvim.dev/demo/#highlight-marks).
 - `<S-F7>` 🅽 - Clear all highlighting word marks.
 - `F8` 🅽 - Open markdown preview.
 - `F9` 🅽 - Toggle terminal.
@@ -243,35 +244,40 @@ Configure these key mappings in _~/.vim/repository/hrsh7th/nvim-cmp.vim_, or con
 
 ---
 
-### Search
+## Search
 
 Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](https://github.com/ojroques/nvim-lspfuzzy). All fzf commands are renamed with the prefix _Fzf_, for example `:Files` are renamed to `:FzfFiles`, `:Rg` are renamed to `:FzfRg`.
 
-#### Text Search
+### Text Search
 
 - `<Space>r` 🅽 - Live grep by self-defined `:LinFzfRg`.
 - `<Space>w` 🅽 - Search word under cursor by self-defined `:LinFzfRgCWord`.
 - `<Space>ln` 🅽 - Search lines on opened buffers by `:FzfLines`.
 - `<Space>tg` 🅽 - Search tags by `:FzfTags`.
 
-#### History Search
+### History Search
 
 - `<Space>sh` 🅽 - Search searching history by `:FzfHistory/`.
 - `<Space>ch` 🅽 - Search vim command history by `:FzfHistory:`.
 
-#### File Search
+### File Search
 
 - `<Space>f`/`<C-p>` 🅽 - Search files by `:FzfFiles`.
 - `<Space>b` 🅽 - Search opened buffers by `:FzfBuffers`.
 - `<Space>hf` 🅽 - Search history files (v:oldfiles) and opened buffers by `:FzfHistory`.
 
-#### Git Search
+### LSP Search
+
+- `<Space>db` 🅽 - Search diagnostics in current buffer by `:LspDiagnostics`.
+- `<Space>da` 🅽 - Search all diagnostics by `:LspDiagnosticsAll`.
+
+### Git Search
 
 - `<Space>gc` 🅽 - Search git commits by `:FzfCommits`.
 - `<Space>gf` 🅽 - Search `git ls-files` files by `:FzfGFile`.
 - `<Space>gs` 🅽 - Search `git status` files by `:FzfGFiles?`.
 
-#### Other Search
+### Other Search
 
 - `<Space>mk` 🅽 - Search vim marks by `:FzfMarks`.
 - `<Space>mp` 🅽 - Search vim key mappings by `:FzfMaps`.
@@ -286,7 +292,7 @@ Configure these key mappings in _~/.vim/repository/junegunn/fzf.vim.vim_.
 
 ## Movement
 
-#### Cursor Movement
+### Cursor Movement
 
 Support by [hop.nvim](https://github.com/phaazon/hop.nvim) and [leap.nvim](https://github.com/ggandor/leap.nvim).
 
@@ -297,7 +303,7 @@ Keys mapped for hop:
 - `<Leader>w` 🅽 - Move by word.
 - `<Leader>l` 🅽 - Move by line.
 
-#### Word Motion
+### Word Motion
 
 Better movement respects words that missing whitespaces, support by [vim-wordmotion](https://github.com/chaoren/vim-wordmotion).
 

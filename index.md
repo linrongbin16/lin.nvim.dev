@@ -15,21 +15,18 @@ nav_order: 1
 
 ---
 
-Aim to be out-of-box, IDE-like editing features, performant, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
+Aim to be out-of-box, with IDE features, performant, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
 
 ## Philosophy
 
 ### No-Manual
 
-Installing neovim with plugins/configs/LSP becomes heavy manual work.
-
-Taking different OS/machines into account, it would be a time killer.
+All done by one-line command(not for windows now), plugins/configs/LSP everything all set.
 
 {: .note-title}
 
 > Note
 >
-> The installer (_install.sh_, _install.ps1_) should depend less and custom more.
 > Besides git and neovim itself, there're still some third-party dependencies can't be given up:
 >
 > - Programming languages:
@@ -66,17 +63,16 @@ Feed IDE features that are in a chronic of starvation:
 
 ### Focus
 
-Trying to cover IDE features, but not be one.
+Focus on and only on editing, no compiling/packaging/debugging:
 
-All is about editing itself, no compiling/packaging/debugging.
-
-As one of the biggest advantages of neovim, performance should always be first priority, even integrated with tons of things.
-
-There're some flashy and wow plugins, but only pain-point-killer stays, not to mention ones that seriously drag cursor and typing.
+- Trying to cover IDE features, but not be one.
+- The installer should depend less and customize more.
+- Performance should always be first priority, even integrated with tons of things.
+- There're some flashy and wow plugins, but only pain-point-killer stays, not to mention ones that seriously drag cursor and typing.
 
 ### Compatibility
 
-Both neovim and its community are under active development, the [latest neovim stable version](https://github.com/neovim/neovim/wiki/Installing-Neovim) is always recommended.
+Both neovim and its community are under active development, the [latest stable version](https://github.com/neovim/neovim/wiki/Installing-Neovim) is always recommended.
 
 No effort is spent on maintaining backward compatibility.
 

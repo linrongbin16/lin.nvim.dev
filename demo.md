@@ -8,6 +8,7 @@ nav_order: 2
 
 - [IDE Features](#ide-features)
 - [UI](#ui)
+- [Colors and Highlights](#colors-and-highlights)
 
 ---
 
