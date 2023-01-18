@@ -268,8 +268,7 @@ Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and
 
 ### LSP Search
 
-- `<Space>db` 🅽 - Search diagnostics in current buffer by `:LspDiagnostics`.
-- `<Space>da` 🅽 - Search all diagnostics by `:LspDiagnosticsAll`.
+- `<Space>dg` 🅽 - Search all diagnostics by `:LspDiagnosticsAll`.
 
 ### Git Search
 
