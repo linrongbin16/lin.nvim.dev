@@ -31,9 +31,9 @@ All done by one-line command(not for windows now), plugins/configs/LSP everythin
 >
 > - Programming languages:
 >   - C/C++ tool chain: as a pre-requirement for other things.
->   - Python3/Pip: for vim plugins and LSP.
->   - Node/Npm: for vim plugins and LSP.
->   - Rust/Cargo: for rg/fd/bat, as greate enhancements for fzf.
+>   - Python3/pip: for vim plugins and LSP.
+>   - Node/npm: for vim plugins and LSP.
+>   - Rust/cargo: for rg/fd/bat, as greate enhancements for fzf.
 > - Curl/wget: download tools for installer itself.
 > - Unzip/gzip/7-zip: for LSP management.
 > - Universal-ctags: tags.
