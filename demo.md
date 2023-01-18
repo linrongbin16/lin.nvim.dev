@@ -9,6 +9,8 @@ nav_order: 2
 - [IDE Features](#ide-features)
 - [UI](#ui)
 - [Colors and Highlights](#colors-and-highlights)
+- [Movement](#movement)
+- [Specific Language Support](#specific-language-support)
 
 ---
 
@@ -21,6 +23,14 @@ nav_order: 2
 ### Diagnostics
 
 {% include image.html src="/assets/demos/ide-features/python-diagnostics.jpg" alt="python-diagnostics.jpg" width="100%" %}
+
+### Global File Search
+
+{% include image.html src="/assets/demos/ide-features/search-files.png" alt="search-files.png" width="100%" %}
+
+### Global Text Search
+
+{% include image.html src="/assets/demos/ide-features/search-text.png" alt="search-text.png" width="100%" %}
 
 ---
 
@@ -53,6 +63,22 @@ nav_order: 2
 ### Highlight Marks
 
 {% include youtube.html id="nIc45KtRE8Y" %}
+
+---
+
+## Movement
+
+### Cursor Movement
+
+{% include image.html src="/assets/demos/movement/hop.png" alt="hop.png" width="100%" %}
+
+---
+
+## Specific Language Support
+
+### Markdown Preview
+
+{% include image.html src="/assets/demos/language/markdown-preview1.png" alt="markdown-preview1.png" width="100%" %}
 
 ---
 
