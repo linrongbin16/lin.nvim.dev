@@ -46,6 +46,12 @@ nav_order: 5
 
 ### Color Scheme
 
+{: .note-title}
+
+> Notice
+>
+> Option `--disable-color` could disable all these plugins.
+
 - [bluz71/vim-moonfly-colors](https://github.com/bluz71/vim-moonfly-colors)
 - [bluz71/vim-nightfly-colors](https://github.com/bluz71/vim-nightfly-colors)
 - [catppuccin/nvim](https://github.com/catppuccin/nvim)
@@ -82,6 +88,12 @@ nav_order: 5
 
 ### Highlight
 
+{: .note-title}
+
+> Notice
+>
+> Option `--disable-highlight` could disable all these plugins.
+
 - [RRethy/vim-illuminate](https://github.com/RRethy/vim-illuminate)
 - [NvChad/nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua)
 - [andymass/vim-matchup](https://github.com/andymass/vim-matchup)
@@ -89,60 +101,90 @@ nav_order: 5
 
 ### UI
 
-  - [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim)
-  - [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
-  - [jlanzarotta/bufexplorer](https://github.com/jlanzarotta/bufexplorer)
-  - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
-  - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-  - [nvim-lua/lsp-status.nvim](https://github.com/nvim-lua/lsp-status.nvim)
-  - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-  - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+- [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim)
+- [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+- [jlanzarotta/bufexplorer](https://github.com/jlanzarotta/bufexplorer)
+- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [nvim-lua/lsp-status.nvim](https://github.com/nvim-lua/lsp-status.nvim)
+- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 
 ### Tags
 
-  - [liuchengxu/vista.vim](https://github.com/liuchengxu/vista.vim)
-  - [ludovicchabant/vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
+- [liuchengxu/vista.vim](https://github.com/liuchengxu/vista.vim)
+- [ludovicchabant/vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 
 ### Search Engine
 
-  - [junegunn/fzf](https://github.com/junegunn/fzf)
-  - [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
-  - [ojroques/nvim-lspfuzzy](https://github.com/ojroques/nvim-lspfuzzy)
+- [junegunn/fzf](https://github.com/junegunn/fzf)
+- [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
+- [ojroques/nvim-lspfuzzy](https://github.com/ojroques/nvim-lspfuzzy)
 
 ### LSP
 
-  - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
-  - [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
-  - [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
-  - [jay-babu/mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim)
-  - [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
-  - [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
-  - [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)
-  - [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
-  - [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-  - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-  - [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
-  - [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
+{: .note-title}
+
+> Notice
+>
+> Option `--disable-language` could disable all these plugins.
+
+- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
+- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
+- [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
+- [jay-babu/mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim)
+- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
+- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)
+- [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
+- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 
 ### Specific Language Support
 
-  - [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
-  - [justinmk/vim-syntax-extra](https://github.com/justinmk/vim-syntax-extra)
-  - [rhysd/vim-llvm](https://github.com/rhysd/vim-llvm)
-  - [zebradil/hive.vim](https://github.com/zebradil/hive.vim)
-  - [slim-template/vim-slim](https://github.com/slim-template/vim-slim)
+{: .note-title}
+
+> Notice
+>
+> Option `--disable-language` could disable all these plugins.
+
+- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
+- [p00f/clangd_extensions.nvim](https://github.com/p00f/clangd_extensions.nvim)
+- [simrat39/rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim)
+- [justinmk/vim-syntax-extra](https://github.com/justinmk/vim-syntax-extra)
+- [rhysd/vim-llvm](https://github.com/rhysd/vim-llvm)
+- [zebradil/hive.vim](https://github.com/zebradil/hive.vim)
+- [slim-template/vim-slim](https://github.com/slim-template/vim-slim)
+
+### Movement
+
+{: .note-title}
+
+> Notice
+>
+> Option `--disable-editing` could disable all these plugins.
+
+- [phaazon/hop.nvim](https://github.com/phaazon/hop.nvim)
+- [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim)
+- [chaoren/vim-wordmotion](https://github.com/chaoren/vim-wordmotion)
 
 ### Editing Enhancement
 
-  - [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
-  - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
-  - [phaazon/hop.nvim](https://github.com/phaazon/hop.nvim)
-  - [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
-  - [haya14busa/is.vim](https://github.com/haya14busa/is.vim)
-  - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
-  - [chaoren/vim-wordmotion](https://github.com/chaoren/vim-wordmotion)
-  - [mbbill/undotree](https://github.com/mbbill/undotree)
-  - [editorconfig/editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
+{: .note-title}
+
+> Notice
+>
+> Option `--disable-editing` could disable all these plugins.
+
+- [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
+- [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
+- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- [haya14busa/is.vim](https://github.com/haya14busa/is.vim)
+- [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
+- [mbbill/undotree](https://github.com/mbbill/undotree)
+- [editorconfig/editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
 
 ---
 
