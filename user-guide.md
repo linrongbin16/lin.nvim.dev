@@ -344,7 +344,7 @@ Supported by [nvim-autopairs](https://github.com/windwp/nvim-autopairs) and [vim
 
 ## Customization
 
-_init.vim_ will load below components:
+_init.vim_ will load below components in _~/.vim_ directory:
 
 - _lua/plugins.lua_ - Plugins managed by [packer.nvim](https://github.com/wbthomason/packer.nvim), see [Plugins](/lin.nvim.dev/appendix/#plugins) for the complete list.
 - _config/\*.vim_ - Pure vim settings.
