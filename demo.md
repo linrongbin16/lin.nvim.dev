@@ -58,4 +58,4 @@ nav_order: 2
 
 ## Next
 
-- See [Installation](/lin.nvim.dev/installation) if you're interested.
+- [Get started](/lin.nvim.dev/installation).

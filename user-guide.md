@@ -362,6 +362,6 @@ For basic install mode, the _init.vim_ is _config/basic.vim_, no more else, see 
 
 ## Next
 
-- See [Installed Plugins](/lin.nvim.dev/appendix/#plugins).
-- See [Installed LSP Servers](/lin.nvim.dev/appendix/#lsp-servers).
-- See [Installed Formatter/Linter/Diagnostic/CodeAction](/lin.nvim.dev/appendix/#extra-formatterlinterdiagnosticcodeaction).
+- Checkout [installed plugins](/lin.nvim.dev/appendix/#plugins).
+- Checkout [installed LSP servers](/lin.nvim.dev/appendix/#lsp-servers).
+- Checkout [installed formatter/linter/diagnostic/codeAction](/lin.nvim.dev/appendix/#extra-formatterlinterdiagnosticcodeaction).

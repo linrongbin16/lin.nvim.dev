@@ -140,4 +140,4 @@ For vim plugins, please update in neovim:
 
 ## Next
 
-- See [User Guide](/lin.nvim.dev/user-guide) to get start.
+- Checkout the [user guide](/lin.nvim.dev/user-guide).
