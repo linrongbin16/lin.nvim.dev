@@ -190,21 +190,18 @@ nav_order: 5
 
 ## LSP Servers
 
+- Bash: bashls(only for macOS/Linux)
 - C/C++: clangd
 - CMake: cmake
 - CSS: cssls, cssmodules_ls
-- Grammar: grammarly
-- GraphQL: graphql
 - HTML: html
 - JSON: jsonls
 - Javascript/typescript/etc: tsserver
 - Lua: sumneko_lua
-- Markdown: marksman
-- Protobuf: bufls
+- PowerShell: powershell_es(only for Windows)
 - Python: pyright
 - Rust: rust_analyzer
 - SQL: sqlls
-- Toml: taplo
 - Yaml: yamlls
 - Vim: vimls
 - XML: lemminx
@@ -213,7 +210,8 @@ nav_order: 5
 
 ## Extra Formatter/Linter/Diagnostic/CodeAction
 
-- Javascript/typescript/html/css/markdown/graphql/etc: prettierd, eslint_d
+- Bash: shfmt
+- Javascript/typescript: prettierd, eslint_d
 - Python: black, isort
 
 ---
