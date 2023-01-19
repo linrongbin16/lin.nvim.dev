@@ -6,10 +6,6 @@ nav_order: 3
 
 # Installation
 
-{: .note }
-
-> _[neovide](https://neovide.dev/) is highly recommended as a performant neovim GUI client._
-
 - [Linux/macOS](#linuxmacos)
 - [Windows](#windows)
 - [More Options](#more-options)
