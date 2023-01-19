@@ -59,7 +59,10 @@ Feed IDE features that are in a chronic of starvation:
 >
 > 1. &gt; 500 stars.
 > 2. Last commit in 1 year.
-> 3. For duplicate ports/variants, keep the one has more stars, more active updates or newer features.
+> 3. For multiple ports/variants, keep the one has more stars or more active updates. Just &gt; 100 stars if has one of below features:
+>    - Newer design.
+>    - Support neovim's modern features: LSP/treesitter/etc(written in lua is not one of them).
+>    - Better integration with neovim's plugins: [barbar.nvim](https://github.com/romgrk/barbar.nvim)/[nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)/[lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)/etc.
 
 ### Focus
 
@@ -69,6 +72,15 @@ Focus on and only on editing, no compiling/packaging/debugging:
 - The installer should depend less and customize more.
 - Performance should always be first priority, even integrated with tons of things.
 - There're some flashy and wow plugins, but only pain-point-killer stays, not to mention ones that seriously drag cursor and typing.
+
+{: .note-title}
+
+> Note
+>
+> Treesitter is not installed even it's so popurlar for below reasons:
+>
+> - None pain-point-killer.
+> - Some implementations severely impact performance.
 
 ### Compatibility
 
