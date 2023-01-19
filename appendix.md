@@ -210,7 +210,7 @@ nav_order: 5
 
 ## Extra Formatter/Linter/Diagnostic/CodeAction
 
-- Bash: shfmt
+- Bash: shfmt(only for macOS/Linux)
 - Javascript/typescript: prettierd, eslint_d
 - Python: black, isort
 
