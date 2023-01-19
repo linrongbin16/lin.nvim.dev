@@ -116,7 +116,7 @@ Configure these key mappings in _~/.vim/settings.vim_.
 
 ### File Explorer
 
-Supported by [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua). Please use _g?_ to toggle help in nvim-tree, or refer to [:help nvim-tree.view.mappings](https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt) for default key mappings. A few keys are added for convenience:
+Supported by [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua). Please use _g?_ to toggle help in nvim-tree, or refer to [:help nvim-tree.view.mappings](https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt) for default key mappings. A few keys are added for convenience:
 
 1. Navigation:
    - `h` 🅽 - Collapse directory.
@@ -129,7 +129,7 @@ Supported by [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua). Pleas
    - `<M-.>`/`<M-Right>`/`<C-.>`/`<C-Right>` 🅽 - Make explorer bigger(👉).
    - `<M-,>`/`<M-Left>`/`<C-,>`/`<C-Left>` 🅽 - Make explorer smaller(👈).
 
-Configure these key mappings in _~/.vim/repository/kyazdani42/nvim-tree.lua.vim_.
+Configure these key mappings in _~/.vim/repository/nvim-tree/nvim-tree.lua.vim_.
 
 ### Tabline
 

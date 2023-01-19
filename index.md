@@ -62,7 +62,7 @@ Feed IDE features that are in a chronic of starvation:
 > 3. For multiple ports/variants, keep the one has more stars or more active updates. Just &gt; 100 stars if has one of below features:
 >    - Newer design.
 >    - Support neovim's modern features: LSP/treesitter/etc(written in lua is not one of them).
->    - Better integration with neovim's plugins: [barbar.nvim](https://github.com/romgrk/barbar.nvim)/[nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)/[lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)/etc.
+>    - Better integration with neovim's plugins: barbar.nvim/nvim-tree.lua/lualine.nvim/etc.
 
 ### Focus
 

@@ -102,7 +102,7 @@ nav_order: 5
 ### UI
 
 - [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim)
-- [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+- [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
 - [jlanzarotta/bufexplorer](https://github.com/jlanzarotta/bufexplorer)
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
