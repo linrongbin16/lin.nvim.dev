@@ -104,12 +104,13 @@ The installer provides 3 installation modes:
 
 And more options:
 
-- `--static-color`: use static color scheme, instead of random selection on startup. For example: `--static-color=darkblue`.
-- `--disable-color`: disable color schemes, and random selection on startup.
-- `--disable-highlight`: disable highlights, such as RGB color, cursor word, etc.
-- `--disable-language`: disable language support, such as auto-complete, code format, lint, diagnostics, etc.
-- `--disable-editing`: disable editing enhancements, such as easy comments, cursor movement, etc.
-- `--disable-plugin`: disable specific plugin in format _org/repo_, this can be provided multiple times. For example: `--disable-plugin=RRethy/vim-hexokinase --disable-plugin=alvan/vim-closetag`.
+- `--use-color`: use a static color scheme, instead of random selection on startup. For example: `--use-color=darkblue`.
+- `--no-color`: disable color schemes, and random selection on startup.
+- `--no-hilight`: disable highlights, such as RGB color, cursor word, etc.
+- `--no-lang`: disable language support, such as auto-complete, code format, lint, diagnostics, etc.
+- `--no-edit`: disable editing enhancements, such as easy comments, cursor movement, etc.
+- `--no-plug`: disable specific plugin in format _org/repo_, this can be provided multiple times. For example: `--no-plug=RRethy/vim-hexokinase --no-plug=alvan/vim-closetag`.
+- `--no-winctrl`: disable Windows ctrl+{c,v,s,x,a,...} keys behavior, include cmd+{c,v,s,x,a,...} keys on macOS.
 
 Please checkout [Plugins](/lin.nvim.dev/appendix/#plugins) to find out whether a plugin will be installed or not.
 
@@ -117,8 +118,7 @@ Please checkout [Plugins](/lin.nvim.dev/appendix/#plugins) to find out whether a
 
 > Notice
 >
-> - You could use `--disable-xxx` to disable some specific features.
-> - Option `--limit` is equivalent to `--disable-highlight --disable-color --disable-language --disable-editing`.
+> - Option `--limit` is equivalent to `--no-hilight --no-color --no-lang --no-edit`.
 
 ---
 

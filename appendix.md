@@ -50,7 +50,7 @@ nav_order: 5
 
 > Notice
 >
-> Option `--disable-color` could disable all these plugins.
+> Option `--no-color` could disable all these plugins.
 
 - [bluz71/vim-moonfly-colors](https://github.com/bluz71/vim-moonfly-colors)
 - [bluz71/vim-nightfly-colors](https://github.com/bluz71/vim-nightfly-colors)
@@ -92,7 +92,7 @@ nav_order: 5
 
 > Notice
 >
-> Option `--disable-highlight` could disable all these plugins.
+> Option `--no-hilight` could disable all these plugins.
 
 - [RRethy/vim-illuminate](https://github.com/RRethy/vim-illuminate)
 - [NvChad/nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua)
@@ -127,7 +127,7 @@ nav_order: 5
 
 > Notice
 >
-> Option `--disable-language` could disable all these plugins.
+> Option `--no-lang` could disable all these plugins.
 
 - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
 - [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
@@ -148,7 +148,7 @@ nav_order: 5
 
 > Notice
 >
-> Option `--disable-language` could disable all these plugins.
+> Option `--no-lang` could disable all these plugins.
 
 - [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
 - [p00f/clangd_extensions.nvim](https://github.com/p00f/clangd_extensions.nvim)
@@ -164,7 +164,7 @@ nav_order: 5
 
 > Notice
 >
-> Option `--disable-editing` could disable all these plugins.
+> Option `--no-edit` could disable all these plugins.
 
 - [phaazon/hop.nvim](https://github.com/phaazon/hop.nvim)
 - [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim)
@@ -176,7 +176,7 @@ nav_order: 5
 
 > Notice
 >
-> Option `--disable-editing` could disable all these plugins.
+> Option `--no-edit` could disable all these plugins.
 
 - [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
