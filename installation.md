@@ -40,7 +40,7 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 >
 > Use a package manager (such as [chocolatey](https://chocolatey.org/) and [scoop](https://scoop.sh/)) could be a better choice, just make sure they're available in _$env:PATH_.
 
-0. Enable Windows Developer Mode.
+0. [Enable Windows Developer Mode](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development#activate-developer-mode).
 
 1. Install [Visual Studio](https://www.visualstudio.com/) with below 2 components:
 
