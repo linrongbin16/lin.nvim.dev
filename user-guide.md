@@ -353,7 +353,7 @@ _init.vim_ will load below components in _~/.vim_ directory:
 - _lua/lspservers.lua_ - LSP servers.
 - _settings.vim_ - Other settings.
 
-To add/remove plugins, please configure _lua/plugins.lua_, and related settings under _repository_/_lua/repository_ directory, then load from _init.vim_.
+To configure plugins, please edit _lua/plugins.lua_, and related settings in _repository_ or _lua/repository_ directory, then load from _init.vim_.
 
 For basic install mode, the _init.vim_ is _config/basic.vim_, no more else, see [More Options](/lin.nvim.dev/installation#more-options).
 
