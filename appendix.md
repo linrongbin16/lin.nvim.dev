@@ -82,7 +82,6 @@ nav_order: 5
 - [sainnhe/everforest](https://github.com/sainnhe/everforest)
 - [sainnhe/sonokai](https://github.com/sainnhe/sonokai)
 - [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim)
-- [sonph/onehalf](https://github.com/sonph/onehalf)
 - [srcery-colors/srcery-vim](https://github.com/srcery-colors/srcery-vim)
 
 ### Highlight
