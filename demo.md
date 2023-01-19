@@ -10,7 +10,7 @@ nav_order: 2
 - [UI](#ui)
 - [Colors and Highlights](#colors-and-highlights)
 - [Movement](#movement)
-- [Specific Language Support](#specific-language-support)
+- [Language Support](#language-support)
 
 ---
 
@@ -74,7 +74,7 @@ nav_order: 2
 
 ---
 
-## Specific Language Support
+## Language Support
 
 ### Markdown Preview
 
