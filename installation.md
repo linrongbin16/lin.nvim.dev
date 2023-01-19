@@ -99,8 +99,8 @@ cd $env:USERPROFILE\.vim
 The installer provides 3 installation modes:
 
 - Full mode: default mode, it installs all features for the best experience, while consuming unignorable CPU, memory, disk and graphics.
-- Limit mode: `--limit` for low-performance devices such as old PC, which disables most plugins and extensions: color schemes, highlight, LSP, editing enhancements, etc.
-- Basic mode: `--basic` for restricted environments such as production servers, which have limited network access or lack authentication. It only installs a pure basic vim setting file.
+- Limit mode: use `--limit` for low-performance devices such as old PC, which disables most plugins and extensions: color schemes, highlight, LSP, editing enhancements, etc.
+- Basic mode: use `--basic` for restricted environments such as production servers, which have limited network access or lack authentication. It only installs a pure basic vim setting file.
 
 And more options:
 
