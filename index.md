@@ -23,22 +23,6 @@ Aim to be out-of-box, with IDE features, performant, lightweight and friendly to
 
 All done by one-line command(not for windows now), plugins/configs/LSP everything all set.
 
-{: .note-title}
-
-> Note
->
-> Besides git and neovim itself, there're still some third-party dependencies can't be given up:
->
-> - Programming languages:
->   - C/C++ tool chain: as a pre-requirement for other things.
->   - Python3/pip: for vim plugins and LSP.
->   - Node/npm: for vim plugins and LSP.
->   - Rust/cargo: for rg/fd/bat, as greate enhancements for fzf.
-> - Curl/wget: download tools for installer itself.
-> - Unzip/gzip/7-zip: for LSP management.
-> - Universal-ctags: tags.
-> - Hack nerd font: patched-font with icons.
-
 ### IDE Features
 
 Feed IDE features that are in a chronic of starvation:
@@ -72,6 +56,22 @@ Focus on and only on editing, no compiling/packaging/debugging:
 - The installer should depend less and customize more.
 - Performance should always be first priority, even integrated with tons of things.
 - There're some flashy and wow plugins, but only pain-point-killer stays, not to mention ones that seriously drag cursor and typing.
+
+{: .note-title}
+
+> Note
+>
+> Besides git and neovim itself, there're still some third-party dependencies can't be given up:
+>
+> - Programming languages:
+>   - C/C++ tool chain: as a pre-requirement for other things.
+>   - Python3/pip: for vim plugins and LSP.
+>   - Node/npm: for vim plugins and LSP.
+>   - Rust/cargo: for rg/fd/bat, as greate enhancements for fzf.
+> - Curl/wget: download tools for installer itself.
+> - Unzip/gzip/7-zip: for LSP management.
+> - Universal-ctags: tags.
+> - Hack nerd font: patched-font with icons.
 
 {: .note-title}
 
