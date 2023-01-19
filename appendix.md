@@ -201,7 +201,6 @@ nav_order: 5
 - PowerShell: powershell_es(only for Windows)
 - Python: pyright
 - Rust: rust_analyzer
-- SQL: sqlls
 - Yaml: yamlls
 - Vim: vimls
 - XML: lemminx
