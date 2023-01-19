@@ -8,7 +8,7 @@ nav_order: 3
 
 - [Linux/macOS](#linuxmacos)
 - [Windows](#windows)
-- [More Options](#more-options)
+- [Options](#options)
 - [Upgrade](#upgrade)
 
 ---
@@ -94,31 +94,31 @@ cd $env:USERPROFILE\.vim
 
 ---
 
-## More Options
+## Options
 
-_install.sh_ (and _install.ps1_) provides 3 installation modes:
+The installer provides 3 installation modes:
 
 - Full mode: default mode, it installs all features for the best experience, while consuming unignorable CPU, memory, disk and graphics.
-- Limit mode: for low-performance devices such as old PC. With `./install.sh --limit`, it disables extra highlights, color schemes, language support and other editing enhancements.
-- Basic mode: for the extremely restricted environment such as a production server, which has limited network access or lacks authentication. With `./install.sh --basic`, it disables everything except one basic vim setting file.
+- Limit mode: _--limit_ for low-performance devices such as old PC, which disables most plugins and extensions: color schemes, highlight, LSP, editing enhancements, etc.
+- Basic mode: _--basic_ for restricted environments such as production servers, which have limited network access or lack authentication. It only installs a pure basic vim setting file.
 
 And more options:
 
-- `--static-color`: use static color scheme, instead of random selection on startup. For example: `--static-color=darkblue`.
-- `--disable-color`: disable extra color schemes, and random selection on startup.
-- `--disable-highlight`: disable extra highlights. Such as RGB color, cursor word, etc.
-- `--disable-language`: disable language support. Such as auto-complete, code-format, lint, diagnostics, etc.
-- `--disable-editing`: disable extra editing enhancements. Such as easy comments, cursor motion, etc.
-- `--disable-plugin`: disable specific plugin in format _org/repo_, this is a multiple options. For example: `--disable-plugin=RRethy/vim-hexokinase --disable-plugin=alvan/vim-closetag`.
+- _--static-color_: use static color scheme, instead of random selection on startup. For example: _--static-color=darkblue_.
+- _--disable-color_: disable color schemes, and random selection on startup.
+- _--disable-highlight_: disable highlights, such as RGB color, cursor word, etc.
+- _--disable-language_: disable language support, such as auto-complete, code format, lint, diagnostics, etc.
+- _--disable-editing_: disable editing enhancements, such as easy comments, cursor movement, etc.
+- _--disable-plugin_: disable specific plugin in format _org/repo_, this can be provided multiple times. For example: _--disable-plugin=RRethy/vim-hexokinase --disable-plugin=alvan/vim-closetag_.
 
-Please checkout [installed plugins](/lin.nvim.dev/appendix/#plugins) to find out whether a plugin will be installed or not.
+Please checkout [Plugins](/lin.nvim.dev/appendix/#plugins) to find out whether a plugin will be installed or not.
 
 {: .note-title}
 
 > Notice
 >
-> - You could use `--disable-xxx` to disable some specific features.
-> - Option `--limit` is equivalent to `--disable-highlight --disable-color --disable-language --disable-editing`.
+> - You could use _--disable-xxx_ to disable some specific features.
+> - Option _--limit_ is equivalent to _--disable-highlight --disable-color --disable-language --disable-editing_.
 
 ---
 
@@ -127,7 +127,7 @@ Please checkout [installed plugins](/lin.nvim.dev/appendix/#plugins) to find out
 For distribution, please re-install by:
 
 ```bash
-cd ~/.vim && git pull origin master && ./install.sh
+cd ~/.vim && git pull origin main && ./install.sh
 ```
 
 For vim plugins, please update in neovim:
