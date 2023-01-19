@@ -67,7 +67,6 @@ Focus on and only on editing, no compiling/packaging/debugging:
 >   - C/C++ tool chain: as a pre-requirement for other things.
 >   - Python3/pip: for vim plugins and LSP.
 >   - Node/npm: for vim plugins and LSP.
->   - Rust/cargo: for rg/fd/bat, as greate enhancements for fzf.
 > - Curl/wget: download tools for installer itself.
 > - Unzip/gzip/7-zip: for LSP management.
 > - Universal-ctags: tags.
@@ -84,9 +83,10 @@ Focus on and only on editing, no compiling/packaging/debugging:
 
 ### Compatibility
 
-Both neovim and its community are under active development, the [latest stable version](https://github.com/neovim/neovim/wiki/Installing-Neovim) is always recommended.
-
 No effort is spent on maintaining backward compatibility.
+
+- [Latest neovim stable version](https://github.com/neovim/neovim/wiki/Installing-Neovim) is always recommended.
+- OS versions in last 2 years(latest ubuntu-lts, windows 10, etc).
 
 ---
 

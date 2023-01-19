@@ -59,14 +59,16 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 
 3. Install other 64-bit dependencies:
 
-   - [Neovim - _nvim-win64.msi_](https://github.com/neovim/neovim/releases/latest): add _nvim.exe_ to _$env:PATH_.
-   - [CMake - _cmake-{x.y.z}-windows-x86_64.msi_](https://github.com/Kitware/CMake/releases/latest): add _cmake.exe_ to _$env:PATH_.
-   - [Make-for-win32 - _make-{x.y}-bin.zip_](https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81-bin.zip/download): add _make.exe_ to _$env:PATH_.
-   - [Python3 - _python-{x.y.z}-amd64.exe_](https://www.python.org/downloads/windows/): manually copy _python.exe_ as _python3.exe_, then add _python3.exe_ to _$env:PATH_ (since windows python3 installer only provide _python.exe_).
-   - [Rust - _rustup-init.exe (64-bit)_](https://www.rust-lang.org/tools/install): add _rustc.exe_, _cargo.exe_ to _$env:PATH_.
-   - [Node.js - _node-v{x.y.z}-x64.msi_](https://nodejs.org/en/download/): add _node.exe_, _npm.exe_ to _$env:PATH_.
-   - [7-zip - _7z{x}-x64.exe_](https://www.7-zip.org/): add _7z.exe_ to _$env:PATH_.
-   - [Universal-ctags - _ctags-p{x.y.d.z}-x64.zip_](https://github.com/universal-ctags/ctags-win32/releases): add _ctags.exe_, _readtags.exe_ to _$env:PATH_.
+   - [Neovim](https://github.com/neovim/neovim/releases/latest): add _nvim.exe_ to _$env:PATH_.
+   - [CMake](https://github.com/Kitware/CMake/releases/latest): add _cmake.exe_ to _$env:PATH_.
+   - [Make-for-win32](https://sourceforge.net/projects/gnuwin32/files/make): add _make.exe_ to _$env:PATH_.
+   - [Python3](https://www.python.org/downloads/windows/): manually copy _python.exe_ as _python3.exe_, then add _python3.exe_ to _$env:PATH_ (since windows python3 installer only provide _python.exe_).
+   - [Node.js](https://nodejs.org/en/download/): add _node.exe_, _npm.exe_ to _$env:PATH_.
+   - [7-zip](https://www.7-zip.org/): add _7z.exe_ to _$env:PATH_.
+   - [Universal-ctags](https://github.com/universal-ctags/ctags-win32/releases): add _ctags.exe_, _readtags.exe_ to _$env:PATH_.
+   - [ripgrep](https://github.com/BurntSushi/ripgrep): add _rg.exe_ to _$env:PATH_.
+   - (Optional) [fd](https://github.com/sharkdp/fd): add _fd.exe_ to _$env:PATH_.
+   - (Optional) [bat](https://github.com/sharkdp/bat): add _bat.exe_ to _$env:PATH_.
 
 4. Install [Hack NFM](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip) font.
 

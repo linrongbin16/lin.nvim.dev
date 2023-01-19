@@ -28,7 +28,6 @@ nav_order: 5
 - C/C++ tool chain([clang](https://clang.llvm.org/)/[gcc](https://gcc.gnu.org/), [make](https://www.gnu.org/software/make/), [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/), [autoconf](https://www.gnu.org/software/autoconf/), [automake](https://www.gnu.org/software/automake/) and [cmake](https://cmake.org/)).
 - [Python3](https://www.python.org/)(python2 is not supported) and some pip packages([pynvim](https://pypi.org/project/pynvim/), [click](https://pypi.org/project/click/)).
 - [Node.js](https://nodejs.org/) and some npm packages([neovim](https://www.npmjs.com/package/neovim)).
-- [Rust](https://www.rust-lang.org/) and some modern commands([fd](https://github.com/sharkdp/fd), [rg](https://github.com/BurntSushi/ripgrep), [bat](https://github.com/sharkdp/bat)).
 - [Curl](https://curl.se/), [wget](https://www.gnu.org/software/wget/), [unzip](https://linux.die.net/man/1/unzip) and [gzip](https://www.gnu.org/software/gzip/).
 - [Universal-ctags](https://github.com/universal-ctags/ctags).
 - [Hack nerd font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip).
@@ -152,7 +151,6 @@ nav_order: 5
 
 - [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
 - [p00f/clangd_extensions.nvim](https://github.com/p00f/clangd_extensions.nvim)
-- # [simrat39/rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim)
 - [justinmk/vim-syntax-extra](https://github.com/justinmk/vim-syntax-extra)
 - [rhysd/vim-llvm](https://github.com/rhysd/vim-llvm)
 - [zebradil/hive.vim](https://github.com/zebradil/hive.vim)
@@ -200,7 +198,6 @@ nav_order: 5
 - Lua: sumneko_lua
 - PowerShell: powershell_es(only for Windows)
 - Python: pyright
-- Rust: rust_analyzer
 - Yaml: yamlls
 - Vim: vimls
 - XML: lemminx
