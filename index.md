@@ -92,4 +92,4 @@ No effort is spent on maintaining backward compatibility.
 
 ## Next
 
-- See [demo](/lin.nvim.dev/demo) for more use cases.
+- [More use cases](/lin.nvim.dev/demo).
