@@ -27,9 +27,10 @@ has_children: true
 - [Search](#search)
   - [Text Search](#text-search)
   - [File Search](#file-search)
+  - [History Search](#history-search)
   - [LSP Search](#lsp-search)
   - [Git Search](#git-search)
-  - [Other Search](#other-search)
+  - [Vim Search](#vim-search)
 - [Movement](#movement)
   - [Cursor Movement](#cursor-movement)
   - [Word Motion](#word-motion)
@@ -252,13 +253,8 @@ Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and
 
 - `<Space>r` 🄽 - Live grep by self-defined `:LinFzfRg`.
 - `<Space>w` 🄽 - Search word under cursor by self-defined `:LinFzfRgCWord`.
-- `<Space>ln` 🄽 - Search lines on opened buffers by `:FzfLines`.
+- `<Space>ln` 🄽 - Search lines in opened buffers by `:FzfLines`.
 - `<Space>tg` 🄽 - Search tags by `:FzfTags`.
-
-### History Search
-
-- `<Space>sh` 🄽 - Search searching history by `:FzfHistory/`.
-- `<Space>ch` 🄽 - Search vim command history by `:FzfHistory:`.
 
 ### File Search
 
@@ -266,9 +262,15 @@ Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and
 - `<Space>b` 🄽 - Search opened buffers by `:FzfBuffers`.
 - `<Space>hf` 🄽 - Search history files (v:oldfiles) and opened buffers by `:FzfHistory`.
 
+### History Search
+
+- `<Space>hs` 🄽 - Search searching history by `:FzfHistory/`.
+- `<Space>hc` 🄽 - Search vim command history by `:FzfHistory:`.
+
 ### LSP Search
 
-- `<Space>dg` 🄽 - Search all diagnostics by `:LspDiagnosticsAll`.
+- `<Space>db` 🄽 - Search diagnostics in current buffer by `:LspDiagnostics 0`.
+- `<Space>da` 🄽 - Search all diagnostics by `:LspDiagnosticsAll`.
 
 ### Git Search
 
@@ -276,14 +278,14 @@ Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and
 - `<Space>gf` 🄽 - Search `git ls-files` files by `:FzfGFile`.
 - `<Space>gs` 🄽 - Search `git status` files by `:FzfGFiles?`.
 
-### Other Search
+### Vim Search
 
 - `<Space>mk` 🄽 - Search vim marks by `:FzfMarks`.
 - `<Space>mp` 🄽 - Search vim key mappings by `:FzfMaps`.
 - `<Space>cm` 🄽 - Search vim commands by `:FzfCommands`.
 - `<Space>ht` 🄽 - Search vim helptags by `:FzfHelptags`.
 - `<Space>cs` 🄽 - Search vim colorschemes by `:FzfColors`.
-- `<Space>ft` 🄽 - Search vim filetypes by `:FzfFiletypes`.
+- `<Space>tp` 🄽 - Search vim filetypes by `:FzfFiletypes`.
 
 Configure these key mappings in _~/.vim/repository/junegunn/fzf.vim.vim_.
 

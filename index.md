@@ -41,12 +41,11 @@ Feed IDE features that are in a chronic of starvation:
 >
 > Most popurlar color schemes are picked from [vimcolorschemes.com/top](https://vimcolorschemes.com/top) and [awesome-neovim#colorscheme](https://www.trackawesomelist.com/rockerBOO/awesome-neovim/readme/#colorscheme), following below rules:
 >
-> 1. &gt; 500 stars.
+> 1. &ge; 500 stars.
 > 2. Last commit in 1 year.
-> 3. For multiple ports/variants, keep the one has more stars or more active updates. Just &gt; 100 stars if has one of below features:
->    - Newer design.
->    - Support neovim's modern features: LSP/treesitter/etc(written in lua is not one of them).
->    - Better integration with neovim's plugins: barbar.nvim/nvim-tree.lua/lualine.nvim/etc.
+> 3. For multiple ports/variants, keep the one has more stars or more active updates. Lower standards to &ge; 100 stars if has one of below features:
+>    - Support modern features: LSP/treesitter/etc.
+>    - Better integration with neovim's plugins: barbar/nvim-tree/lualine/etc.
 
 ### Focus
 
@@ -86,7 +85,7 @@ Focus on and only on editing, no compiling/packaging/debugging:
 No effort is spent on maintaining backward compatibility.
 
 - [Latest neovim stable version](https://github.com/neovim/neovim/wiki/Installing-Neovim) is always recommended.
-- OS versions in last 2 years(latest ubuntu-lts, windows 10, etc).
+- OS in last 2 years(latest Ubuntu-LTS) are supported.
 
 ---
 

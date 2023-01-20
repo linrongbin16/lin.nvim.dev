@@ -10,6 +10,7 @@ nav_order: 3
 - [Windows](#windows)
 - [Options](#options)
 - [Upgrade](#upgrade)
+- [Optimization](#optimization)
 
 ---
 
@@ -29,6 +30,8 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 >    - Archlinux based Linux: use _pacman_ as installer.
 >    - MacOS: use _brew_ as package installer, please install [Xcode](https://guide.macports.org/chunked/installing.html) and [homebrew](https://brew.sh/) as pre-requirements.
 >    - Other \*NIX systems such as Gentoo, BSD are not supported yet.
+
+{: .note-title}
 
 ---
 
@@ -138,6 +141,19 @@ For vim plugins, please update in neovim:
 ```vim
 :PackerSync
 ```
+
+---
+
+## Optimization
+
+### Git Performance
+
+Add below global configs to improve performance if git version &ge; 2.37.0:
+
+- `git config --global core.fsmonitor true`
+- `git config --global core.untrackedcache  true`
+
+See [Improve Git monorepo performance with a file system monitor](https://github.blog/2022-06-29-improve-git-monorepo-performance-with-a-file-system-monitor/).
 
 ---
 
