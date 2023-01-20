@@ -56,30 +56,6 @@ Focus on and only on editing, no compiling/packaging/debugging:
 - Performance should always be first priority, even integrated with tons of things.
 - There're some flashy and wow plugins, but only pain-point-killer stays, not to mention ones that seriously drag cursor and typing.
 
-{: .note-title}
-
-> Note
->
-> Besides git and neovim itself, there're still some third-party dependencies can't be given up:
->
-> - Programming languages:
->   - C/C++ tool chain: as a pre-requirement for other things.
->   - Python3/pip: for vim plugins and LSP.
->   - Node/npm: for vim plugins and LSP.
-> - Curl/wget: download tools for installer itself.
-> - Unzip/gzip/7-zip: for LSP management.
-> - Universal-ctags: tags.
-> - Hack nerd font: patched-font with icons.
-
-{: .note-title}
-
-> Note
->
-> Treesitter is not installed even it's so popurlar for below reasons:
->
-> - None pain-point-killer.
-> - Some implementations severely impact performance.
-
 ### Compatibility
 
 No effort is spent on maintaining backward compatibility.
