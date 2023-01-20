@@ -66,9 +66,10 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
    - [Node.js](https://nodejs.org/en/download/): add _node.exe_, _npm.exe_ to _$env:PATH_.
    - [7-zip](https://www.7-zip.org/): add _7z.exe_ to _$env:PATH_.
    - [Universal-ctags](https://github.com/universal-ctags/ctags-win32/releases): add _ctags.exe_, _readtags.exe_ to _$env:PATH_.
-   - [ripgrep](https://github.com/BurntSushi/ripgrep): add _rg.exe_ to _$env:PATH_.
+   - [Ripgrep](https://github.com/BurntSushi/ripgrep): add _rg.exe_ to _$env:PATH_.
    - (Optional) [fd](https://github.com/sharkdp/fd): add _fd.exe_ to _$env:PATH_.
    - (Optional) [bat](https://github.com/sharkdp/bat): add _bat.exe_ to _$env:PATH_.
+   - (Optional) [delta](https://github.com/dandavison/delta): add _delta.exe_ to _$env:PATH_.
 
 4. Install [Hack NFM](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip) font.
 
