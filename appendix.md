@@ -69,7 +69,6 @@ nav_order: 5
 - [Mofiqul/dracula.nvim](https://github.com/Mofiqul/dracula.nvim)
 - [navarasu/onedark.nvim](https://github.com/navarasu/onedark.nvim)
 - [NLKNguyen/papercolor-theme](https://github.com/NLKNguyen/papercolor-theme)
-- [olimorris/onedarkpro.nvim](https://github.com/olimorris/onedarkpro.nvim)
 - [pineapplegiant/spaceduck](https://github.com/pineapplegiant/spaceduck)
 - [preservim/vim-colors-pencil](https://github.com/preservim/vim-colors-pencil)
 - [projekt0n/github-nvim-theme](https://github.com/projekt0n/github-nvim-theme)
