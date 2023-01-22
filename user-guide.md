@@ -137,8 +137,8 @@ Configure these key mappings in _~/.vim/repository/nvim-tree/nvim-tree.lua.vim_.
 Support by [barbar.nvim](https://github.com/romgrk/barbar.nvim).
 
 1. Navigation:
-   - `<Leader>bn`/`<M-.>`/`<C-.>`/`<M-Right>`/`<C-Right>` 🄽 - Go to next(👉) buffer.
-   - `<Leader>bp`/`<M-,>`/`<C-,>`/`<M-Left>`/`<C-Left>` 🄽 - Go to previous(👈) buffer.
+   - `]b`/`<M-.>`/`<C-.>`/`<M-Right>`/`<C-Right>` 🄽 - Go to next(👉) buffer.
+   - `[b`/`<M-,>`/`<C-,>`/`<M-Left>`/`<C-Left>` 🄽 - Go to previous(👈) buffer.
    - `<Leader>bd` 🄽 - Close current buffer without closing vim window.
    - `<M-1>`/`<C-1>` 🄽 - Go to buffer-1.
    - `<M-2>`/`<C-2>` 🄽 - Go to buffer-2.
