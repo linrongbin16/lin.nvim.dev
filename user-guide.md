@@ -117,51 +117,45 @@ Configure these key mappings in _~/.vim/settings.vim_.
 
 ### File Explorer
 
-Supported by [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua). Please use _g?_ to toggle help in nvim-tree, or refer to [:help nvim-tree.view.mappings](https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt) for default key mappings. A few keys are added for convenience:
+Supported by [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim). Please use _?_ to show help in neo-tree, or refer to [neo-tree.nvim's README](https://github.com/nvim-neo-tree/neo-tree.nvim) for default key mappings.
 
-1. Navigation:
-   - `h` 🄽 - Collapse directory.
-   - `l` 🄽 - Expand directory or open file.
-2. Copy/paste/cut:
-   - `C` 🄽 - Copy file/directory into an internal clipboard, just like _ctrl+c/cmd+c_ in other editors.
-   - `X` 🄽 - Cut file/directory into an internal clipboard, just like _ctrl+x/cmd+c_ in other editors.
-   - `V` 🄽 - Paste file/directory from an internal clipboard to current cursor, just like _ctrl+v/cmd+v_ in other editors.
-3. Adjust width:
-   - `<M-.>`/`<M-Right>`/`<C-.>`/`<C-Right>` 🄽 - Make explorer bigger(👉).
-   - `<M-,>`/`<M-Left>`/`<C-,>`/`<C-Left>` 🄽 - Make explorer smaller(👈).
+A few keys are added/modified for convenience, based on [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)'s mappings:
 
-Configure these key mappings in _~/.vim/repository/nvim-tree/nvim-tree.lua.vim_.
+- `h` 🄽 - Collapse current directory or navigate to parent directory.
+- `l` 🄽 - Expand directory or open file. `<space>` and `w` keys are removed.
+- `Z` 🄽 - Expand all directories.
+- `<C-x>` 🄽 - Open in split. `S` key is removed.
+- `<C-v>` 🄽 - Open in vsplit. `s` key is removed.
+- `<C-t>` 🄽 - Open in new tab. `t` key is removed.
+- `]c` 🄽 - Navigate to next(👇) git item. `]g` key is removed.
+- `[c` 🄽 - Navigate to previous(👆) git item. `[g` key is removed.
+
+Configure these key mappings in _~/.vim/lua/repo/nvim-neo-tree/neo-tree-nvim.lua_.
 
 ### Tabline
 
-Support by [barbar.nvim](https://github.com/romgrk/barbar.nvim).
+Supported by [bufferline.nvim](https://github.com/akinsho/bufferline.nvim).
 
 1. Navigation:
-   - `]b`/`<M-.>`/`<C-.>`/`<M-Right>`/`<C-Right>` 🄽 - Go to next(👉) buffer.
-   - `[b`/`<M-,>`/`<C-,>`/`<M-Left>`/`<C-Left>` 🄽 - Go to previous(👈) buffer.
+   - `]b` 🄽 - Go to next(👉) buffer.
+   - `[b` 🄽 - Go to previous(👈) buffer.
    - `<Leader>bd` 🄽 - Close current buffer without closing vim window.
-   - `<M-1>`/`<C-1>` 🄽 - Go to buffer-1.
-   - `<M-2>`/`<C-2>` 🄽 - Go to buffer-2.
-   - `<M-3>`/`<C-3>` 🄽 - Go to buffer-3.
-   - `<M-4>`/`<C-4>` 🄽 - Go to buffer-4.
-   - `<M-5>`/`<C-5>` 🄽 - Go to buffer-5.
-   - `<M-6>`/`<C-6>` 🄽 - Go to buffer-6.
-   - `<M-7>`/`<C-7>` 🄽 - Go to buffer-7.
-   - `<M-8>`/`<C-8>` 🄽 - Go to buffer-8.
-   - `<M-9>`/`<C-9>` 🄽 - Go to buffer-9.
-   - `<M-0>`/`<C-0>` 🄽 - Go to the last buffer.
+   - `<Leader>1` 🄽 - Go to buffer-1.
+   - `<Leader>2` 🄽 - Go to buffer-2.
+   - `<Leader>3` 🄽 - Go to buffer-3.
+   - `<Leader>4` 🄽 - Go to buffer-4.
+   - `<Leader>5` 🄽 - Go to buffer-5.
+   - `<Leader>6` 🄽 - Go to buffer-6.
+   - `<Leader>7` 🄽 - Go to buffer-7.
+   - `<Leader>8` 🄽 - Go to buffer-8.
+   - `<Leader>9` 🄽 - Go to buffer-9.
+   - `<Leader>0` 🄽 - Go to the last buffer.
 2. Re-order:
-   - `<M-S-Right>`/`<C-S-Right>` 🄽 - Re-order(move) current buffer to next(👉) position.
-   - `<M-S-Left>`/`<C-S-Left>` 🄽 - Re-order(move) current buffer to previous(👈) position.
+   - `<Leader>>` 🄽 - Move(re-order) current buffer to next(👉) position.
+   - `<Leader><` 🄽 - Move(re-order) current buffer to previous(👈) position.
 3. Mouse:
    - `<LeftMouse>` 🄽 - Go to target buffer.
-   - `<MiddleMouse>` 🄽 - Close target buffer.
-
-{: .note-title}
-
-> Notice
->
-> On different platforms, terminals and GUI clients, a few ctrl+?/alt+?/meta+? keys could be overwritten by app. Please try all the ways to make sure of the availability.
+   - `<RightMouse>` 🄽 - Close target buffer.
 
 ### Highlight Marks
 
@@ -251,14 +245,17 @@ Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and
 
 ### Text Search
 
-- `<Space>r` 🄽 - Live grep by self-defined `:LinFzfRg`.
-- `<Space>w` 🄽 - Search word under cursor by self-defined `:LinFzfRgCWord`.
+- `<Space>r` 🄽 - Live grep by `:FzfRg`.
+- `<Space>ur` 🄽 - Unrestricted(--no-ignore --hidden) live grep by self-defined `:LinFzfUnrestrictedRg`.
+- `<Space>w` 🄽 - Search word under cursor by `:LinFzfRgCWord`.
+- `<Space>uw` 🄽 - Unrestricted(--no-ignore --hidden) search word under cursor by self-defined `:LinFzfUnrestrictedRgCWord`.
 - `<Space>ln` 🄽 - Search lines in opened buffers by `:FzfLines`.
 - `<Space>tg` 🄽 - Search tags by `:FzfTags`.
 
 ### File Search
 
 - `<Space>f`/`<C-p>` 🄽 - Search files by `:FzfFiles`.
+- `<Space>uf` 🄽 - Unrestricted(--no-ignore --hidden) search files by self-defined `:LinFzfUnrestrictedFiles`.
 - `<Space>b` 🄽 - Search opened buffers by `:FzfBuffers`.
 - `<Space>hf` 🄽 - Search history files (v:oldfiles) and opened buffers by `:FzfHistory`.
 
@@ -295,7 +292,7 @@ Configure these key mappings in _~/.vim/repository/junegunn/fzf.vim.vim_.
 
 ### Cursor Movement
 
-Support by [hop.nvim](https://github.com/phaazon/hop.nvim) and [leap.nvim](https://github.com/ggandor/leap.nvim).
+Supported by [hop.nvim](https://github.com/phaazon/hop.nvim) and [leap.nvim](https://github.com/ggandor/leap.nvim).
 
 Leap use its default key mappings(s/S, x/X), and hop use below key mappings:
 
@@ -321,7 +318,7 @@ For no modifying vim origin behavior, keys are mapped with a comma prefix:
 
 ### Easy Comment
 
-Support by [Comment.nvim](https://github.com/numToStr/Comment.nvim).
+Supported by [Comment.nvim](https://github.com/numToStr/Comment.nvim).
 
 ### Better Repeat
 
