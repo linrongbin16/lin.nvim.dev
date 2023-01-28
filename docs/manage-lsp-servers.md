@@ -74,7 +74,8 @@ local embeded_extras = {
 
 > Notice
 >
-> - For `embeded_servers`, please refer to [mason-lspconfig's Available LSP servers](https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers) for all LSP server names.
+> - For `embeded_servers`, please refer to:
+>   1. [mason-lspconfig's Available LSP servers](https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers) for all LSP server names.
 > - For `embeded_extras`, please refer to:
 >   1. [mason-null-ls's Available Null-ls sources](https://github.com/jay-babu/mason-null-ls.nvim#available-null-ls-sources) for all source names.
 >   2. [null-ls's BUILTINS](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) for all null-ls builtin configs.
