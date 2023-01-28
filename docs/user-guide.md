@@ -293,7 +293,7 @@ Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](
 
 Supported by [hop.nvim](https://github.com/phaazon/hop.nvim) and [leap.nvim](https://github.com/ggandor/leap.nvim).
 
-Leap use its default key mappings(s/S, x/X), and hop use below key mappings:
+Leap keeps its default key mappings(s/S, x/X), and keys for hop are mapped to:
 
 - `<Leader>f{char}` 🄽 - Move by a single {char}.
 - `<Leader>s{char}{char}` 🄽 - Move by two consequent {char}{char}.
@@ -304,7 +304,7 @@ Leap use its default key mappings(s/S, x/X), and hop use below key mappings:
 
 Better movement respects words that missing whitespaces, supported by [vim-wordmotion](https://github.com/chaoren/vim-wordmotion).
 
-For no modifying vim origin behavior, keys are mapped with a comma prefix:
+To not change vim's default behavior, motions are mapped with a comma prefix:
 
 - `,w`/`,W` 🄽 🅇 🄾 - word/WORD forward(👉), exclusive.
 - `,b`/`,B` 🄽 🅇 🄾 - word/WORD backward(👈), exclusive.
