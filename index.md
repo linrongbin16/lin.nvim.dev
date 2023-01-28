@@ -16,7 +16,8 @@ A highly configured [neovim](https://neovim.io/) distribution integrated with to
 
 Aim to be out-of-box, with IDE features, performant, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
 
-{% include youtube.html id="zCfSekdZiIg" %}
+<!-- {% include youtube.html id="zCfSekdZiIg" %} -->
+{% include image.html src="/assets/demos/ui/start-ui.jpg" alt="start-ui.jpg" width="100%" %}
 
 ---
 
