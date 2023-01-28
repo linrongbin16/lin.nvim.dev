@@ -114,7 +114,7 @@ And more options:
 - `--no-lang`: disable language support, such as auto-complete, code format, lint, diagnostics, etc.
 - `--no-edit`: disable editing enhancements, such as easy comments, cursor movement, etc.
 - `--no-plug`: disable specific plugin in format _org/repo_, this can be provided multiple times. For example: `--no-plug=RRethy/vim-hexokinase --no-plug=alvan/vim-closetag`.
-- `--no-winctrl`: disable Windows ctrl+{c,v,s,x,a,...} keys behavior, include cmd+{c,v,s,x,a,...} keys on macOS.
+- `--no-ctrl`: disable Windows ctrl+{c,v,s,x,a,...}(macOS cmd+{c,v,s,x,a,...}) keys behavior.
 
 Please checkout [Plugins](/lin.nvim.dev/docs/appendix/#plugins) to find out how these options affect a plugin.
 

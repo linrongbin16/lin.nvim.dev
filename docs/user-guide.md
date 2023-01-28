@@ -39,7 +39,7 @@ has_toc: false
   - [Easy Comment](#easy-comment)
   - [Better Repeat](#better-repeat)
   - [Better Matching](#better-matching)
-  - [Auto Pair and Close HTML Tag](#auto-pair-and-close-html-tag)
+  - [Auto Pair/Close/End](#auto-pair-close-end)
 - [Customization](#customization)
 
 In this section, vim editing modes are specified with:
@@ -327,9 +327,9 @@ Better repeat(`.`) operation, supported by [vim-repeat](https://github.com/tpope
 
 Better matching for brackets, parentheses, HTML tags, if-endif, etc, supported by [vim-matchup](https://github.com/andymass/vim-matchup).
 
-### Auto Pair and Close HTML Tag
+### Auto Pair/Close/End
 
-Auto pair brackets and close html tags, supported by [nvim-autopairs](https://github.com/windwp/nvim-autopairs) and [vim-closetag](https://github.com/alvan/vim-closetag).
+Auto-pair braces/parentheses, auto-close html/xml tags, auto-end if-endif/function-endfunction. Supported by [nvim-autopairs](https://github.com/windwp/nvim-autopairs), [vim-closetag](https://github.com/alvan/vim-closetag) and [tpope/vim-endwise](https://github.com/tpope/vim-endwise).
 
 ---
 
