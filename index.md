@@ -14,14 +14,15 @@ has_toc: false
 
 A highly configured [neovim](https://neovim.io/) distribution integrated with tons of utilities for development, inspired by [spf13-vim](https://github.com/spf13/spf13-vim).
 
-Aim to be out-of-box, with IDE features, performant, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
-
 <!-- {% include youtube.html id="zCfSekdZiIg" %} -->
+
 {% include image.html src="/assets/demos/ui/start-ui.jpg" alt="start-ui.jpg" width="100%" %}
 
 ---
 
 ## Philosophy
+
+Aim to be out-of-box, with IDE features, performant, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
 
 ### No-Manual
 
