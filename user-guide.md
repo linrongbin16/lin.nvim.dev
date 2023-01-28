@@ -111,7 +111,7 @@ Easier way to _nohlsearch_:
 
 {: .note}
 
-> Configure these key mappings in _~/.vim/settings.vim_.
+> Configure these key mappings in _~/.nvim/settings.vim_.
 
 ---
 
@@ -171,7 +171,7 @@ Supported by [vim-mark](https://github.com/inkarkat/vim-mark).
 
 {: .note}
 
-> Configure GUI font in _~/.vim/settings.vim_.
+> Configure GUI font in _~/.nvim/settings.vim_.
 
 ---
 
@@ -237,7 +237,7 @@ If you need to save file without code format, please use:
 
 {: .note}
 
-> Configure these key mappings in _~/.vim/lua/conf/lsp.lua_.
+> Configure these key mappings in _~/.nvim/lua/conf/lsp.lua_.
 
 ---
 
@@ -290,7 +290,7 @@ Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and
 
 {: .note}
 
-> Configure these key mappings in _~/.vim/repo/junegunn/fzf.vim/config.vim_.
+> Configure these key mappings in _~/.nvim/repo/junegunn/fzf.vim/config.vim_.
 
 ---
 
@@ -348,7 +348,7 @@ Supported by [nvim-autopairs](https://github.com/windwp/nvim-autopairs) and [vim
 
 ## Customization
 
-_init.vim_ will load below components in _~/.vim_ directory:
+_init.vim_ will load below components in _~/.nvim_ directory:
 
 - _conf/\*.vim_ and _lua/conf/\*.lua_ - Basic vim and lua settings.
 - _lua/plugins.lua_ - Plugins managed by [lazy.nvim](https://github.com/folke/lazy.nvim), see [Plugins](/lin.nvim.dev/appendix/#plugins) for the complete list.

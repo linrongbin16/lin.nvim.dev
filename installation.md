@@ -17,7 +17,7 @@ nav_order: 3
 ## Linux/macOS
 
 ```bash
-git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./install.sh
+git clone https://github.com/linrongbin16/lin.nvim ~/.nvim && cd ~/.nvim && ./install.sh
 ```
 
 {: .note-title}
@@ -79,8 +79,8 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 5. Run PowerShell command as Administrator:
 
 ```powershell
-git clone https://github.com/linrongbin16/lin.nvim $env:USERPROFILE\.vim
-cd $env:USERPROFILE\.vim
+git clone https://github.com/linrongbin16/lin.nvim $env:USERPROFILE\.nvim
+cd $env:USERPROFILE\.nvim
 .\install.ps1
 ```
 
@@ -133,7 +133,7 @@ Please checkout [Plugins](/lin.nvim.dev/appendix/#plugins) to find out whether a
 For distribution, please re-install by:
 
 ```bash
-cd ~/.vim && git pull origin main && ./install.sh
+cd ~/.nvim && git pull origin main && ./install.sh
 ```
 
 For vim plugins, please update in neovim:
