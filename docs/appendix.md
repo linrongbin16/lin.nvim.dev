@@ -12,13 +12,12 @@ nav_order: 5
   - [Color Scheme](#color-scheme)
   - [Highlight](#highlight)
   - [UI](#ui)
-  - [Tags](#tags)
   - [Search Engine](#search-engine)
+  - [Tags](#tags)
   - [LSP](#lsp)
   - [Specific Language Support](#specific-language-support)
   - [Editing Enhancement](#editing-enhancement)
 - [LSP Servers](#lsp-servers)
-- [Extra Formatter/Linter/Diagnostic/CodeAction](#extra-formatterlinterdiagnosticcodeaction)
 - [Reference](#reference)
 
 ---
@@ -49,7 +48,7 @@ nav_order: 5
 
 ### Color Scheme
 
-{: .note-title}
+{: .important-title}
 
 > Notice
 >
@@ -89,7 +88,7 @@ nav_order: 5
 
 ### Highlight
 
-{: .note-title}
+{: .important-title}
 
 > Notice
 >
@@ -123,7 +122,7 @@ nav_order: 5
 
 ### LSP
 
-{: .note-title}
+{: .important-title}
 
 > Notice
 >
@@ -143,7 +142,7 @@ nav_order: 5
 
 ### Specific Language Support
 
-{: .note-title}
+{: .important-title}
 
 > Notice
 >
@@ -158,7 +157,7 @@ nav_order: 5
 
 ### Movement
 
-{: .note-title}
+{: .important-title}
 
 > Notice
 >
@@ -170,7 +169,7 @@ nav_order: 5
 
 ### Editing Enhancement
 
-{: .note-title}
+{: .important-title}
 
 > Notice
 >
@@ -188,29 +187,25 @@ nav_order: 5
 
 ## LSP Servers
 
-- Bash: bashls(only for macOS/Linux)
+- Bash: bashls(macOS/Linux only)
 - C/C++: clangd
 - CMake: cmake
 - CSS: cssls, cssmodules_ls
 - HTML: html
 - JSON: jsonls
-- Javascript/typescript/etc: tsserver
+- Javascript/typescript: tsserver
 - Lua: sumneko_lua
-- PowerShell: powershell_es(only for Windows)
+- PowerShell: powershell_es(Windows only)
 - Python: pyright
 - Yaml: yamlls
 - Vim: vimls
 - XML: lemminx
 
----
+Null-ls sources:
 
-## Extra Formatter/Linter/Diagnostic/CodeAction
-
-- Bash: shfmt(only for macOS/Linux)
+- Bash: shfmt(macOS/Linux only)
 - Javascript/typescript: prettierd, eslint_d
 - Python: black, isort
-
----
 
 ## Reference
 

@@ -3,14 +3,15 @@ layout: default
 title: User Guide
 nav_order: 4
 has_children: true
+has_toc: false
 ---
 
 # User Guide
 
 - [Global Key Mappings](#global-key-mappings)
-  - [Hot Keys](#hot-keys)
-  - [Ctrl+? Cmd+? Keys](#ctrl-cmd-keys)
-  - [Biscuits](#biscuits)
+    - [Hot Keys](#hot-keys)
+    - [Ctrl+? Cmd+? Keys](#ctrl-cmd-keys)
+    - [Biscuits](#biscuits)
 - [UI](#ui)
   - [File Explorer](#file-explorer)
   - [Tabline](#tabline)
@@ -55,7 +56,7 @@ In this section, vim editing modes are specified with:
 - 🄸 - Insert mode.
 - 🄻 - Command-line mode.
 
-Meta-key (_M_), alt-key (_A_) (on Windows/Linux), and command-key (_D_) (on macOS) are collectively represented by:
+Meta-key (_M_), alt-key (_A_) on Windows/Linux, and command-key (_D_) on macOS are collectively represented by:
 
 - _M_
 
@@ -70,8 +71,8 @@ Meta-key (_M_), alt-key (_A_) (on Windows/Linux), and command-key (_D_) (on macO
 - `F2` 🄽 - Toggle undo-tree.
 - `F3` 🄽 - Toggle structure outlines(tags).
 - `F4` 🄽 - Switch between C/C++ header and source.
-- `F8` 🄽 - Enable/disable highlighting word marks, see [demo](/lin.nvim.dev/demo/#highlight-marks).
-- `<S-F8>` 🄽 - Clear all highlighting word marks.
+- `F8` 🄽 - Enable/disable highlighting marks.
+- `<S-F8>` 🄽 - Clear all highlighting marks.
 - `F9` 🄽 - Open markdown preview.
 - `F10` 🄽 - Toggle terminal.
 
@@ -102,8 +103,8 @@ For macOS, cmd+? follows the same behavior(ctrl+? works as well):
 
 Copy/paste across different vim instances through remote ssh could be difficult, introduce two shortcuts using local cache:
 
-- `<Leader>y` 🅇 - Copy selected text to local cache.
-- `<Leader>p` 🄽 - Paste from local cache to current cursor.
+- `<Leader>y` 🅇 - Copy selected text to _~/.nvim/.copypaste_.
+- `<Leader>p` 🄽 - Paste from _~/.nvim/.copypaste_ to current cursor.
 
 Easier way to _nohlsearch_:
 
@@ -121,7 +122,7 @@ Easier way to _nohlsearch_:
 
 Supported by [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua). Please use _g?_ to toggle help in nvim-tree, or refer to [nvim-tree's default key mappings](https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt).
 
-Only a few keys are added for convenience:
+A few keys are added for convenience:
 
 - `h` 🄽 - Collapse current directory.
 - `l` 🄽 - Expand directory or open file.
@@ -157,9 +158,7 @@ Supported by [bufferline.nvim](https://github.com/akinsho/bufferline.nvim).
 
 ### Highlight Marks
 
-Highlight all the words with different colors.
-
-Supported by [vim-mark](https://github.com/inkarkat/vim-mark).
+Highlight words with different colors, supported by [vim-mark](https://github.com/inkarkat/vim-mark).
 
 - `<Leader>m` 🄽 🅅 - Mark/clear mark under cursor.
 - `<Leader>*` 🄽 - Navigate to next(👇) mark.
@@ -167,7 +166,7 @@ Supported by [vim-mark](https://github.com/inkarkat/vim-mark).
 
 ### GUI Font
 
-[Hack Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases) is enabled by default.
+Patched-fonts [Hack Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases) is enabled by default.
 
 {: .note}
 
@@ -177,7 +176,7 @@ Supported by [vim-mark](https://github.com/inkarkat/vim-mark).
 
 ## IDE Features
 
-Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) and many other plugins, please see [Manage LSP Servers](/lin.nvim.dev/manage-lsp-servers) for more details.
+Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) and many other plugins, please see [Manage LSP Servers](/lin.nvim.dev/docs/manage-lsp-servers) for more details.
 
 ### Code Complete
 
@@ -209,19 +208,17 @@ Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](htt
 
 ### Code Format
 
-Code format runs on file save asynchronous by default.
+Code format runs on file save asynchronous by default. To forcibly trigger code format:
 
-If you need to forcibly trigger code format, please use below synchronous code format:
+- `<Leader>cf` 🄽 🅇 - Synchronously format code in current buffer(normal mode) or selected code(visual mode).
 
-- `<Leader>cf` 🄽 🅇 - Format code in current buffer(in normal mode) or selected code(in visual mode).
-
-If you need to save file without code format, please use:
+To save file without code format:
 
 - `:noa w` 🄻 - Save file without _vim's autocmd_.
 
 ### Code Actions
 
-- `<Leader>ca` 🄽 🅇 - Run code actions under cursor(in normal mode) or in selected code(in visual mode).
+- `<Leader>ca` 🄽 🅇 - Run code actions under cursor(normal mode) or in selected code(visual mode).
 
 ### Workspace
 
@@ -243,22 +240,22 @@ If you need to save file without code format, please use:
 
 ## Search
 
-Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](https://github.com/ojroques/nvim-lspfuzzy). All fzf commands are renamed with the prefix _Fzf_, for example `:Files` are renamed to `:FzfFiles`, `:Rg` are renamed to `:FzfRg`.
+Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](https://github.com/ojroques/nvim-lspfuzzy). All fzf commands are renamed with the prefix `Fzf`, for example `:Files` are renamed to `:FzfFiles`, `:Rg` are renamed to `:FzfRg`.
 
 ### Text Search
 
-- `<Space>r` 🄽 - Live grep by `:FzfRg`. More powerful live grep variants(default `FzfRg` respect _.gitignore_, _.ignore_ files, and filter hidden files):
+- `<Space>r` 🄽 - Live grep by `:FzfRg`(filter ignored and hidden files).
   - `<Space>ur` 🄽 - Unrestricted(--no-ignore --hidden) live grep by self-defined `:LinFzfUnrestrictedRg`.
   - `<Space>pr` 🄽 - Precise(no fuzzy) live grep by self-defined `:LinFzfPreciseRg`.
   - `<Space>upr` 🄽 - Unrestricted(--no-ignore --hidden) precise(no fuzzy) live grep by self-defined `:LinFzfUnrestrictedPreciseRg`.
-- `<Space>w` 🄽 - Search word under cursor by `:LinFzfRgCWord`. Word search variants:
+- `<Space>w` 🄽 - Search word under cursor by `:LinFzfRgCWord`(filter ignored and hidden files).
   - `<Space>uw` 🄽 - Unrestricted(--no-ignore --hidden) search word under cursor by self-defined `:LinFzfUnrestrictedRgCWord`.
 - `<Space>ln` 🄽 - Search lines in opened buffers by `:FzfLines`.
 - `<Space>tg` 🄽 - Search tags by `:FzfTags`.
 
 ### File Search
 
-- `<Space>f`/`<C-p>` 🄽 - Search files by `:FzfFiles`. File search variants:
+- `<Space>f`/`<C-p>` 🄽 - Search files by `:FzfFiles`(filter ignored and hidden files).
   - `<Space>uf` 🄽 - Unrestricted(--no-ignore --hidden) search files by self-defined `:LinFzfUnrestrictedFiles`.
 - `<Space>b` 🄽 - Search opened buffers by `:FzfBuffers`.
 - `<Space>hf` 🄽 - Search history files (v:oldfiles) and opened buffers by `:FzfHistory`.
@@ -309,7 +306,7 @@ Leap use its default key mappings(s/S, x/X), and hop use below key mappings:
 
 ### Word Motion
 
-Better movement respects words that missing whitespaces, support by [vim-wordmotion](https://github.com/chaoren/vim-wordmotion).
+Better movement respects words that missing whitespaces, supported by [vim-wordmotion](https://github.com/chaoren/vim-wordmotion).
 
 For no modifying vim origin behavior, keys are mapped with a comma prefix:
 
@@ -328,21 +325,15 @@ Supported by [Comment.nvim](https://github.com/numToStr/Comment.nvim).
 
 ### Better Repeat
 
-Better repeat(`.`) operation.
-
-Supported by [vim-repeat](https://github.com/tpope/vim-repeat).
+Better repeat(`.`) operation, supported by [vim-repeat](https://github.com/tpope/vim-repeat).
 
 ### Better Matching
 
-Better matching for brackets, parentheses, HTML tags, if-endif, etc.
-
-Supported by [vim-matchup](https://github.com/andymass/vim-matchup).
+Better matching for brackets, parentheses, HTML tags, if-endif, etc, supported by [vim-matchup](https://github.com/andymass/vim-matchup).
 
 ### Auto Pair and Close HTML Tag
 
-Auto pair brackets and close html tags.
-
-Supported by [nvim-autopairs](https://github.com/windwp/nvim-autopairs) and [vim-closetag](https://github.com/alvan/vim-closetag).
+Auto pair brackets and close html tags, supported by [nvim-autopairs](https://github.com/windwp/nvim-autopairs) and [vim-closetag](https://github.com/alvan/vim-closetag).
 
 ---
 
@@ -359,14 +350,10 @@ _init.vim_ will load below components in _~/.nvim_ directory:
 
 {: .note}
 
-> Configure plugins in _lua/plugins.lua_ and related settings in _repo/{org}/{repo}/\*.vim or \_lua/repo/{org}/{repo}/\*.lua_.
->
-> For basic install mode, the _init.vim_ is _conf/basic.vim_, no more else, see [Options](/lin.nvim.dev/installation#options).
+> Configure plugins in _lua/plugins.lua_ and related settings in _repo/{org}/{repo}/\*.vim_ or _lua/repo/{org}/{repo}/\*.lua_.
 
 ---
 
 ## Next
 
-- Checkout [installed plugins](/lin.nvim.dev/appendix/#plugins).
-- Checkout [installed LSP servers](/lin.nvim.dev/appendix/#lsp-servers).
-- Checkout [installed formatter/linter/diagnostic/codeAction](/lin.nvim.dev/appendix/#extra-formatterlinterdiagnosticcodeaction).
+- See [complete list of installed colorschemes/plugins/lsps](/lin.nvim.dev/docs/appendix).

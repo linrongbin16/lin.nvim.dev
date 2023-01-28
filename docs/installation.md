@@ -2,6 +2,7 @@
 layout: default
 title: Installation
 nav_order: 3
+has_toc: false
 ---
 
 # Installation
@@ -20,28 +21,21 @@ nav_order: 3
 git clone https://github.com/linrongbin16/lin.nvim ~/.nvim && cd ~/.nvim && ./install.sh
 ```
 
-{: .note-title}
+{: .note}
 
-> Notice
+> _install.sh_ will install [third-party dependencies](/lin.nvim.dev/appendix/#dependencies) with system package manager if not exists. Supported platforms are:
 >
-> 1. _install.sh_ will install [third-party dependencies](/lin.nvim.dev/appendix/#dependencies) with system package manager if not exists. For now supported platforms are:
->    - Debian/ubuntu based Linux: use _apt_ and _snap_ as installer.
->    - Fedora/centos based Linux: use _dnf_ as installer.
->    - Archlinux based Linux: use _pacman_ as installer.
->    - MacOS: use _brew_ as package installer, please install [Xcode](https://guide.macports.org/chunked/installing.html) and [homebrew](https://brew.sh/) as pre-requirements.
->    - Other \*NIX systems such as Gentoo, BSD are not supported yet.
+> - Debian/ubuntu based Linux: use _apt_ and _snap_ as installer.
+> - Fedora/centos based Linux: use _dnf_ as installer.
+> - Archlinux based Linux: use _pacman_ as installer.
+> - MacOS: use _brew_ as package installer, please install [Xcode](https://guide.macports.org/chunked/installing.html) and [homebrew](https://brew.sh/) as pre-requirements.
+> - Other \*NIX systems such as Gentoo, BSD are not supported yet.
 
 {: .note-title}
 
 ---
 
 ## Windows
-
-{: .note-title }
-
-> Notice
->
-> Use a package manager (such as [chocolatey](https://chocolatey.org/) and [scoop](https://scoop.sh/)) could be a better choice, just make sure they're available in $env:PATH.
 
 0. [Enable Windows Developer Mode](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development#activate-developer-mode).
 
@@ -74,6 +68,10 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.nvim && cd ~/.nvim && ./in
    - (Optional) [bat](https://github.com/sharkdp/bat): add _bat.exe_ to $env:PATH.
    - (Optional) [delta](https://github.com/dandavison/delta): add _delta.exe_ to $env:PATH.
 
+   {: .note}
+
+   > Use a package manager (such as [chocolatey](https://chocolatey.org/) and [scoop](https://scoop.sh/)) could be a better choice, just make sure they're available in $env:PATH.
+
 4. Install [Hack NFM](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip) font.
 
 5. Run PowerShell command as Administrator:
@@ -84,14 +82,14 @@ cd $env:USERPROFILE\.nvim
 .\install.ps1
 ```
 
-{: .note-title}
+{: .important-title}
 
 > Notice
 >
 > If you are using WSL, _C:\Windows\System32\bash.exe_ could lead you to WSL instead of the _bash.exe_ from [Git for Windows](https://git-scm.com/). Make sure the git path is ahead of _C:\Windows\System32_, so git bash will be first detected (_wsl.exe_ could connect to WSL as well so no need to worry about losing _C:\Windows\System32\bash.exe_).
 > {% include nest-image.html src="/assets/installations/install-windows-git-path.png" alt="install-windows-git-path.png" width="70%" %}
 
-{: .note-title}
+{: .important-title}
 
 > Notice
 >
@@ -106,7 +104,7 @@ The installer provides 3 installation modes:
 
 - Full mode: default mode, it installs all features for the best experience, while consuming unignorable CPU, memory, disk and graphics.
 - Limit mode: use `--limit` for low-performance devices such as old PC, which disables most plugins and extensions.
-- Basic mode: use `--basic` for restricted environments such as production servers, which only installs a pure basic vim setting file.
+- Basic mode: use `--basic` for restricted environments such as production servers, which only installs a pure basic vim setting file(_~/.nvim/conf/basic.vim_).
 
 And more options:
 
@@ -118,13 +116,11 @@ And more options:
 - `--no-plug`: disable specific plugin in format _org/repo_, this can be provided multiple times. For example: `--no-plug=RRethy/vim-hexokinase --no-plug=alvan/vim-closetag`.
 - `--no-winctrl`: disable Windows ctrl+{c,v,s,x,a,...} keys behavior, include cmd+{c,v,s,x,a,...} keys on macOS.
 
-Please checkout [Plugins](/lin.nvim.dev/appendix/#plugins) to find out whether a plugin will be installed or not.
+Please checkout [Plugins](/lin.nvim.dev/docs/appendix/#plugins) to find out how these options affect a plugin.
 
-{: .note-title}
+{: .note}
 
-> Notice
->
-> - Option `--limit` is equivalent to `--no-hilight --no-color --no-lang --no-edit`.
+> Option `--limit` is equivalent to `--no-hilight --no-color --no-lang --no-edit`.
 
 ---
 
@@ -159,4 +155,4 @@ See [Improve Git monorepo performance with a file system monitor](https://github
 
 ## Next
 
-- Checkout [user guide](/lin.nvim.dev/user-guide).
+- Checkout [user guide](/lin.nvim.dev/docs/user-guide).

@@ -3,15 +3,12 @@ layout: default
 title: Contribute
 nav_order: 6
 has_children: true
+has_toc: false
 ---
 
 # Contribute
 
 Please open [issue](https://github.com/linrongbin16/lin.nvim/issues/new)/[PR](https://github.com/linrongbin16/lin.nvim/pulls) for anything about lin.nvim.
-
----
-
-## Sponsor
 
 Like lin.nvim? Consider
 

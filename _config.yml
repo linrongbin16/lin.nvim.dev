@@ -96,7 +96,7 @@ callouts:
   highlight:
     color: yellow
   note:
-    color: purple
+    color: grey-dk
   important:
     color: blue
   new:
