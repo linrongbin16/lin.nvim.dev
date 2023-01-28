@@ -205,6 +205,7 @@ Null-ls sources:
 
 - Bash: shfmt(macOS/Linux only)
 - Javascript/typescript: prettierd, eslint_d
+- Lua: stylua
 - Python: black, isort
 
 ## Reference
