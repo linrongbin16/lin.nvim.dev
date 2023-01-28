@@ -43,9 +43,8 @@ nav_order: 5
 
 ### Infrastructure
 
-- [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)
+- [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 - [nathom/filetype.nvim](https://github.com/nathom/filetype.nvim)
-- [lewis6991/impatient.nvim](https://github.com/lewis6991/impatient.nvim)
 - [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
 ### Color Scheme
@@ -103,9 +102,8 @@ nav_order: 5
 
 ### UI
 
-- [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim)
+- [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 - [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
-- [jlanzarotta/bufexplorer](https://github.com/jlanzarotta/bufexplorer)
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [nvim-lua/lsp-status.nvim](https://github.com/nvim-lua/lsp-status.nvim)
@@ -142,7 +140,6 @@ nav_order: 5
 - [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
-- [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 
 ### Specific Language Support
 

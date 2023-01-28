@@ -139,7 +139,7 @@ cd ~/.vim && git pull origin main && ./install.sh
 For vim plugins, please update in neovim:
 
 ```vim
-:PackerSync
+:Lazy! sync
 ```
 
 ---

@@ -66,14 +66,14 @@ Meta-key (_M_), alt-key (_A_) (on Windows/Linux), and command-key (_D_) (on macO
 ### Hot Keys
 
 - `F1` 🄽 - Toggle file explorer.
+- `<S-F1>` 🄽 - Find current file in explorer.
 - `F2` 🄽 - Toggle undo-tree.
 - `F3` 🄽 - Toggle structure outlines(tags).
 - `F4` 🄽 - Switch between C/C++ header and source.
-- `F7` 🄽 - Enable/disable highlighting word marks, see [demo](/lin.nvim.dev/demo/#highlight-marks).
-- `<S-F7>` 🄽 - Clear all highlighting word marks.
-- `F8` 🄽 - Open markdown preview.
-- `F9` 🄽 - Toggle terminal.
-- `F10` 🄽 - Toggle buffers explorer.
+- `F8` 🄽 - Enable/disable highlighting word marks, see [demo](/lin.nvim.dev/demo/#highlight-marks).
+- `<S-F8>` 🄽 - Clear all highlighting word marks.
+- `F9` 🄽 - Open markdown preview.
+- `F10` 🄽 - Toggle terminal.
 
 ### Ctrl+? Cmd+? Keys
 
@@ -109,7 +109,9 @@ Easier way to _nohlsearch_:
 
 - `<C-l>` 🄽 - Execute command `:nohlsearch`.
 
-Configure these key mappings in _~/.vim/settings.vim_.
+{: .note}
+
+> Configure these key mappings in _~/.vim/settings.vim_.
 
 ---
 
@@ -117,20 +119,16 @@ Configure these key mappings in _~/.vim/settings.vim_.
 
 ### File Explorer
 
-Supported by [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim). Please use _?_ to show help in neo-tree, or refer to [neo-tree.nvim's README](https://github.com/nvim-neo-tree/neo-tree.nvim) for default key mappings.
+Supported by [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua). Please use _g?_ to toggle help in nvim-tree, or refer to [nvim-tree's default key mappings](https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt).
 
-A few keys are added/modified for convenience, based on [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)'s mappings:
+Only a few keys are added for convenience:
 
-- `h` 🄽 - Collapse current directory or navigate to parent directory.
-- `l` 🄽 - Expand directory or open file. `<space>` and `w` keys are removed.
-- `Z` 🄽 - Expand all directories.
-- `<C-x>` 🄽 - Open in split. `S` key is removed.
-- `<C-v>` 🄽 - Open in vsplit. `s` key is removed.
-- `<C-t>` 🄽 - Open in new tab. `t` key is removed.
-- `]c` 🄽 - Navigate to next(👇) git item. `]g` key is removed.
-- `[c` 🄽 - Navigate to previous(👆) git item. `[g` key is removed.
-
-Configure these key mappings in _~/.vim/lua/repo/nvim-neo-tree/neo-tree-nvim.lua_.
+- `h` 🄽 - Collapse current directory.
+- `l` 🄽 - Expand directory or open file.
+- `]d` 🄽 - Navigate to next(👇) diagnostic item.
+- `[d` 🄽 - Navigate to previous(👆) diagnostic item.
+- `<Leader>>` 🄽 - Resize explorer width bigger.
+- `<Leader><` 🄽 - Resize explorer width smaller.
 
 ### Tabline
 
@@ -171,7 +169,9 @@ Supported by [vim-mark](https://github.com/inkarkat/vim-mark).
 
 [Hack Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases) is enabled by default.
 
-Install other nerd fonts and configure in _~/.vim/settings.vim_ to customize.
+{: .note}
+
+> Configure GUI font in _~/.vim/settings.vim_.
 
 ---
 
@@ -235,7 +235,9 @@ If you need to save file without code format, please use:
 - `[c` 🄽 - Go to previous(👆) git chunk in current buffer.
 - `<Leader>gb` 🄽 - Toggle git blame info on current line.
 
-Configure these key mappings in _~/.vim/repository/hrsh7th/nvim-cmp.vim_, or configure embedded LSP servers in _~/.vim/lsp-settings.vim_.
+{: .note}
+
+> Configure these key mappings in _~/.vim/lua/conf/lsp.lua_.
 
 ---
 
@@ -284,7 +286,9 @@ Search engine is supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and
 - `<Space>cs` 🄽 - Search vim colorschemes by `:FzfColors`.
 - `<Space>tp` 🄽 - Search vim filetypes by `:FzfFiletypes`.
 
-Configure these key mappings in _~/.vim/repository/junegunn/fzf.vim.vim_.
+{: .note}
+
+> Configure these key mappings in _~/.vim/repo/junegunn/fzf.vim/config.vim_.
 
 ---
 
@@ -344,17 +348,18 @@ Supported by [nvim-autopairs](https://github.com/windwp/nvim-autopairs) and [vim
 
 _init.vim_ will load below components in _~/.vim_ directory:
 
-- _lua/plugins.lua_ - Plugins managed by [packer.nvim](https://github.com/wbthomason/packer.nvim), see [Plugins](/lin.nvim.dev/appendix/#plugins) for the complete list.
-- _config/\*.vim_ - Pure vim settings.
-- _lua/constants.lua_ - Settings used across multiple plugins.
-- _repository/\**/*.vim_ and _lua/repository/\**/*.lua_ - Settings for each installed plugin.
+- _conf/\*.vim_ and _lua/conf/\*.lua_ - Basic vim and lua settings.
+- _lua/plugins.lua_ - Plugins managed by [lazy.nvim](https://github.com/folke/lazy.nvim), see [Plugins](/lin.nvim.dev/appendix/#plugins) for the complete list.
+- _repo/{org}/{repo}/\*.vim_ and _lua/repo/{org}/{repo}/\*.lua_ - Settings for related plugin.
 - _colorschemes.vim_ - Color schemes.
 - _lua/lspservers.lua_ - LSP servers.
 - _settings.vim_ - Other settings.
 
-To configure plugins, please edit _lua/plugins.lua_, and related settings in _repository_ or _lua/repository_ directory, then load from _init.vim_.
+{: .note}
 
-For basic install mode, the _init.vim_ is _config/basic.vim_, no more else, see [Options](/lin.nvim.dev/installation#options).
+> Configure plugins in _lua/plugins.lua_ and related settings in _repo/{org}/{repo}/\*.vim or \_lua/repo/{org}/{repo}/\*.lua_.
+>
+> For basic install mode, the _init.vim_ is _conf/basic.vim_, no more else, see [Options](/lin.nvim.dev/installation#options).
 
 ---
 
