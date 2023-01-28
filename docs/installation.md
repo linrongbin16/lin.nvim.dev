@@ -146,8 +146,10 @@ For vim plugins, please update in neovim:
 
 Add below global configs to improve performance if git version &ge; 2.37.0:
 
-- `git config --global core.fsmonitor true`
-- `git config --global core.untrackedcache  true`
+```bash
+git config --global core.fsmonitor true
+git config --global core.untrackedcache  true
+```
 
 See [Improve Git monorepo performance with a file system monitor](https://github.blog/2022-06-29-improve-git-monorepo-performance-with-a-file-system-monitor/).
 
