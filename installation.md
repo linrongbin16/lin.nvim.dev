@@ -41,7 +41,7 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 
 > Notice
 >
-> Use a package manager (such as [chocolatey](https://chocolatey.org/) and [scoop](https://scoop.sh/)) could be a better choice, just make sure they're available in _$env:PATH_.
+> Use a package manager (such as [chocolatey](https://chocolatey.org/) and [scoop](https://scoop.sh/)) could be a better choice, just make sure they're available in $env:PATH.
 
 0. [Enable Windows Developer Mode](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development#activate-developer-mode).
 
@@ -53,26 +53,26 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.vim && cd ~/.vim && ./inst
 
 2. Install [64-bit Git for Windows Setup](https://git-scm.com/downloads) with below 3 options:
 
-   - In **_Select Components_**, select **_Associate .sh files to be run with Bash_**.
+   - In **Select Components**, select **Associate .sh files to be run with Bash**.
      {% include nest-image.html src="/assets/installations/install-windows-git1.png" alt="install-windows-git1.png" width="70%" %}
-   - In **_Adjusting your PATH environment_**, select **_Use Git and optional Unix tools from the Command Prompt_**.
+   - In **Adjusting your PATH environment**, select **Use Git and optional Unix tools from the Command Prompt**.
      {% include nest-image.html src="/assets/installations/install-windows-git2.png" alt="install-windows-git2.png" width="70%" %}
-   - In **_Configuring the terminal emulator to use with Git Bash_**, select **_Use Windows's default console window_**. After this step, _git.exe_ and Linux built-in commands(such as _bash.exe_, _cp.exe_, _mv.exe_, _ls.exe_) will be available in _$env:PATH_.
+   - In **Configuring the terminal emulator to use with Git Bash**, select **Use Windows's default console window**. After this step, _git.exe_ and Linux built-in commands(such as _bash.exe_, _cp.exe_, _mv.exe_, _ls.exe_) will be available in $env:PATH.
      {% include nest-image.html src="/assets/installations/install-windows-git3.png" alt="install-windows-git3.png" width="70%" %}
 
 3. Install other 64-bit dependencies:
 
-   - [Neovim](https://github.com/neovim/neovim/releases/latest): add _nvim.exe_ to _$env:PATH_.
-   - [CMake](https://github.com/Kitware/CMake/releases/latest): add _cmake.exe_ to _$env:PATH_.
-   - [Make-for-win32](https://sourceforge.net/projects/gnuwin32/files/make): add _make.exe_ to _$env:PATH_.
-   - [Python3](https://www.python.org/downloads/windows/): manually copy _python.exe_ as _python3.exe_, then add _python3.exe_ to _$env:PATH_ (since windows python3 installer only provide _python.exe_).
-   - [Node.js](https://nodejs.org/en/download/): add _node.exe_, _npm.exe_ to _$env:PATH_.
-   - [7-zip](https://www.7-zip.org/): add _7z.exe_ to _$env:PATH_.
-   - [Universal-ctags](https://github.com/universal-ctags/ctags-win32/releases): add _ctags.exe_, _readtags.exe_ to _$env:PATH_.
-   - [Ripgrep](https://github.com/BurntSushi/ripgrep): add _rg.exe_ to _$env:PATH_.
-   - (Optional) [fd](https://github.com/sharkdp/fd): add _fd.exe_ to _$env:PATH_.
-   - (Optional) [bat](https://github.com/sharkdp/bat): add _bat.exe_ to _$env:PATH_.
-   - (Optional) [delta](https://github.com/dandavison/delta): add _delta.exe_ to _$env:PATH_.
+   - [Neovim](https://github.com/neovim/neovim/releases/latest): add _nvim.exe_ to $env:PATH.
+   - [CMake](https://github.com/Kitware/CMake/releases/latest): add _cmake.exe_ to $env:PATH.
+   - [Make-for-win32](https://sourceforge.net/projects/gnuwin32/files/make): add _make.exe_ to $env:PATH.
+   - [Python3](https://www.python.org/downloads/windows/): manually copy _python.exe_ as _python3.exe_, then add _python3.exe_ to $env:PATH (since windows python3 installer only provide _python.exe_).
+   - [Node.js](https://nodejs.org/en/download/): add _node.exe_, _npm.exe_ to $env:PATH.
+   - [7-zip](https://www.7-zip.org/): add _7z.exe_ to $env:PATH.
+   - [Universal-ctags](https://github.com/universal-ctags/ctags-win32/releases): add _ctags.exe_, _readtags.exe_ to $env:PATH.
+   - [Ripgrep](https://github.com/BurntSushi/ripgrep): add _rg.exe_ to $env:PATH.
+   - [fd](https://github.com/sharkdp/fd): add _fd.exe_ to $env:PATH.
+   - (Optional) [bat](https://github.com/sharkdp/bat): add _bat.exe_ to $env:PATH.
+   - (Optional) [delta](https://github.com/dandavison/delta): add _delta.exe_ to $env:PATH.
 
 4. Install [Hack NFM](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip) font.
 
