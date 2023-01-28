@@ -9,9 +9,9 @@ has_toc: false
 # User Guide
 
 - [Global Key Mappings](#global-key-mappings)
-    - [Hot Keys](#hot-keys)
-    - [Ctrl+? Cmd+? Keys](#ctrl-cmd-keys)
-    - [Biscuits](#biscuits)
+  - [Hot Keys](#hot-keys)
+  - [Ctrl+? Cmd+? Keys](#ctrl-cmd-keys)
+  - [Biscuits](#biscuits)
 - [UI](#ui)
   - [File Explorer](#file-explorer)
   - [Tabline](#tabline)
@@ -284,10 +284,6 @@ Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](
 - `<Space>ht` 🄽 - Search vim helptags by `:FzfHelptags`.
 - `<Space>cs` 🄽 - Search vim colorschemes by `:FzfColors`.
 - `<Space>tp` 🄽 - Search vim filetypes by `:FzfFiletypes`.
-
-{: .note}
-
-> Configure these key mappings in _~/.nvim/repo/junegunn/fzf.vim/config.vim_.
 
 ---
 
