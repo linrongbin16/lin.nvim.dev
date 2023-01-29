@@ -119,6 +119,12 @@ nav_order: 5
 
 ### Tags
 
+{: .important-title}
+
+> Notice
+>
+> Option `--no-lang` could disable all these plugins.
+
 - [liuchengxu/vista.vim](https://github.com/liuchengxu/vista.vim)
 - [ludovicchabant/vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 
