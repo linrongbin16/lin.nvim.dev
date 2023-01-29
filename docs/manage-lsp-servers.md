@@ -8,8 +8,12 @@ has_toc: false
 
 # Manage LSP Servers
 
+---
+
 - [Plugins](#plugins)
 - [Use Cases](#use-cases)
+
+---
 
 By default, [a bunch of language servers](/lin.nvim.dev/appendix/#lsp-servers) are already embedded. But sooner or later you will manage LSP servers yourself.
 

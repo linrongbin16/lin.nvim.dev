@@ -7,6 +7,8 @@ has_toc: false
 
 # Installation
 
+---
+
 - [Linux/macOS](#linuxmacos)
 - [Windows](#windows)
 - [Options](#options)

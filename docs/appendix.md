@@ -6,6 +6,8 @@ nav_order: 5
 
 # Appendix
 
+---
+
 - [Dependencies](#dependencies)
 - [Plugins](#plugins)
   - [Infrastructure](#infrastructure)

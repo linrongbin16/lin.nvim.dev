@@ -8,6 +8,8 @@ has_toc: false
 
 # User Guide
 
+---
+
 - [Global Key Mappings](#global-key-mappings)
   - [Hot Keys](#hot-keys)
   - [Ctrl+? Cmd+? Keys](#ctrl-cmd-keys)
@@ -41,6 +43,8 @@ has_toc: false
   - [Better Matching](#better-matching)
   - [Auto Pair/Close/End](#auto-pair-close-end)
 - [Customization](#customization)
+
+---
 
 In this section, vim editing modes are specified with:
 

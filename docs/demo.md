@@ -6,6 +6,8 @@ nav_order: 2
 
 # Demo
 
+---
+
 - [IDE Features](#ide-features)
 - [UI](#ui)
 - [Colors and Highlights](#colors-and-highlights)
