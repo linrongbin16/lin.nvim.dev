@@ -62,7 +62,7 @@ nav_order: 2
 
 ### Highlight Marks
 
-{% include youtube.html id="nIc45KtRE8Y" %}
+{% include youtube.html id="zmsnf4DXyZA" %}
 
 ---
 
@@ -78,7 +78,7 @@ nav_order: 2
 
 ### Markdown Preview
 
-{% include image.html src="/assets/demos/language/markdown-preview1.png" alt="markdown-preview1.png" width="100%" %}
+{% include youtube.html id="t8W94Bdl0wI" %}
 
 ---
 
