@@ -187,9 +187,8 @@ nav_order: 5
 >
 > Option `--no-edit` could disable all these plugins.
 
-- [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
-- [tpope/vim-endwise](https://github.com/tpope/vim-endwise)
 - [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [haya14busa/is.vim](https://github.com/haya14busa/is.vim)
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
