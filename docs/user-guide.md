@@ -301,10 +301,10 @@ Supported by [hop.nvim](https://github.com/phaazon/hop.nvim) and [leap.nvim](htt
 
 Leap keeps its default key mappings(s/S, x/X), and keys for hop are mapped to:
 
-- `<Leader>f{char}` 🄽 - Move by a single {char}.
-- `<Leader>s{char}{char}` 🄽 - Move by two consequent {char}{char}.
-- `<Leader>w` 🄽 - Move by word.
-- `<Leader>l` 🄽 - Move by line.
+- `<Leader>f{char}` 🄽 🅇 - Move by a single {char}.
+- `<Leader>s{char}{char}` 🄽 🅇 - Move by two consequent {char}{char}.
+- `<Leader>w` 🄽 🅇 - Move by word.
+- `<Leader>l` 🄽 🅇 - Move by line.
 
 ### Word Motion
 
