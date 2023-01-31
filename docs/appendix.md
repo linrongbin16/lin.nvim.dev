@@ -109,7 +109,9 @@ nav_order: 5
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [linrongbin16/lsp-progress.nvim](https://github.com/linrongbin16/lsp-progress.nvim)
-- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [itchyny/vim-gitbranch](https://github.com/itchyny/vim-gitbranch)
+- [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [f-person/git-blame.nvim](https://github.com/f-person/git-blame.nvim)
 - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 - [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim)
 
