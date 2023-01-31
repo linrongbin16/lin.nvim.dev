@@ -252,8 +252,8 @@ Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](
   - `<Space>ur` 🄽 - Unrestricted(--no-ignore --hidden) live grep by self-defined `:LinFzfUnrestrictedRg`.
   - `<Space>pr` 🄽 - Precise(no fuzzy) live grep by self-defined `:LinFzfPreciseRg`.
   - `<Space>upr` 🄽 - Unrestricted(--no-ignore --hidden) precise(no fuzzy) live grep by self-defined `:LinFzfUnrestrictedPreciseRg`.
-- `<Space>w` 🄽 - Search word under cursor by `:LinFzfRgCWord`(filter ignored and hidden files).
-  - `<Space>uw` 🄽 - Unrestricted(--no-ignore --hidden) search word under cursor by self-defined `:LinFzfUnrestrictedRgCWord`.
+  - `<Space>wr` 🄽 - Search word under cursor by `:LinFzfRgCWord`(filter ignored and hidden files).
+  - `<Space>uwr` 🄽 - Unrestricted(--no-ignore --hidden) search word under cursor by self-defined `:LinFzfUnrestrictedRgCWord`.
 - `<Space>ln` 🄽 - Search lines in opened buffers by `:FzfLines`.
 - `<Space>tg` 🄽 - Search tags by `:FzfTags`.
 
@@ -261,6 +261,8 @@ Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](
 
 - `<Space>f`/`<C-p>` 🄽 - Search files by `:FzfFiles`(filter ignored and hidden files).
   - `<Space>uf` 🄽 - Unrestricted(--no-ignore --hidden) search files by self-defined `:LinFzfUnrestrictedFiles`.
+  - `<Space>wf` 🄽 - Search files by word under cursor by self-defined `:LinFzfFilesCWord`.
+  - `<Space>uwf` 🄽 - Unrestricted(--no-ignore --hidden) search files by word under cursor by self-defined `:LinFzfUnrestrictedFilesCWord`.
 - `<Space>b` 🄽 - Search opened buffers by `:FzfBuffers`.
 - `<Space>hf` 🄽 - Search history files (v:oldfiles) and opened buffers by `:FzfHistory`.
 
