@@ -12,7 +12,7 @@ has_toc: false
 
 > Leave vim behind, this is the next generation of [lin.vim](https://github.com/linrongbin16/lin.vim).
 
-A highly configured [neovim](https://neovim.io/) distribution integrated with tons of utilities for development, inspired by [spf13-vim](https://github.com/spf13/spf13-vim).
+A highly configured [Neovim](https://neovim.io/) distribution integrated with tons of utilities for development, inspired by [spf13-vim](https://github.com/spf13/spf13-vim).
 
 {% include youtube.html id="0W_vmla99Cs" %}
 
