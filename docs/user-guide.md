@@ -71,12 +71,10 @@ Meta-key (_M_), alt-key (_A_) on Windows/Linux, and command-key (_D_) on macOS a
 ### Hot Keys
 
 - `F1` 🄽 - Toggle file explorer.
-- `<S-F1>` 🄽 - Find current file in explorer.
 - `F2` 🄽 - Toggle undo-tree.
 - `F3` 🄽 - Toggle structure outlines(tags).
 - `F4` 🄽 - Switch between C/C++ header and source.
 - `F8` 🄽 - Enable/disable highlighting marks.
-- `<S-F8>` 🄽 - Clear all highlighting marks.
 - `F9` 🄽 - Open markdown preview.
 - `F10` 🄽 - Toggle terminal.
 
@@ -128,21 +126,22 @@ Copy/paste across different vim instances through remote ssh could be difficult,
 
 ### File Explorer
 
-Supported by [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua). Please use _g?_ to toggle help in nvim-tree, or refer to [nvim-tree's default key mappings](https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt).
+Supported by [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim). Please use _?_ to toggle help in neo-tree, or refer to [neo-tree's default configs](https://github.com/nvim-neo-tree/neo-tree.nvim/blob/v2.x/lua/neo-tree/defaults.lua).
 
-A few keys are added for convenience:
+A few keys are modified for convenience:
 
-- `h` 🄽 - Collapse current directory.
-- `l` 🄽 - Expand directory or open file.
-- `]d` 🄽 - Navigate to next(👇) diagnostic item.
-- `[d` 🄽 - Navigate to previous(👆) diagnostic item.
+- `h` 🄽 - Collapse current directory. `C` is removed for close node.
+- `l` 🄽 - Expand directory or open file. `w` is removed for open node with window picker. `<Space>` is removed for (toggle current directory).
+- `<C-s>` 🄽 - Open in a split window. `S` is removed for open in split.
+- `<C-v>` 🄽 - Open in a vsplit window. `s` is removed for open in vsplit.
+- `<C-t>` 🄽 - Open in a new tab window. `t` is removed for open in tabnew.
+- `]c` 🄽 - Navigate to next(👇) git item. `]g` is removed for navigate to next.
+- `[c` 🄽 - Navigate to previous(👆) git item. `[g` is removed for navigate to previous.
+
+Resize explorer width:
+
 - `<Leader>>` 🄽 - Resize explorer width bigger.
 - `<Leader><` 🄽 - Resize explorer width smaller.
-
-Toggle explorer and find file:
-
-- `<Leader>nto`🄽 - Toggle explorer.
-- `<Leader>ntf`🄽 - Find current file in explorer.
 
 ### Tabline
 
@@ -177,6 +176,7 @@ Highlight words with different colors, supported by [vim-mark](https://github.co
 - `<Leader>m` 🄽 🅅 - Mark/clear mark under cursor.
 - `<Leader>*` 🄽 - Navigate to next(👇) mark.
 - `<Leader>#` 🄽 - Navigate to previous(👆) mark.
+- `<Leader>M` 🄽 - Clear all marks.
 
 ### GUI Font
 
