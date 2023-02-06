@@ -228,12 +228,6 @@ To save file without code format:
 
 - `<Leader>ca` 🄽 🅇 - Run code actions under cursor(normal mode) or in selected code(visual mode).
 
-### Workspace
-
-- `<Leader>wa` 🄽 - Add current folder to workspace.
-- `<Leader>wr` 🄽 - Remove current folder from workspace.
-- `<Leader>wl` 🄽 - List all workspaces.
-
 ### Git
 
 - `]c` 🄽 - Go to next(👇) git chunk in current buffer.
