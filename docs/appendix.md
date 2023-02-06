@@ -170,7 +170,7 @@ nav_order: 5
 - [zebradil/hive.vim](https://github.com/zebradil/hive.vim)
 - [slim-template/vim-slim](https://github.com/slim-template/vim-slim)
 
-### Movement
+### Editing Enhancement
 
 {: .important-title}
 
@@ -180,15 +180,6 @@ nav_order: 5
 
 - [phaazon/hop.nvim](https://github.com/phaazon/hop.nvim)
 - [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim)
-
-### Editing Enhancement
-
-{: .important-title}
-
-> Notice
->
-> Option `--no-edit` could disable all these plugins.
-
 - [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
