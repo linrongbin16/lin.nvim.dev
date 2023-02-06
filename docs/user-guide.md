@@ -135,6 +135,9 @@ A few keys are added for convenience:
 - `<Leader>>` 🄽 - Resize explorer width bigger.
 - `<Leader><` 🄽 - Resize explorer width smaller.
 
+- `<Leader>nto`🄽 - Toggle explorer.
+- `<Leader>ntf`🄽 - Find current file in explorer.
+
 ### Tabline
 
 Supported by [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) and [vim-bbye](https://github.com/moll/vim-bbye).
