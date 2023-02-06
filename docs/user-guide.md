@@ -34,10 +34,8 @@ has_toc: false
   - [LSP Search](#lsp-search)
   - [Git Search](#git-search)
   - [Vim Search](#vim-search)
-- [Movement](#movement)
-  - [Cursor Movement](#cursor-movement)
-  - [Word Motion](#word-motion)
 - [Editing Enhancement](#editing-enhancement)
+  - [Cursor Motion](#cursor-motion)
   - [Easy Comment](#easy-comment)
   - [Better Repeat](#better-repeat)
   - [Better Matching](#better-matching)
@@ -301,11 +299,13 @@ Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](
 
 ---
 
-## Movement
+---
 
-### Cursor Movement
+## Editing Enhancement
 
-Supported by [hop.nvim](https://github.com/phaazon/hop.nvim) and [leap.nvim](https://github.com/ggandor/leap.nvim).
+### Cursor Motion
+
+Supported by [leap.nvim](https://github.com/ggandor/leap.nvim) and [hop.nvim](https://github.com/phaazon/hop.nvim).
 
 Leap keeps its default key mappings(s/S, x/X), and keys for hop are mapped following its predecessor [vim-easymotion](https://github.com/easymotion/vim-easymotion):
 
@@ -318,10 +318,6 @@ Leap keeps its default key mappings(s/S, x/X), and keys for hop are mapped follo
 - `<Leader>l` 🄽 🅇 - Move forward by line.
 - `<Leader>L` 🄽 🅇 - Move backward by line.
 
----
-
-## Editing Enhancement
-
 ### Easy Comment
 
 Supported by [Comment.nvim](https://github.com/numToStr/Comment.nvim).
@@ -330,13 +326,17 @@ Supported by [Comment.nvim](https://github.com/numToStr/Comment.nvim).
 
 Better repeat(`.`) operation, supported by [vim-repeat](https://github.com/tpope/vim-repeat).
 
+### Better Surroundings
+
+Better operation on surroundings such as quotes/brackets, supported by [nvim-surround](https://github.com/kylechui/nvim-surround).
+
 ### Better Matching
 
 Better matching for brackets, parentheses, HTML tags, if-endif, etc, supported by [vim-matchup](https://github.com/andymass/vim-matchup).
 
-### Auto Pair/Close/End
+### Auto Pair/Close
 
-Auto-pair braces/parentheses, auto-close html/xml tags, auto-end if-endif/function-endfunction. Supported by [nvim-autopairs](https://github.com/windwp/nvim-autopairs), [vim-closetag](https://github.com/alvan/vim-closetag) and [tpope/vim-endwise](https://github.com/tpope/vim-endwise).
+Auto-pair braces/parentheses, auto-close html/xml tags, auto-end if-endif/function-endfunction. Supported by [nvim-autopairs](https://github.com/windwp/nvim-autopairs) and [vim-closetag](https://github.com/alvan/vim-closetag).
 
 ---
 

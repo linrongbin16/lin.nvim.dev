@@ -194,6 +194,7 @@ nav_order: 5
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [haya14busa/is.vim](https://github.com/haya14busa/is.vim)
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
+- [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
 - [mbbill/undotree](https://github.com/mbbill/undotree)
 - [editorconfig/editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
 
