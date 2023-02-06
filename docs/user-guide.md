@@ -105,14 +105,18 @@ For macOS, cmd+? follows the same behavior(ctrl+? works as well):
 
 ### Biscuits
 
+Folding:
+
+- `zz` 🄽 - Toggle folding.
+
+Clean highlights(include `nohlsearch`):
+
+- `<C-l>` 🄽 - Clean highlights, update diff and refresh colors.
+
 Copy/paste across different vim instances through remote ssh could be difficult, introduce two shortcuts using local cache:
 
 - `<Leader>y` 🅇 - Copy selected text to _~/.nvim/.copypaste_.
 - `<Leader>p` 🄽 - Paste from _~/.nvim/.copypaste_ to current cursor.
-
-Easier way to _nohlsearch_:
-
-- `<C-l>` 🄽 - Execute command `:nohlsearch`.
 
 {: .note}
 
