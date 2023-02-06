@@ -46,6 +46,7 @@ nav_order: 5
 
 - [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 - [nathom/filetype.nvim](https://github.com/nathom/filetype.nvim)
+- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
 
 ### Color Scheme
 
@@ -102,7 +103,8 @@ nav_order: 5
 
 ### UI
 
-- [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+- [nvim-neo-tree/neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim)
 - [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 - [moll/vim-bbye](https://github.com/moll/vim-bbye)
@@ -145,7 +147,6 @@ nav_order: 5
 - [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [p00f/clangd_extensions.nvim](https://github.com/p00f/clangd_extensions.nvim)
 - [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
-- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
 - [jay-babu/mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim)
 - [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
