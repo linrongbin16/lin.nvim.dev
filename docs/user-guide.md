@@ -139,6 +139,8 @@ A few keys are added for convenience:
 - `<Leader>>` 🄽 - Resize explorer width bigger.
 - `<Leader><` 🄽 - Resize explorer width smaller.
 
+Toggle explorer and find file:
+
 - `<Leader>nto`🄽 - Toggle explorer.
 - `<Leader>ntf`🄽 - Find current file in explorer.
 
@@ -216,6 +218,10 @@ Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](htt
 
 - `[d` 🄽 - Go to previous(👆) diagnostic location.
 - `]d` 🄽 - Go to next(👇) diagnostic location.
+- `[e` 🄽 - Go to previous(👆) error location.
+- `]e` 🄽 - Go to next(👇) error location.
+- `[w` 🄽 - Go to previous(👆) warning location.
+- `]w` 🄽 - Go to next(👇) warning location.
 - `<Leader>df` 🄽 - Open diagnostic float window.
 
 ### Code Format
