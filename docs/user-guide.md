@@ -137,12 +137,13 @@ A few keys are added for convenience:
 
 ### Tabline
 
-Supported by [bufferline.nvim](https://github.com/akinsho/bufferline.nvim).
+Supported by [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) and [vim-bbye](https://github.com/moll/vim-bbye).
 
 1. Navigation:
    - `]b` 🄽 - Go to next(👉) buffer.
    - `[b` 🄽 - Go to previous(👈) buffer.
-   - `<Leader>bd` 🄽 - Close current buffer without closing vim window.
+   - `<Leader>bd` 🄽 - Close current buffer without closing vim window by command `:Bdelete`.
+   - `<Leader>bD` 🄽 - Forcibly close current buffer without closing vim window by command `:Bdelete!`.
    - `<Leader>1` 🄽 - Go to buffer-1.
    - `<Leader>2` 🄽 - Go to buffer-2.
    - `<Leader>3` 🄽 - Go to buffer-3.
@@ -299,23 +300,16 @@ Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](
 
 Supported by [hop.nvim](https://github.com/phaazon/hop.nvim) and [leap.nvim](https://github.com/ggandor/leap.nvim).
 
-Leap keeps its default key mappings(s/S, x/X), and keys for hop are mapped to:
+Leap keeps its default key mappings(s/S, x/X), and keys for hop are mapped following its predecessor [vim-easymotion](https://github.com/easymotion/vim-easymotion):
 
-- `<Leader>f{char}` 🄽 🅇 - Move by a single {char}.
-- `<Leader>s{char}{char}` 🄽 🅇 - Move by two consequent {char}{char}.
-- `<Leader>w` 🄽 🅇 - Move by word.
-- `<Leader>l` 🄽 🅇 - Move by line.
-
-### Word Motion
-
-Better movement respects words that missing whitespaces, supported by [vim-wordmotion](https://github.com/chaoren/vim-wordmotion).
-
-To not change vim's default behavior, motions are mapped with a comma prefix:
-
-- `,w`/`,W` 🄽 🅇 🄾 - word/WORD forward(👉), exclusive.
-- `,b`/`,B` 🄽 🅇 🄾 - word/WORD backward(👈), exclusive.
-- `,e`/`,E` 🄽 🅇 🄾 - Forward to the end of word/WORD, inclusive.
-- `,ge`/`,gE` 🄽 🅇 🄾 - Backward to the end of word/WORD, inclusive.
+- `<Leader>f{char}` 🄽 🅇 - Move forward by a single {char}.
+- `<Leader>F{char}` 🄽 🅇 - Move backward by a single {char}.
+- `<Leader>s{char}{char}` 🄽 🅇 - Move forward by two consequent {char}{char}.
+- `<Leader>S{char}{char}` 🄽 🅇 - Move backward by two consequent {char}{char}.
+- `<Leader>w` 🄽 🅇 - Move forward by word.
+- `<Leader>W` 🄽 🅇 - Move backward by word.
+- `<Leader>l` 🄽 🅇 - Move forward by line.
+- `<Leader>L` 🄽 🅇 - Move backward by line.
 
 ---
 

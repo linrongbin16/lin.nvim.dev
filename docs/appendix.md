@@ -179,7 +179,6 @@ nav_order: 5
 
 - [phaazon/hop.nvim](https://github.com/phaazon/hop.nvim)
 - [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim)
-- [chaoren/vim-wordmotion](https://github.com/chaoren/vim-wordmotion)
 
 ### Editing Enhancement
 
