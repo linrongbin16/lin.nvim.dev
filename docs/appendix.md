@@ -115,6 +115,8 @@ nav_order: 5
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [linrongbin16/lsp-progress.nvim](https://github.com/linrongbin16/lsp-progress.nvim)
 - [itchyny/vim-gitbranch](https://github.com/itchyny/vim-gitbranch)
+- [utilyre/barbecue.nvim](https://github.com/utilyre/barbecue.nvim)
+- [SmiteshP/nvim-navic](https://github.com/SmiteshP/nvim-navic)
 - [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [f-person/git-blame.nvim](https://github.com/f-person/git-blame.nvim)
 - [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim)
@@ -195,9 +197,9 @@ nav_order: 5
 - [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+- [mbbill/undotree](https://github.com/mbbill/undotree)
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
 - [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
-- [mbbill/undotree](https://github.com/mbbill/undotree)
 - [editorconfig/editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
 
 ## LSP Servers
