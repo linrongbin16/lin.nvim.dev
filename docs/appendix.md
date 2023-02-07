@@ -98,8 +98,10 @@ nav_order: 5
 - [RRethy/vim-illuminate](https://github.com/RRethy/vim-illuminate)
 - [NvChad/nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua)
 - [andymass/vim-matchup](https://github.com/andymass/vim-matchup)
-- [inkarkat/vim-mark](https://github.com/inkarkat/vim-mark)
-- [inkarkat/vim-ingo-library](https://github.com/inkarkat/vim-ingo-library)
+- [lfv89/vim-interestingwords](https://github.com/lfv89/vim-interestingwords)
+- [haya14busa/is.vim](https://github.com/haya14busa/is.vim)
+- [winston0410/range-highlight.nvim](https://github.com/winston0410/range-highlight.nvim)
+- [winston0410/cmd-parser.nvim](https://github.com/winston0410/cmd-parser.nvim)
 
 ### UI
 
@@ -184,9 +186,6 @@ nav_order: 5
 - [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
-- [haya14busa/is.vim](https://github.com/haya14busa/is.vim)
-- [winston0410/range-highlight.nvim](https://github.com/winston0410/range-highlight.nvim)
-- [winston0410/cmd-parser.nvim](https://github.com/winston0410/cmd-parser.nvim)
 - [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
 - [mbbill/undotree](https://github.com/mbbill/undotree)
 - [editorconfig/editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
