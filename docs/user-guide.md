@@ -263,7 +263,7 @@ Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](
 
 ### File Search
 
-- `<Space>f`/`<C-p>` 🄽 - Search files by `:FzfFiles`(filter ignored and hidden files).
+- `<Space>f` 🄽 - Search files by `:FzfFiles`(filter ignored and hidden files).
   - `<Space>uf` 🄽 - Unrestricted(--no-ignore --hidden) search files by self-defined `:LinFzfUnrestrictedFiles`.
   - `<Space>wf` 🄽 - Search files by word under cursor by self-defined `:LinFzfFilesCWord`.
   - `<Space>uwf` 🄽 - Unrestricted(--no-ignore --hidden) search files by word under cursor by self-defined `:LinFzfUnrestrictedFilesCWord`.
