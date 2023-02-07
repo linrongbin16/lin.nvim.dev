@@ -101,8 +101,7 @@ nav_order: 5
 - [andymass/vim-matchup](https://github.com/andymass/vim-matchup)
 - [lfv89/vim-interestingwords](https://github.com/lfv89/vim-interestingwords)
 - [haya14busa/is.vim](https://github.com/haya14busa/is.vim)
-- [winston0410/range-highlight.nvim](https://github.com/winston0410/range-highlight.nvim)
-- [winston0410/cmd-parser.nvim](https://github.com/winston0410/cmd-parser.nvim)
+- [markonm/traces.vim](https://github.com/markonm/traces.vim)
 
 ### UI
 
