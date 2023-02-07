@@ -30,7 +30,9 @@ A highly configured [Neovim](https://neovim.io/) distribution integrated with to
 
 <!-- {% include image.html src="/assets/demos/ui/start-ui.jpg" alt="start-ui.jpg" width="100%" %} -->
 
-Aim to be out-of-box, with IDE features, performant, lightweight and friendly to most neovim users. Focus on and only on editing, no compiling/packaging/debugging.
+Aim to be out-of-box, with IDE features, performant, lightweight and friendly to most Neovim users. Focus on and only on editing, no compiling/packaging/debugging.
+
+There're [more thoughts about the Neovim editor](/lin.nvim.dev/docs/philosophy).
 
 ---
 
@@ -78,4 +80,3 @@ Aim to be out-of-box, with IDE features, performant, lightweight and friendly to
 ## Next
 
 - [Get started](/lin.nvim.dev/docs/installation).
-- [More thoughts about the Neovim editor](/lin.nvim.dev/docs/philosophy).
