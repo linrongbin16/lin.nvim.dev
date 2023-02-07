@@ -8,8 +8,6 @@ has_toc: false
 
 # lin.nvim: Lin Rongbin's Neovim Distribution
 
----
-
 > Leave Vim behind, this is the next generation of [lin.vim](https://github.com/linrongbin16/lin.vim).
 
 ---
