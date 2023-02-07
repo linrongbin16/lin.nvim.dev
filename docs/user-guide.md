@@ -105,10 +105,6 @@ Folding:
 
 - `zz` 🄽 - Toggle folding.
 
-Clean highlights(include `nohlsearch`):
-
-- `<C-l>` 🄽 - Clean highlights, update diff and refresh colors.
-
 Copy/paste across different vim instances through remote ssh could be difficult, introduce two shortcuts using local cache:
 
 - `<Leader>y` 🅇 - Copy selected text to _~/.nvim/.copypaste_.
