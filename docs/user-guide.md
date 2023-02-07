@@ -17,7 +17,7 @@ has_toc: false
 - [UI](#ui)
   - [File Explorer](#file-explorer)
   - [Tabline](#tabline)
-  - [Highlight Marks](#highlight-marks)
+  - [Highlight Words](#highlight-words)
   - [GUI Font](#gui-font)
 - [IDE Features](#ide-features)
   - [Code Complete](#code-complete)
@@ -72,7 +72,7 @@ Meta-key (_M_), alt-key (_A_) on Windows/Linux, and command-key (_D_) on macOS a
 - `F2` 🄽 - Toggle undo-tree.
 - `F3` 🄽 - Toggle structure outlines(tags).
 - `F4` 🄽 - Switch between C/C++ header and source.
-- `F8` 🄽 - Enable/disable highlighting marks.
+- `F8` 🄽 - Clear all highlighted words.
 - `F9` 🄽 - Open markdown preview.
 - `F10` 🄽 - Toggle terminal.
 
@@ -163,14 +163,16 @@ Supported by [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) and [
    - `<LeftMouse>` 🄽 - Go to target buffer.
    - `<RightMouse>` 🄽 - Close target buffer.
 
-### Highlight Marks
+### Highlight Words
 
-Highlight words with different colors, supported by [vim-mark](https://github.com/inkarkat/vim-mark).
+Highlight words with different colors, supported by [vim-interestingwords](https://github.com/lfv89/vim-interestingwords).
 
-- `<Leader>m` 🄽 🅅 - Mark/clear mark under cursor.
-- `<Leader>*` 🄽 - Navigate to next(👇) mark.
-- `<Leader>#` 🄽 - Navigate to previous(👆) mark.
-- `<Leader>M` 🄽 - Clear all marks.
+All keys are mapped with prefix `<Leader>k` to avoid conflicts:
+
+- `<Leader>km` 🄽 🅅 - Mark/unmark word under cursor.
+- `<Leader>kM` 🄽 - Clear all words.
+- `<Leader>kn` 🄽 - Navigate to next(👇) marked word.
+- `<Leader>kN` 🄽 - Navigate to previous(👆) marked word.
 
 ### GUI Font
 
