@@ -101,9 +101,16 @@ For macOS, cmd+? follows the same behavior(ctrl+? works as well):
 
 ### Biscuits
 
+Quit:
+
+- `<Leader>qt` 🄽 - Execute `:quit`.
+- `<Leader>Qt` 🄽 - Execute `:quit!`.
+- `<Leader>qa` 🄽 - Execute `:qall`.
+- `<Leader>Qa` 🄽 - Execute `:qall!`.
+
 Folding:
 
-- `zz` 🄽 - Toggle folding.
+- `<Leader>zz` 🄽 - Toggle folding.
 
 Copy/paste across different vim instances through remote ssh could be difficult, introduce two shortcuts using local cache:
 

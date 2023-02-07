@@ -13,7 +13,7 @@ has_toc: false
 ---
 
 - [Introduction](#introduction)
-- [Quick Demo](#quick-demo)
+- [Feature Browsing](#feature-browsing)
   - [IDE Features](#ide-features)
   - [UI](#ui)
   - [Colors and Highlights](#colors-and-highlights)
@@ -36,7 +36,7 @@ There're [more thoughts about the Neovim editor](/lin.nvim.dev/docs/philosophy).
 
 ---
 
-## Quick Demo
+## Feature Browsing
 
 ### IDE Features
 
