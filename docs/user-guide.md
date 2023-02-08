@@ -314,14 +314,14 @@ Supported by [leap.nvim](https://github.com/ggandor/leap.nvim) and [hop.nvim](ht
 
 Leap keeps its default key mappings(s/S, x/X), and keys for hop are mapped following its predecessor [vim-easymotion](https://github.com/easymotion/vim-easymotion):
 
-- `<Leader>f{char}` 🄽 🅇 - Move forward by a single {char}.
-- `<Leader>F{char}` 🄽 🅇 - Move backward by a single {char}.
-- `<Leader>s{char}{char}` 🄽 🅇 - Move forward by two consequent {char}{char}.
-- `<Leader>S{char}{char}` 🄽 🅇 - Move backward by two consequent {char}{char}.
-- `<Leader>w` 🄽 🅇 - Move forward by word.
-- `<Leader>W` 🄽 🅇 - Move backward by word.
-- `<Leader>l` 🄽 🅇 - Move forward by line.
-- `<Leader>L` 🄽 🅇 - Move backward by line.
+- `<Leader><Leader>f{char}` 🄽 🅇 - Move forward by a single {char}.
+- `<Leader><Leader>F{char}` 🄽 🅇 - Move backward by a single {char}.
+- `<Leader><Leader>s{char}{char}` 🄽 🅇 - Move forward by two consequent {char}{char}.
+- `<Leader><Leader>S{char}{char}` 🄽 🅇 - Move backward by two consequent {char}{char}.
+- `<Leader><Leader>w` 🄽 🅇 - Move forward by word.
+- `<Leader><Leader>W` 🄽 🅇 - Move backward by word.
+- `<Leader><Leader>l` 🄽 🅇 - Move forward by line.
+- `<Leader><Leader>L` 🄽 🅇 - Move backward by line.
 
 ### Easy Comment
 
