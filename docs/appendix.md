@@ -113,7 +113,7 @@ nav_order: 5
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [linrongbin16/lsp-progress.nvim](https://github.com/linrongbin16/lsp-progress.nvim)
-- [itchyny/vim-gitbranch](https://github.com/itchyny/vim-gitbranch)
+<!-- - [itchyny/vim-gitbranch](https://github.com/itchyny/vim-gitbranch) -->
 - [utilyre/barbecue.nvim](https://github.com/utilyre/barbecue.nvim)
 - [SmiteshP/nvim-navic](https://github.com/SmiteshP/nvim-navic)
 - [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
