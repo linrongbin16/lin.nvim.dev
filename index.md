@@ -60,7 +60,7 @@ There're [more thoughts about the Neovim editor](/lin.nvim.dev/docs/philosophy).
 
 ### Colors and Highlights
 
-1. Cursor Word
+1. Highlight Word
    {% include nest-youtube.html id="C6RfmXEzB6o" %}
 2. CSS Color
    {% include nest-image.html src="/assets/demos/color-highlight/css-color.jpg" alt="css-color.jpg" width="100%" %}
