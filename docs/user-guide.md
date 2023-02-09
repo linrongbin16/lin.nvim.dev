@@ -31,7 +31,6 @@ has_toc: false
   - [Text Search](#text-search)
   - [File Search](#file-search)
   - [History Search](#history-search)
-  - [LSP Search](#lsp-search)
   - [Git Search](#git-search)
   - [Vim Search](#vim-search)
 - [Editing Enhancement](#editing-enhancement)
@@ -226,6 +225,8 @@ Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](htt
 - `[w` 🄽 - Go to previous(👆) warning location.
 - `]w` 🄽 - Go to next(👇) warning location.
 - `<Leader>df` 🄽 - Open diagnostic float window.
+- `<Leader>ds` 🄽 - Show diagnostics in current buffer.
+- `<Leader>da` 🄽 - Show all diagnostics.
 
 ### Code Format
 
@@ -281,11 +282,6 @@ Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](
 
 - `<Space>hs` 🄽 - Search searching history by `:FzfHistory/`.
 - `<Space>hc` 🄽 - Search vim command history by `:FzfHistory:`.
-
-### LSP Search
-
-- `<Space>db` 🄽 - Search diagnostics in current buffer by `:LspDiagnostics 0`.
-- `<Space>da` 🄽 - Search all diagnostics by `:LspDiagnosticsAll`.
 
 ### Git Search
 
