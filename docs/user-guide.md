@@ -171,9 +171,9 @@ Supported by [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) and [
 
 ### Highlight Words
 
-Highlight words with different colors, supported by [vim-interestingwords](https://github.com/lfv89/vim-interestingwords).
+Highlight words with different colors, supported by [vim-mark](https://github.com/inkarkat/vim-mark).
 
-All keys are mapped with prefix `<Leader>k` to avoid conflicts:
+All keys are mapped with prefix `<Leader>k` to avoid key conflicts with other plugins:
 
 - `<Leader>km` 🄽 🅅 - Mark/unmark word under cursor.
 - `<Leader>kM` 🄽 - Clear all words.

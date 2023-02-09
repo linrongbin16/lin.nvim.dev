@@ -99,7 +99,8 @@ nav_order: 5
 - [RRethy/vim-illuminate](https://github.com/RRethy/vim-illuminate)
 - [NvChad/nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua)
 - [andymass/vim-matchup](https://github.com/andymass/vim-matchup)
-- [lfv89/vim-interestingwords](https://github.com/lfv89/vim-interestingwords)
+- [inkarkat/vim-mark](https://github.com/inkarkat/vim-mark)
+- [inkarkat/vim-ingo-library](https://github.com/inkarkat/vim-ingo-library)
 - [haya14busa/is.vim](https://github.com/haya14busa/is.vim)
 - [markonm/traces.vim](https://github.com/markonm/traces.vim)
 
