@@ -20,7 +20,8 @@ has_toc: false
   - [Highlight Words](#highlight-words)
   - [GUI Font](#gui-font)
 - [IDE Features](#ide-features)
-  - [Code Complete](#code-complete)
+  - [Auto-Complete](#auto-complete)
+  - [Navigation](#navigation)
   - [Symbols](#symbols)
   - [Diagnostics](#diagnostics)
   - [Code Format](#code-format)
@@ -194,7 +195,7 @@ Patched-fonts [Hack Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/rele
 
 Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) and many other plugins, please see [Manage LSP Servers](/lin.nvim.dev/docs/manage-lsp-servers) for more details.
 
-### Code Complete
+### Auto-Complete
 
 - `<C-n>`/`<Down>` 🄸 - Navigate to next(👇) suggestion.
 - `<C-p>`/`<Up>` 🄸 - Navigate to previous(👆) suggestion.
@@ -205,15 +206,28 @@ Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](htt
 - `<C-f>` 🄸 - Navigate to next(👉) snippet placeholder.
 - `<C-b>` 🄸 - Navigate to previous(👈) snippet placeholder.
 
+### Navigation
+
+Navigate with a floating window to preview and edit, supported by [glance.nvim](https://github.com/DNLHC/glance.nvim).
+
+A few keys are modified for better user experience:
+
+List window keys:
+
+- `<C-s>` 🄽 - Open preview window in split. `s` is removed for open split.
+- `<C-v>` 🄽 - Open preview window in vsplit. `v` is removed for open vsplit.
+- `<C-t>` 🄽 - Open preview window in new tab. `t` is removed for open new tab.
+- `<Leader>p` 🄽 - Go to preview window. `<Leader>l` is removed for go to preview window.
+- `<C-c>`/`<C-[>` 🄽 - Close navigation window. `Q` is removed for close list window.
+
+Preview window keys:
+
+- `<Tab>`/`<S-Tab>` are removed for jump to next/previous navigation location.
+- `<Leader>l` 🄽 - Go to list window. `<Leader>p` is removed for go to list window.
+- `<C-c>`/`<C-[>` 🄽 - Close preview window. `Q` is removed for close preview window.
+
 ### Symbols
 
-- `gd` 🄽 - Go to definitions.
-- `gD` 🄽 - Go to declarations.
-- `gt` 🄽 - Go to type definitions.
-- `gi` 🄽 - Go to implementions.
-- `gr` 🄽 - Go to references.
-- `gI` 🄽 - Go to incoming calls.
-- `gO` 🄽 - Go to outgoing calls.
 - `K` 🄽 - Show hover information.
 - `<C-k>` 🄽 - Show signature help.
 - `<Leader>rn` 🄽 - Rename symbol.
