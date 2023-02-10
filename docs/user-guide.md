@@ -207,11 +207,13 @@ Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](htt
 
 ### Symbols
 
-- `gd` 🄽 - Go to definition.
-- `gD` 🄽 - Go to declaration.
-- `gt` 🄽 - Go to type definition.
-- `gi` 🄽 - Go to implemention.
+- `gd` 🄽 - Go to definitions.
+- `gD` 🄽 - Go to declarations.
+- `gt` 🄽 - Go to type definitions.
+- `gi` 🄽 - Go to implementions.
 - `gr` 🄽 - Go to references.
+- `gI` 🄽 - Go to incoming calls.
+- `gO` 🄽 - Go to outgoing calls.
 - `K` 🄽 - Show hover information.
 - `<C-k>` 🄽 - Show signature help.
 - `<Leader>rn` 🄽 - Rename symbol.
@@ -224,9 +226,9 @@ Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](htt
 - `]e` 🄽 - Go to next(👇) error location.
 - `[w` 🄽 - Go to previous(👆) warning location.
 - `]w` 🄽 - Go to next(👇) warning location.
-- `<Leader>df` 🄽 - Open diagnostic float window.
-- `<Leader>ds` 🄽 - Show diagnostics in current buffer.
-- `<Leader>da` 🄽 - Show all diagnostics.
+- `<Leader>dc` 🄽 - Show diagnostic under cursor.
+  <!-- - `<Leader>ds` 🄽 - Show diagnostics in current buffer. -->
+  <!-- - `<Leader>da` 🄽 - Show all diagnostics. -->
 
 ### Code Format
 
