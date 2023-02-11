@@ -10,7 +10,7 @@ has_toc: false
 
 ---
 
-- [Global Key Mappings](#global-key-mappings)
+- [Key Mappings](#key-mappings)
   - [Hot Keys](#hot-keys)
   - [Ctrl+? Cmd+? Keys](#ctrl-cmd-keys)
   - [Biscuits](#biscuits)
@@ -34,6 +34,7 @@ has_toc: false
   - [Git Search](#git-search)
   - [Vim Search](#vim-search)
 - [Editing Enhancement](#editing-enhancement)
+  - [Key Mappings](#key-mappings)
   - [Cursor Motion](#cursor-motion)
   - [Easy Comment](#easy-comment)
   - [Better Repeat](#better-repeat)
@@ -63,7 +64,7 @@ Meta-key (_M_), alt-key (_A_) on Windows/Linux, and command-key (_D_) on macOS a
 
 ---
 
-## Global Key Mappings
+## Key Mappings
 
 ### Hot Keys
 
@@ -71,7 +72,6 @@ Meta-key (_M_), alt-key (_A_) on Windows/Linux, and command-key (_D_) on macOS a
 - `F2` 🄽 - Toggle undo-tree.
 - `F3` 🄽 - Toggle structure outlines(tags).
 - `F4` 🄽 - Switch between C/C++ header and source.
-- `F8` 🄽 - Clear all highlighted words.
 - `F9` 🄽 - Open markdown preview.
 - `F10` 🄽 - Toggle terminal.
 
@@ -100,12 +100,22 @@ For macOS, cmd+? follows the same behavior(ctrl+? works as well):
 
 ### Biscuits
 
+Plugins:
+
+- `<Leader>ms` 🄽 - `:Mason<CR>`.
+- `<Leader>lz` 🄽 - `:Lazy<CR>`.
+- `<Leader>wk` 🄽 - `:WhichKey `.
+
+Save file without formatting:
+
+- `<Leader>ww` 🄽 - Save file without formatting, e.g.`:noa w<CR>`.
+
 Quit:
 
-- `<Leader>qt` 🄽 - Execute `:quit`.
-- `<Leader>qT` 🄽 - Execute `:quit!`.
-- `<Leader>qa` 🄽 - Execute `:qall`.
-- `<Leader>qA` 🄽 - Execute `:qall!`.
+- `<Leader>qt` 🄽 - `:quit<CR>`.
+- `<Leader>qT` 🄽 - `:quit!<CR>`.
+- `<Leader>qa` 🄽 - `:qall<CR>`.
+- `<Leader>qA` 🄽 - `:qall!<CR>`.
 
 Folding:
 
@@ -224,19 +234,14 @@ Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](htt
 - `]e` 🄽 - Go to next(👇) error location.
 - `[w` 🄽 - Go to previous(👆) warning location.
 - `]w` 🄽 - Go to next(👇) warning location.
-- `<Leader>df` 🄽 - Open diagnostic float window.
-- `<Leader>ds` 🄽 - Show diagnostics in current buffer.
-- `<Leader>da` 🄽 - Show all diagnostics.
+- `<Leader>dc` 🄽 - Show diagnostic under cursor.
 
 ### Code Format
 
 Code format runs on file save asynchronous by default. To forcibly trigger code format:
 
 - `<Leader>cf` 🄽 🅇 - Synchronously format code in current buffer(normal mode) or selected code(visual mode).
-
-To save file without code format:
-
-- `:noa w` 🄻 - Save file without _vim's autocmd_.
+- `<Leader>ww` 🄽 - Save file without formatting, e.g.`:noa w<CR>`.
 
 ### Code Actions
 
@@ -260,49 +265,53 @@ Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](
 
 ### Text Search
 
-- `<Space>r` 🄽 - Live grep by `:FzfRg`(filter ignored and hidden files).
-  - `<Space>ur` 🄽 - Unrestricted(--no-ignore --hidden) live grep by self-defined `:LinFzfUnrestrictedRg`.
-  - `<Space>pr` 🄽 - Precise(no fuzzy) live grep by self-defined `:LinFzfPreciseRg`.
-  - `<Space>upr` 🄽 - Unrestricted(--no-ignore --hidden) precise(no fuzzy) live grep by self-defined `:LinFzfUnrestrictedPreciseRg`.
-  - `<Space>wr` 🄽 - Search word under cursor by `:LinFzfRgCWord`(filter ignored and hidden files).
-  - `<Space>uwr` 🄽 - Unrestricted(--no-ignore --hidden) search word under cursor by self-defined `:LinFzfUnrestrictedRgCWord`.
-- `<Space>ln` 🄽 - Search lines in opened buffers by `:FzfLines`.
-- `<Space>tg` 🄽 - Search tags by `:FzfTags`.
+- `<Space>r` 🄽 - Live grep by `FzfRg`, by default this command will filter ignored and hidden files.
+  - `<Space>ur` 🄽 - Unrestricted(--no-ignore --hidden) live grep by extend command `FzfUnrestrictedRg`.
+  - `<Space>pr` 🄽 - Precise(no fuzzy) live grep by extend command `FzfPrecisedRg`.
+  - `<Space>upr` 🄽 - Unrestricted(--no-ignore --hidden) precise(no fuzzy) live grep by self-defined `FzfUnrestrictedPrecisedRg`.
+  - `<Space>wr` 🄽 - Search word under cursor by `FzfCWordRg`, by default this command will filter ignored and hidden files.
+  - `<Space>uwr` 🄽 - Unrestricted(--no-ignore --hidden) search word under cursor by extend command `FzfUnrestrictedCWordRg`.
+- `<Space>ln` 🄽 - Search lines in current buffer by `FzfLines`.
+- `<Space>tg` 🄽 - Search tags by `FzfTags`.
 
 ### File Search
 
-- `<Space>f` 🄽 - Search files by `:FzfFiles`(filter ignored and hidden files).
-  - `<Space>uf` 🄽 - Unrestricted(--no-ignore --hidden) search files by self-defined `:LinFzfUnrestrictedFiles`.
-  - `<Space>wf` 🄽 - Search files by word under cursor by self-defined `:LinFzfFilesCWord`.
-  - `<Space>uwf` 🄽 - Unrestricted(--no-ignore --hidden) search files by word under cursor by self-defined `:LinFzfUnrestrictedFilesCWord`.
-- `<Space>b` 🄽 - Search opened buffers by `:FzfBuffers`.
-- `<Space>hf` 🄽 - Search history files (v:oldfiles) and opened buffers by `:FzfHistory`.
+- `<Space>f` 🄽 - Search files by `FzfFiles`, by default this command will filter ignored and hidden files.
+  - `<Space>uf` 🄽 - Unrestricted(--no-ignore --hidden) search files by extend command `FzfUnrestrictedFiles`.
+  - `<Space>wf` 🄽 - Search files by word under cursor by extend command `FzfCWordFiles`.
+  - `<Space>uwf` 🄽 - Unrestricted(--no-ignore --hidden) search files by word under cursor by extend command `FzfUnrestrictedCWordFiles`.
+- `<Space>b` 🄽 - Search opened buffers by `FzfBuffers`.
+- `<Space>hf` 🄽 - Search history files (v:oldfiles) and opened buffers by `FzfHistory`.
 
 ### History Search
 
-- `<Space>hs` 🄽 - Search searching history by `:FzfHistory/`.
-- `<Space>hc` 🄽 - Search vim command history by `:FzfHistory:`.
+- `<Space>hs` 🄽 - Search searching history by `FzfHistory/`.
+- `<Space>hc` 🄽 - Search vim command history by `FzfHistory:`.
 
 ### Git Search
 
-- `<Space>gc` 🄽 - Search git commits by `:FzfCommits`.
-- `<Space>gf` 🄽 - Search `git ls-files` files by `:FzfGFile`.
-- `<Space>gs` 🄽 - Search `git status` files by `:FzfGFiles?`.
+- `<Space>gc` 🄽 - Search git commits by `FzfCommits`.
+- `<Space>gf` 🄽 - Search `git ls-files` files by `FzfGFile`.
+- `<Space>gs` 🄽 - Search `git status` files by `FzfGFiles?`.
 
 ### Vim Search
 
-- `<Space>mk` 🄽 - Search vim marks by `:FzfMarks`.
-- `<Space>mp` 🄽 - Search vim key mappings by `:FzfMaps`.
-- `<Space>cm` 🄽 - Search vim commands by `:FzfCommands`.
-- `<Space>ht` 🄽 - Search vim helptags by `:FzfHelptags`.
-- `<Space>cs` 🄽 - Search vim colorschemes by `:FzfColors`.
-- `<Space>tp` 🄽 - Search vim filetypes by `:FzfFiletypes`.
+- `<Space>mk` 🄽 - Search vim marks by `FzfMarks`.
+- `<Space>mp` 🄽 - Search vim key mappings by `FzfMaps`.
+- `<Space>cm` 🄽 - Search vim commands by `FzfCommands`.
+- `<Space>ht` 🄽 - Search vim helptags by `FzfHelptags`.
+- `<Space>cs` 🄽 - Search vim colorschemes by `FzfColors`.
+- `<Space>tp` 🄽 - Search vim filetypes by `FzfFiletypes`.
 
 ---
 
 ---
 
 ## Editing Enhancement
+
+### Key Mappings
+
+Supported by [which-key.nvim](https://github.com/folke/which-key.nvim).
 
 ### Cursor Motion
 

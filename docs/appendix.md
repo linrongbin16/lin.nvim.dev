@@ -174,6 +174,16 @@ nav_order: 5
 - [zebradil/hive.vim](https://github.com/zebradil/hive.vim)
 - [slim-template/vim-slim](https://github.com/slim-template/vim-slim)
 
+### Key Mappings
+
+{: .important-title}
+
+> Notice
+>
+> Option `--no-edit` could disable all these plugins.
+
+- [folke/which-key.nvim](https://github.com/folke/which-key.nvim).
+
 ### Cursor Motion
 
 {: .important-title}
