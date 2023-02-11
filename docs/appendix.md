@@ -125,7 +125,6 @@ nav_order: 5
 
 - [junegunn/fzf](https://github.com/junegunn/fzf)
 - [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
-- [ojroques/nvim-lspfuzzy](https://github.com/ojroques/nvim-lspfuzzy)
 
 ### Tags
 
@@ -159,6 +158,7 @@ nav_order: 5
 - [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+- [DNLHC/glance.nvim](https://github.com/DNLHC/glance.nvim)
 
 ### Specific Language Support
 
