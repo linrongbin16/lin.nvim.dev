@@ -37,8 +37,8 @@ More UI improve plugins leave to you to find out.
 You could install new LSP servers by manual commands `:Mason`/`:LspInstall`/`:NullLsInstall`, but that's only recommanded when the server cannot be ensure-installed by mason-lspconfig or mason-null-ls.
 _~/.nvim/lua/lspservers.lua_ provides two groups of lua tables:
 
-    - `embeded_servers`/`embeded_server_setups` - Former setup mason's lsp servers, latter setup lsp configs.
-    - `embeded_nulllses`/`embeded_nullls_setups` - Former setup null-ls sources, latter setup null-ls configs.
+- `embeded_servers`/`embeded_server_setups`: Former setup mason's lsp servers, latter setup lsp configs.
+- `embeded_nulllses`/`embeded_nullls_setups`: Former setup null-ls sources, latter setup null-ls configs.
 
 Since we're using mason-lspconfig and mason-null-ls, both setup could be done automatically by the **default setup** handler.
 So simply add/remove the items in `embeded_servers` and `embeded_nulllses` can meet most needs, or specific setup handlers for customization.
