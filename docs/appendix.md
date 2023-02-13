@@ -206,6 +206,7 @@ nav_order: 5
 - [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
+- [ruifm/gitlinker.nvim](https://github.com/ruifm/gitlinker.nvim)
 - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 - [mbbill/undotree](https://github.com/mbbill/undotree)
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)

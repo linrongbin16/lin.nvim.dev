@@ -129,6 +129,12 @@ Copy/paste across different vim instances through remote ssh could be difficult,
 
 {: .note}
 
+> View all key mappings with:
+>
+> - 🄽 - `:WhichKey`.
+> - 🅅 - `:WhichKey '' v`.
+> - 🄸 - `:WhichKey '' i`.
+>
 > Configure these key mappings in _~/.nvim/settings.vim_.
 
 ---
@@ -267,9 +273,11 @@ Code format runs on file save asynchronous by default. To forcibly trigger code 
 
 ### Git
 
-- `]c` 🄽 - Go to next(👇) git chunk in current buffer.
-- `[c` 🄽 - Go to previous(👆) git chunk in current buffer.
+- `]h` 🄽 - Go to next(👇) git hunk in current buffer.
+- `[h` 🄽 - Go to previous(👆) git hunk in current buffer.
 - `<Leader>gb` 🄽 - Toggle git blame info on current line.
+- `<Leader>gl` 🄽 🅇 - Show sharable git link in current line.
+- `<Leader>gL` 🄽 🅇 - Open git link in current line.
 
 {: .note}
 
