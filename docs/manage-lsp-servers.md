@@ -35,43 +35,88 @@ More UI improve plugins leave to you to find out.
 ## Use Cases
 
 You could install new LSP servers by manual commands `:Mason`/`:LspInstall`/`:NullLsInstall`, but that's only recommanded when the server cannot be ensure-installed by mason-lspconfig or mason-null-ls.
+_~/.nvim/lua/lspservers.lua_ provides two groups of lua tables:
 
-<!-- found in [mason-lspconfig's Available LSP servers](https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers) or [mason-null-ls's Available Null-ls sources](https://github.com/jay-babu/mason-null-ls.nvim#available-null-ls-sources). -->
+    - `embeded_servers`/`embeded_server_setups` - Former setup mason's lsp servers, latter setup lsp configs.
+    - `embeded_nulllses`/`embeded_nullls_setups` - Former setup null-ls sources, latter setup null-ls configs.
 
-_~/.nvim/lua/lspservers.lua_ provides two config list `embeded_servers`/`embeded_extras` to automatically setup all the packages.
-
-- Case-1: add LSP server name in `embeded_servers`, it will work as a nvim-cmp source, ensure-installed by mason-lspconfig.
-- Case-2: add extra null-ls source in `embeded_extras`, it will work as a null-ls source, ensure-installed by mason-null-ls.
+Since we're using mason-lspconfig and mason-null-ls, both setup could be done automatically by the **default setup** handler.
+So simply add/remove the items in `embeded_servers` and `embeded_nulllses` can meet most needs, or specific setup handlers for customization.
 
 Here's an example:
 
 ```lua
-local embeded_servers = {
-    "clangd",   -- c/c++
-    "cmake",    -- cmake
-    "pyright",  -- python
-}
-local embeded_extras = {
-    -- js/ts
-    -- eslint_d and prettierd are not valid LSP servers,
-    -- They're not working through nvim-cmp when editing js/ts files.
-    -- So registered them as null-ls sources to let them work.
-    {
-        "eslint_d",
-        {
-            null_ls.builtins.diagnostics.eslint_d,
-            null_ls.builtins.formatting.eslint_d,
-            null_ls.builtins.code_actions.eslint_d,
-        }
-    },
-    { "prettierd", { null_ls.builtins.formatting.prettierd } },
+local null_ls = require("null-ls")
 
-    -- python
-    -- pyright doesn't have a formatter.
-    -- So registered black/isort as null-ls sources to let them work.
-    { "black", { null_ls.builtins.formatting.black } },
-    { "isort", { null_ls.builtins.formatting.isort } },
+-- { mason's config
+local embeded_servers = {
+  -- clang
+  "clangd",
+  -- lua
+  "lua_ls",
+  -- python
+  "pyright",
 }
+local embeded_server_setups = {
+  -- default setup
+  function(server)
+    require("lspconfig")[server].setup({})
+  end,
+  -- specific setup
+  clangd = function()
+    require("clangd_extensions").setup({
+      extensions = {
+        ast = {
+          role_icons = {
+            type = "",
+            declaration = "",
+            expression = "",
+            specifier = "",
+            statement = "",
+            ["template argument"] = "",
+          },
+          kind_icons = {
+            Compound = "",
+            Recovery = "",
+            TranslationUnit = "",
+            PackExpansion = "",
+            TemplateTypeParm = "",
+            TemplateTemplateParm = "",
+            TemplateParamObject = "",
+          },
+        },
+      },
+    })
+  end,
+  -- ["rust_analyzer"] = function()
+  --   require("rust-tools").setup({})
+  -- end,
+}
+-- }
+
+-- {
+local embeded_nulllses = {
+  -- js/ts
+  "eslint_d",
+  "prettierd",
+  -- lua
+  "stylua", -- Better lua formatter
+  -- python
+  "black", -- Since pyright doesn't include code format.
+  "isort", -- Use black/isort as code formatter.
+}
+local embeded_nullls_setups = {
+  -- default setup
+  function(source, methods)
+    require("mason-null-ls.automatic_setup")(source, methods)
+  end,
+  -- specific setup
+  stylua = function(source, methods)
+    null_ls.register(null_ls.builtins.formatting.stylua)
+  end,
+}
+-- }
+
 ```
 
 {: .important-title}
@@ -80,7 +125,7 @@ local embeded_extras = {
 >
 > - For `embeded_servers`, please refer to:
 >   - [mason-lspconfig's Available LSP servers](https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers) for all LSP server names.
-> - For `embeded_extras`, please refer to:
+> - For `embeded_nulllses`/`embeded_nullls_setups`, please refer to:
 >   - [mason-null-ls's Available Null-ls sources](https://github.com/jay-babu/mason-null-ls.nvim#available-null-ls-sources) for all source names.
 >   - [null-ls's BUILTINS](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) for all null-ls builtin configs.
 
