@@ -152,8 +152,8 @@ A few keys are modified for convenience:
 - `<C-s>` 🄽 - Open in a split window. `S` is removed for open in split.
 - `<C-v>` 🄽 - Open in a vsplit window. `s` is removed for open in vsplit.
 - `<C-t>` 🄽 - Open in a new tab window. `t` is removed for open in tabnew.
-- `]c` 🄽 - Navigate to next(👇) git item. `]g` is removed for navigate to next.
-- `[c` 🄽 - Navigate to previous(👆) git item. `[g` is removed for navigate to previous.
+- `]h` 🄽 - Navigate to next(👇) git item, `]g` is still enabled.
+- `[h` 🄽 - Navigate to previous(👆) git item. `[g` is still enabled.
 
 Resize explorer width:
 
