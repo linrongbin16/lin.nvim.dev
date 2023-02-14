@@ -12,17 +12,19 @@ has_toc: false
 
 - [Plugins](#plugins)
 - [Use Cases](#use-cases)
+- [Embeded LSP Servers](#embeded-lsp-servers)
 - [Reference](#reference)
 
 ---
 
-By default, [a bunch of language servers](/lin.nvim.dev/appendix/#lsp-servers) are already embedded. But sooner or later you will manage LSP servers yourself.
+Unlike [coc.nvim](https://github.com/neoclide/coc.nvim), there's no such all-in-one framework in neovim's LSP world.
+But with the help of [mason.nvim](https://github.com/williamboman/mason.nvim) and [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim), install and configure new lsp servers is just a piece of cake now.
 
 ---
 
 ## Plugins
 
-Unlike [coc.nvim](https://github.com/neoclide/coc.nvim), there's no such all-in-one framework in neovim's LSP world. Quite a few [plugins](/lin.nvim.dev/user-guide/#ide-like-editing-features) are assembled to work it out:
+To bring this easy-to-use LSP based auto-complete feature to users, quite a few [plugins](/lin.nvim.dev/docs/appendix/#lsp) are assembled together:
 
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) for LSP servers configuration, as a pre-requirement of other plugins.
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) for complete engine, and its sources([cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp), [cmp-buffer](https://github.com/hrsh7th/cmp-buffer), [cmp-path](https://github.com/hrsh7th/cmp-path), [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline), [LuaSnip](https://github.com/L3MON4D3/LuaSnip), [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)).
@@ -37,10 +39,10 @@ More UI improve plugins leave to you to find out.
 
 You could install new LSP servers by manual commands `:Mason`/`:LspInstall`/`:NullLsInstall`, but that's only recommended when the server cannot be ensure-installed by mason-lspconfig or mason-null-ls. _~/.nvim/lua/lspservers.lua_ provides two groups of lua tables:
 
-- `embeded_servers`/`embeded_servers_setups`: Former setup mason's lsp servers, latter setup lsp configs.
+- `embeded_servers`/`embeded_servers_setups`: Former setup mason's LSP servers, latter setup LSP configs.
 - `embeded_nullls`/`embeded_nullls_setups`: Former setup null-ls sources, latter setup null-ls configs.
 
-Since we're using mason-lspconfig and mason-null-ls, both setup could be done automatically by the **default setup** handler.
+Since we're using mason-lspconfig and mason-null-ls, both setup could be done automatically by the **default setup handler**.
 So simply add/remove the items in `embeded_servers` and `embeded_nullls` can meet most needs, or specific setup handlers for customization.
 
 Here's an example:
@@ -48,8 +50,10 @@ Here's an example:
 ```lua
 local null_ls = require("null-ls")
 
--- { mason's config
+-- { mason's servers
 local embeded_servers = {
+  -- bash
+  "bashls",
   -- clang
   "clangd",
   -- lua
@@ -88,22 +92,24 @@ local embeded_servers_setups = {
       },
     })
   end,
-  -- ["rust_analyzer"] = function()
-  --   require("rust-tools").setup({})
-  -- end,
+  ["rust_analyzer"] = function()
+    require("rust-tools").setup({})
+  end,
 }
 -- }
 
--- {
+-- { null-ls's sources
 local embeded_nullls = {
   -- js/ts
   "eslint_d",
   "prettierd",
   -- lua
-  "stylua", -- Better lua formatter
+  "stylua", -- Better lua formatter.
   -- python
   "black", -- Since pyright doesn't include code format.
   "isort", -- Use black/isort as code formatter.
+  -- bash
+  "shfmt", -- Bash formatter.
 }
 local embeded_nullls_setups = {
   -- default setup
@@ -118,6 +124,21 @@ local embeded_nullls_setups = {
 -- }
 
 ```
+
+Each item of `embeded_servers` or `embeded_nullls` is a name of _mason_ package or _null-ls_ source.
+
+For most cases, just add your LSP server name to `embeded_servers` should do the job. But some formatter/linter/etc is not even a LSP server, so use _null-ls_ to register it(here we call it a source) through `embeded_nullls`.
+
+And for some specific language customization/enhancement, please add configs to `embeded_servers_setups`(for `embeded_servers`) and `embeded_nullls_setups`(for `embeded_nullls`).
+
+## Embeded LSP Servers
+
+- Mason servers:
+  - Lua: lua_ls
+  - VimScript: vimls
+- Null-ls sources:
+  - Lua: stylua
+  - VimScript: vint
 
 ## Reference
 

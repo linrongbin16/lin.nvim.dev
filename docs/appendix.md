@@ -20,7 +20,6 @@ nav_order: 5
   - [Specific Language Support](#specific-language-support)
   - [Cursor Motion](#cursor-motion)
   - [Editing Enhancement](#editing-enhancement)
-- [LSP Servers](#lsp-servers)
 - [Reference](#reference)
 
 ---
@@ -212,29 +211,6 @@ nav_order: 5
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
 - [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
 - [editorconfig/editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
-
-## LSP Servers
-
-- Bash: bashls(macOS/Linux only)
-- C/C++: clangd
-- CMake: cmake
-- CSS: cssls, cssmodules_ls
-- HTML: html
-- JSON: jsonls
-- Javascript/typescript: tsserver
-- Lua: sumneko_lua
-- PowerShell: powershell_es(Windows only)
-- Python: pyright
-- Yaml: yamlls
-- Vim: vimls
-- XML: lemminx
-
-Null-ls sources:
-
-- Bash: shfmt(macOS/Linux only)
-- Javascript/typescript: prettierd, eslint_d
-- Lua: stylua
-- Python: black, isort
 
 ## Reference
 
