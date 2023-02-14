@@ -105,7 +105,7 @@ Plugins:
 
 - `<Leader>ms` 🄽 - `:Mason<CR>`.
 - `<Leader>lz` 🄽 - `:Lazy<CR>`.
-- `<Leader>wk` 🄽 - `:WhichKey `.
+- `<Leader>wk` 🄽 - `:WhichKey`.
 
 Save file without formatting:
 
@@ -233,13 +233,11 @@ List window keys:
 - `<C-s>` 🄽 - Open preview window in split. `s` is removed for open split.
 - `<C-v>` 🄽 - Open preview window in vsplit. `v` is removed for open vsplit.
 - `<C-t>` 🄽 - Open preview window in new tab. `t` is removed for open new tab.
-- `<Leader>p` 🄽 - Go to preview window. `<Leader>l` is removed for go to preview window.
 - `<C-c>`/`<C-[>` 🄽 - Close navigation window. `Q` is removed for close list window.
 
 Preview window keys:
 
 - `<Tab>`/`<S-Tab>` are removed for jump to next/previous navigation location.
-- `<Leader>l` 🄽 - Go to list window. `<Leader>p` is removed for go to list window.
 - `<C-c>`/`<C-[>` 🄽 - Close preview window. `Q` is removed for close preview window.
 
 ### Symbols
