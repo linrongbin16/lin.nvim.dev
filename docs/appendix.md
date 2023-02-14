@@ -18,6 +18,7 @@ nav_order: 5
   - [Tags](#tags)
   - [LSP](#lsp)
   - [Specific Language Support](#specific-language-support)
+  - [Key Bindings](#key-bindings)
   - [Cursor Motion](#cursor-motion)
   - [Editing Enhancement](#editing-enhancement)
 - [Reference](#reference)
@@ -47,6 +48,7 @@ nav_order: 5
 - [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 - [nathom/filetype.nvim](https://github.com/nathom/filetype.nvim)
 - [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
 ### Color Scheme
 
@@ -146,8 +148,6 @@ nav_order: 5
 
 - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
 - [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
-- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-- [p00f/clangd_extensions.nvim](https://github.com/p00f/clangd_extensions.nvim)
 - [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
 - [jay-babu/mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim)
 - [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
@@ -173,7 +173,7 @@ nav_order: 5
 - [zebradil/hive.vim](https://github.com/zebradil/hive.vim)
 - [slim-template/vim-slim](https://github.com/slim-template/vim-slim)
 
-### Key Mappings
+### Key Bindings
 
 {: .important-title}
 

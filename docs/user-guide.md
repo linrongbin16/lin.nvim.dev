@@ -35,7 +35,7 @@ has_toc: false
   - [Git Search](#git-search)
   - [Vim Search](#vim-search)
 - [Editing Enhancement](#editing-enhancement)
-  - [Key Mappings](#key-mappings)
+  - [Key Bindings](#key-bindings)
   - [Cursor Motion](#cursor-motion)
   - [Easy Comment](#easy-comment)
   - [Better Repeat](#better-repeat)
@@ -333,7 +333,7 @@ Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](
 
 ## Editing Enhancement
 
-### Key Mappings
+### Key Bindings
 
 Supported by [which-key.nvim](https://github.com/folke/which-key.nvim).
 
