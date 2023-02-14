@@ -12,6 +12,7 @@ has_toc: false
 
 - [Plugins](#plugins)
 - [Use Cases](#use-cases)
+- [Reference](#reference)
 
 ---
 
@@ -34,14 +35,13 @@ More UI improve plugins leave to you to find out.
 
 ## Use Cases
 
-You could install new LSP servers by manual commands `:Mason`/`:LspInstall`/`:NullLsInstall`, but that's only recommanded when the server cannot be ensure-installed by mason-lspconfig or mason-null-ls.
-_~/.nvim/lua/lspservers.lua_ provides two groups of lua tables:
+You could install new LSP servers by manual commands `:Mason`/`:LspInstall`/`:NullLsInstall`, but that's only recommended when the server cannot be ensure-installed by mason-lspconfig or mason-null-ls. _~/.nvim/lua/lspservers.lua_ provides two groups of lua tables:
 
-- `embeded_servers`/`embeded_server_setups`: Former setup mason's lsp servers, latter setup lsp configs.
-- `embeded_nulllses`/`embeded_nullls_setups`: Former setup null-ls sources, latter setup null-ls configs.
+- `embeded_servers`/`embeded_servers_setups`: Former setup mason's lsp servers, latter setup lsp configs.
+- `embeded_nullls`/`embeded_nullls_setups`: Former setup null-ls sources, latter setup null-ls configs.
 
 Since we're using mason-lspconfig and mason-null-ls, both setup could be done automatically by the **default setup** handler.
-So simply add/remove the items in `embeded_servers` and `embeded_nulllses` can meet most needs, or specific setup handlers for customization.
+So simply add/remove the items in `embeded_servers` and `embeded_nullls` can meet most needs, or specific setup handlers for customization.
 
 Here's an example:
 
@@ -57,7 +57,7 @@ local embeded_servers = {
   -- python
   "pyright",
 }
-local embeded_server_setups = {
+local embeded_servers_setups = {
   -- default setup
   function(server)
     require("lspconfig")[server].setup({})
@@ -95,7 +95,7 @@ local embeded_server_setups = {
 -- }
 
 -- {
-local embeded_nulllses = {
+local embeded_nullls = {
   -- js/ts
   "eslint_d",
   "prettierd",
@@ -119,15 +119,15 @@ local embeded_nullls_setups = {
 
 ```
 
-{: .important-title}
+## Reference
 
-> Notice
->
-> - For `embeded_servers`, please refer to:
->   - [mason-lspconfig's Available LSP servers](https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers) for all LSP server names.
-> - For `embeded_nulllses`/`embeded_nullls_setups`, please refer to:
->   - [mason-null-ls's Available Null-ls sources](https://github.com/jay-babu/mason-null-ls.nvim#available-null-ls-sources) for all source names.
->   - [null-ls's BUILTINS](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) for all null-ls builtin configs.
+- For `embeded_servers`/`embeded_servers_setups`, please refer to:
+  - [mason-lspconfig's Available LSP servers](https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers) for all LSP server names.
+  - [nvim-lspconfig's LSP configurations](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) for all LSP configurations.
+  - [nvim-lspconfig's recommended specific language plugins](https://github.com/neovim/nvim-lspconfig/wiki/Language-specific-plugins) for enhancements for specific languages.
+- For `embeded_nullls`/`embeded_nullls_setups`, please refer to:
+  - [mason-null-ls's Available Null-ls sources](https://github.com/jay-babu/mason-null-ls.nvim#available-null-ls-sources) for all source names.
+  - [null-ls's BUILTINS](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) for all null-ls builtin configs.
 
 {: .note}
 
