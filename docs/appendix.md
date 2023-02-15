@@ -218,7 +218,132 @@ nav_order: 5
 
 ## LSP Server Candidates
 
-TODO
+- assembly:
+  - lsp servers: `asm_lsp`
+  - null-ls sources: empty
+- bash:
+  - lsp servers: `bashls`
+  - null-ls sources: empty
+- c/c++:
+  - lsp servers: `clangd`
+  - null-ls sources: `cpplint`, `clang_format`
+- clojure:
+  - lsp servers: `clojure_lsp`
+  - null-ls sources: `joker`
+- cmake:
+  - lsp servers: `cmake`, `neocmake`
+  - null-ls sources: empty
+- crystal:
+  - lsp servers: `crystalline`
+  - null-ls sources: empty
+- csharp:
+  - lsp servers: `csharp_ls`, `omnisharp_mono`, `omnisharp`
+  - null-ls sources: `csharpier`, `clang_format`
+- css:
+  - lsp servers: `cssls`, `cssmodules_ls`, `unocss`
+  - null-ls sources: empty
+- docker:
+  - lsp servers: `dockerls`
+  - null-ls sources: `hadolint`
+- dot(graphviz):
+  - lsp servers: `dotls`
+  - null-ls sources: empty
+- elixir:
+  - lsp servers: `elixirls`
+  - null-ls sources: empty
+- erlang:
+  - lsp servers: `erlangls`
+  - null-ls sources: empty
+- fortran:
+  - lsp servers: `fortls`
+  - null-ls sources: empty
+- fsharp:
+  - lsp servers: `fsautocomplete`
+  - null-ls sources: empty
+- go:
+  - lsp servers: `golangci_lint_ls`, `gopls`
+  - null-ls sources: `gofumpt`, `goimports`, `goimports_reviser`, `golangci_lint`, `golines`, `revive`, `staticcheck`
+- groovy:
+  - lsp servers: `groovyls`
+  - null-ls sources: empty
+- haskell:
+  - lsp servers: `hls`
+  - null-ls sources: empty
+- html:
+  - lsp servers: `html`
+  - null-ls sources: `curlylint`
+- java:
+  - lsp servers: `jdtls`
+  - null-ls sources: `clang_format`
+- javascript/typescript:
+  - lsp servers: `quick_lint_js`, `tsserver`, `vtsls`, `eslint`
+  - null-ls sources: `rome`, `xo`, `eslint_d`, `prettier`, `prettierd`
+- json:
+  - lsp servers: `jsonls`
+  - null-ls sources: `fixjson`, `jq`, `cfn_lint`
+- julia:
+  - lsp servers: `julials`
+  - null-ls sources: `fixjson`, `jq`
+- kotlin:
+  - lsp servers: `kotlin_language_server`
+  - null-ls sources: `ktlint`
+- latex:
+  - lsp servers: `ltex`, `texlab`
+  - null-ls sources: `proselint`, `vale`
+- lua:
+  - lsp servers: `lua_ls`
+  - null-ls sources: `luacheck`, `selene`, `stylua`
+- markdown:
+  - lsp servers: `marksman`, `prosemd_lsp`, `remark_ls`, `zk`
+  - null-ls sources: `alex`, `markdownlint`, `write_good`, `cbfmt`, `proselint`, `vale`
+- ocaml:
+  - lsp servers: `ocamllsp`
+  - null-ls sources: empty
+- perl:
+  - lsp servers: `perlnavigator`
+  - null-ls sources: empty
+- php:
+  - lsp servers: `intelephense`, `phpactor`, `psalm`
+  - null-ls sources: `phpcbf`, `psalm`
+- powershell:
+  - lsp servers: `powershell_es`
+  - null-ls sources: empty
+- protobuf:
+  - lsp servers: `bufls`
+  - null-ls sources: `buf`, `protolint`
+- python:
+  - lsp servers: `jedi_language_server`, `pyre`, `pyright`, `sourcery`, `pylsp`, `ruff_lsp`
+  - null-ls sources: `autopep8`, `black`, `blue`, `flake8`, `isort`, `mypy`, `pylint`, `vulture`, `yapf`
+- R:
+  - lsp servers: `r_language_server`
+  - null-ls sources: empty
+- ruby:
+  - lsp servers: `ruby_ls`, `solargraph`
+  - null-ls sources: `rubocop`, `standardrb`, `erb_lint`
+- rust:
+  - lsp servers: `rust_analyzer`
+  - null-ls sources: empty
+- sql:
+  - lsp servers: `sqlls`, `sqls`
+  - null-ls sources: `sqlfluff`, `sql_formatter`
+- sh:
+  - lsp servers: empty
+  - null-ls sources: `shellcheck`, `shellharden`, `shfmt`
+- solidity:
+  - lsp servers: `solang`, `solc`, `solidity`
+  - null-ls sources: `solhint`
+- toml:
+  - lsp servers: `taplo`
+  - null-ls sources: `taplo`
+- vim:
+  - lsp servers: `vimls`
+  - null-ls sources: `vint`
+- xml:
+  - lsp servers: `lemminx`
+  - null-ls sources: empty
+- yaml:
+  - lsp servers: `yamlls`
+  - null-ls sources: `actionlint`, `yamlfmt`, `yamllint`, `cfn_lint`
 
 ---
 
