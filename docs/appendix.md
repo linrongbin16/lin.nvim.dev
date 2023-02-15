@@ -120,7 +120,6 @@ nav_order: 5
 - [utilyre/barbecue.nvim](https://github.com/utilyre/barbecue.nvim)
 - [SmiteshP/nvim-navic](https://github.com/SmiteshP/nvim-navic)
 - [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-- [f-person/git-blame.nvim](https://github.com/f-person/git-blame.nvim)
 - [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim)
 
 ### Search Engine
@@ -195,6 +194,17 @@ nav_order: 5
 - [phaazon/hop.nvim](https://github.com/phaazon/hop.nvim)
 - [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim)
 
+### Git
+
+{: .important-title}
+
+> Notice
+>
+> Option `--no-edit` could disable all these plugins.
+
+- [f-person/git-blame.nvim](https://github.com/f-person/git-blame.nvim)
+- [ruifm/gitlinker.nvim](https://github.com/ruifm/gitlinker.nvim)
+
 ### Editing Enhancement
 
 {: .important-title}
@@ -206,7 +216,6 @@ nav_order: 5
 - [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
-- [ruifm/gitlinker.nvim](https://github.com/ruifm/gitlinker.nvim)
 - [kkoomen/vim-doge](https://github.com/kkoomen/vim-doge)
 - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 - [mbbill/undotree](https://github.com/mbbill/undotree)

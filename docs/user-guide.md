@@ -28,8 +28,6 @@ has_toc: false
   - [Diagnostics](#diagnostics)
   - [Code Format](#code-format)
   - [Code Actions](#code-actions)
-  - [Workspace](#workspace)
-  - [Git](#git)
 - [Search](#search)
   - [Text Search](#text-search)
   - [File Search](#file-search)
@@ -39,6 +37,7 @@ has_toc: false
 - [Editing Enhancement](#editing-enhancement)
   - [Key Bindings](#key-bindings)
   - [Cursor Motion](#cursor-motion)
+  - [Git](#git)
   - [Easy Comment](#easy-comment)
   - [Better Repeat](#better-repeat)
   - [Better Matching](#better-matching)
@@ -64,6 +63,7 @@ Specifically, we use below prefix keys in common:
 - `g` as a prefix of LSP navigation mappings.
 - `<Space>` as a prefix of fzf commands mappings.
 - `]`/`[` as prefixes of next/previous navigation mappings.
+- `<Down>`/`<Up>`(`>`/`<`, `.`/`,`) as direction of next/previous(down/up or right/left) position mappings.
 - Capitalized last letter as a bang for command, or a lower frequency variant.
 
 ---
@@ -180,8 +180,7 @@ A few keys are added for convenience:
 - `v` 🄽 - Open in vsplit, instead of `s`.
 - `W` 🄽 - Collapse all directories.
 - `E` 🄽 - Expand all directories.
-- `<Leader>>` 🄽 - Resize explorer width bigger.
-- `<Leader><` 🄽 - Resize explorer width smaller.
+- `<Leader>.`/`<Leader>,` 🄽 - Resize explorer width bigger/smaller.
 
 A few keys are removed:
 
@@ -189,30 +188,21 @@ A few keys are removed:
 - `<Space>` 🄽 - Toggle current directory, replaced by `l`/`h`.
 - `w` 🄽 - Open node with window picker, replaced by `l`.
 - `z` 🄽 - Collapse all directories, replaced by `W`.
-- `e` 🄽 - Toggle width, replaced by `<Leader>>`/`<Leader><`.
+- `e` 🄽 - Toggle width, replaced by `<Leader>.`/`<Leader>,`.
 
 ### Tabline
 
 Supported by [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) and [vim-bbye](https://github.com/moll/vim-bbye).
 
 1. Navigation:
+   - `<Leader>1` ~ `<Leader>9` 🄽 - Go to buffer-1 ~ buffer-9.
+   - `<Leader>0` 🄽 - Go to the last buffer.
    - `]b` 🄽 - Go to next(👉) buffer.
    - `[b` 🄽 - Go to previous(👈) buffer.
    - `<Leader>bd` 🄽 - Close current buffer without closing vim window by command `:Bdelete`.
    - `<Leader>bD` 🄽 - Forcibly close current buffer without closing vim window by command `:Bdelete!`.
-   - `<Leader>1` 🄽 - Go to buffer-1.
-   - `<Leader>2` 🄽 - Go to buffer-2.
-   - `<Leader>3` 🄽 - Go to buffer-3.
-   - `<Leader>4` 🄽 - Go to buffer-4.
-   - `<Leader>5` 🄽 - Go to buffer-5.
-   - `<Leader>6` 🄽 - Go to buffer-6.
-   - `<Leader>7` 🄽 - Go to buffer-7.
-   - `<Leader>8` 🄽 - Go to buffer-8.
-   - `<Leader>9` 🄽 - Go to buffer-9.
-   - `<Leader>0` 🄽 - Go to the last buffer.
-2. Re-order:
-   - `<Leader>>` 🄽 - Move(re-order) current buffer to next(👉) position.
-   - `<Leader><` 🄽 - Move(re-order) current buffer to previous(👈) position.
+2. Move/re-order:
+   - `<Leader>.`/`<Leader>,` 🄽 - Move(re-order) current buffer to next(👉)/previous(👈) position.
 3. Mouse:
    - `<LeftMouse>` 🄽 - Go to target buffer.
    - `<RightMouse>` 🄽 - Close target buffer.
@@ -221,12 +211,12 @@ Supported by [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) and [
 
 Highlight words with different colors, supported by [vim-mark](https://github.com/inkarkat/vim-mark).
 
-All keys are mapped with prefix `<Leader>k` to avoid key conflicts with other plugins:
+All keys are mapped with prefix `<Leader>h` to avoid key conflicts with other plugins:
 
-- `<Leader>km` 🄽 🅅 - Mark/unmark word under cursor.
-- `<Leader>kM` 🄽 - Clear all words.
-- `<Leader>kn` 🄽 - Navigate to next(👇) marked word.
-- `<Leader>kN` 🄽 - Navigate to previous(👆) marked word.
+- `<Leader>hw` 🄽 🅅 - Highlight/unhighlight cursor word.
+- `<Leader>hW` 🄽 - Clear all highlighting words.
+- `<Leader>hn` 🄽 - Navigate to next(👇) highlighting word.
+- `<Leader>hN` 🄽 - Navigate to previous(👆) highlighting word.
 
 ### GUI Font
 
@@ -240,7 +230,8 @@ Patched-fonts [Hack Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/rele
 
 ## IDE Features
 
-Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) and many other plugins, please see [Manage LSP Servers](/lin.nvim.dev/docs/manage-lsp-servers) for more details.
+Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) and many other plugins.
+Please see [Manage LSP Servers](/lin.nvim.dev/docs/manage-lsp-servers) for more details.
 
 ### Auto-Complete
 
@@ -299,14 +290,6 @@ Code format runs on file save asynchronous by default. To forcibly trigger code 
 
 - `<Leader>ca` 🄽 🅇 - Run code actions under cursor(normal mode) or in selected code(visual mode).
 
-### Git
-
-- `]h` 🄽 - Go to next(👇) git hunk in current buffer.
-- `[h` 🄽 - Go to previous(👆) git hunk in current buffer.
-- `<Leader>gb` 🄽 - Toggle git blame info on current line.
-- `<Leader>gl` 🄽 🅇 - Show sharable git link in current line.
-- `<Leader>gL` 🄽 🅇 - Open git link in current line.
-
 {: .note}
 
 > Configure these key mappings in _~/.nvim/lua/conf/lsp.lua_.
@@ -315,32 +298,32 @@ Code format runs on file save asynchronous by default. To forcibly trigger code 
 
 ## Search
 
-Supported by [fzf.vim](https://github.com/junegunn/fzf.vim) and [nvim-lspfuzzy](https://github.com/ojroques/nvim-lspfuzzy). All fzf commands are renamed with the prefix `Fzf`, for example `:Files` are renamed to `:FzfFiles`, `:Rg` are renamed to `:FzfRg`.
+Supported by [fzf.vim](https://github.com/junegunn/fzf.vim). All fzf commands are renamed with the prefix `Fzf`, for example `:Files` are renamed to `:FzfFiles`, `:Rg` are renamed to `:FzfRg`.
 
 ### Text Search
 
-- `<Space>r` 🄽 - Live grep by `FzfRg`, by default this command will filter ignored and hidden files.
-  - `<Space>ur` 🄽 - Unrestricted(--no-ignore --hidden) live grep by extend command `FzfUnrestrictedRg`.
+- `<Space>r` 🄽 - Live grep by `FzfRg`, by default filter ignored and hidden files.
+  - `<Space>ur` 🄽 - Unrestricted(`--no-ignore --hidden`) live grep by extend command `FzfUnrestrictedRg`.
   - `<Space>pr` 🄽 - Precise(no fuzzy) live grep by extend command `FzfPrecisedRg`.
-  - `<Space>upr` 🄽 - Unrestricted(--no-ignore --hidden) precise(no fuzzy) live grep by self-defined `FzfUnrestrictedPrecisedRg`.
-  - `<Space>wr` 🄽 - Search word under cursor by `FzfCWordRg`, by default this command will filter ignored and hidden files.
-  - `<Space>uwr` 🄽 - Unrestricted(--no-ignore --hidden) search word under cursor by extend command `FzfUnrestrictedCWordRg`.
+  - `<Space>upr` 🄽 - Unrestricted(`--no-ignore --hidden`) precise(no fuzzy) live grep by extend command `FzfUnrestrictedPrecisedRg`.
+  - `<Space>wr` 🄽 - Search cursor word by `FzfCWordRg`, by default filter ignored and hidden files.
+  - `<Space>uwr` 🄽 - Unrestricted(`--no-ignore --hidden`) search cursor word by extend command `FzfUnrestrictedCWordRg`.
 - `<Space>ln` 🄽 - Search lines in current buffer by `FzfLines`.
 - `<Space>tg` 🄽 - Search tags by `FzfTags`.
 
 ### File Search
 
-- `<Space>f` 🄽 - Search files by `FzfFiles`, by default this command will filter ignored and hidden files.
-  - `<Space>uf` 🄽 - Unrestricted(--no-ignore --hidden) search files by extend command `FzfUnrestrictedFiles`.
-  - `<Space>wf` 🄽 - Search files by word under cursor by extend command `FzfCWordFiles`.
-  - `<Space>uwf` 🄽 - Unrestricted(--no-ignore --hidden) search files by word under cursor by extend command `FzfUnrestrictedCWordFiles`.
+- `<Space>f` 🄽 - Search files by `FzfFiles`, by default filter ignored and hidden files.
+  - `<Space>uf` 🄽 - Unrestricted(`--no-ignore --hidden`) search files by extend command `FzfUnrestrictedFiles`.
+  - `<Space>wf` 🄽 - Search files by cursor word by extend command `FzfCWordFiles`.
+  - `<Space>uwf` 🄽 - Unrestricted(`--no-ignore --hidden`) search files by cursor word by extend command `FzfUnrestrictedCWordFiles`.
 - `<Space>b` 🄽 - Search opened buffers by `FzfBuffers`.
 - `<Space>hf` 🄽 - Search history files (v:oldfiles) and opened buffers by `FzfHistory`.
 
 ### History Search
 
-- `<Space>hs` 🄽 - Search searching history by `FzfHistory/`.
-- `<Space>hc` 🄽 - Search vim command history by `FzfHistory:`.
+- `<Space>hs` 🄽 - Search searching history(`/` in command line) by `FzfHistory/`.
+- `<Space>hc` 🄽 - Search vim command history(`:` in command line) by `FzfHistory:`.
 
 ### Git Search
 
@@ -371,7 +354,8 @@ Supported by [which-key.nvim](https://github.com/folke/which-key.nvim).
 
 Supported by [leap.nvim](https://github.com/ggandor/leap.nvim) and [hop.nvim](https://github.com/phaazon/hop.nvim).
 
-Leap keeps its default key mappings(s/S, x/X), and keys for hop are mapped following its predecessor [vim-easymotion](https://github.com/easymotion/vim-easymotion):
+Leap keeps its default key mappings: `s`/`S` (🄽), `x`/`X` (🅇).
+While keys for hop are mapped following its predecessor [vim-easymotion](https://github.com/easymotion/vim-easymotion):
 
 - `<Leader><Leader>f{char}` 🄽 🅇 - Move forward by a single {char}.
 - `<Leader><Leader>F{char}` 🄽 🅇 - Move backward by a single {char}.
@@ -381,6 +365,14 @@ Leap keeps its default key mappings(s/S, x/X), and keys for hop are mapped follo
 - `<Leader><Leader>W` 🄽 🅇 - Move backward by word.
 - `<Leader><Leader>l` 🄽 🅇 - Move forward by line.
 - `<Leader><Leader>L` 🄽 🅇 - Move backward by line.
+
+### Git
+
+- `]h` 🄽 - Go to next(👇) git hunk in current buffer.
+- `[h` 🄽 - Go to previous(👆) git hunk in current buffer.
+- `<Leader>gb` 🄽 - Toggle git blame info on current line.
+- `<Leader>gl` 🄽 🅇 - Show sharable git link in current line.
+- `<Leader>gL` 🄽 🅇 - Open git link in current line.
 
 ### Easy Comment
 
