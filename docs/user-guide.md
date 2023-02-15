@@ -10,6 +10,8 @@ has_toc: false
 
 ---
 
+- [Principle](#principle)
+- [Terms](#terms)
 - [Key Mappings](#key-mappings)
   - [Hot Keys](#hot-keys)
   - [Ctrl+? Cmd+? Keys](#ctrl-cmd-keys)
@@ -44,6 +46,29 @@ has_toc: false
 - [Customization](#customization)
 
 ---
+
+## Principle
+
+### Key Mapping Principle
+
+1. First letter of words as a key mapping sequence, unless it conflicts.
+2. Same prefix keys for same functionality.
+3. Shorter keys for higher usage frequency.
+4. Unified design and experience.
+5. Map less editing modes(mostly normal mode), unless it make sense.
+6. Following Vim's classical mappings, popular editor's behavior, or plugin's recommendation.
+
+Specifically, we use below prefix keys in common:
+
+- `<Leader>` as a prefix for commands mappings.
+- `g` as a prefix of LSP navigation mappings.
+- `<Space>` as a prefix of fzf commands mappings.
+- `]`/`[` as prefixes of next/previous navigation mappings.
+- Capitalized last letter as a bang for command, or a lower frequency variant.
+
+---
+
+## Terms
 
 In this section, vim editing modes are specified with:
 
@@ -144,22 +169,27 @@ Copy/paste across different vim instances through remote ssh could be difficult,
 
 ### File Explorer
 
-Supported by [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim). Please use _?_ to toggle help in neo-tree, or refer to [neo-tree's default configs](https://github.com/nvim-neo-tree/neo-tree.nvim/blob/v2.x/lua/neo-tree/defaults.lua).
+Supported by [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim).
+Please use _?_ to toggle help in neo-tree, or refer to [neo-tree's default configs](https://github.com/nvim-neo-tree/neo-tree.nvim/blob/v2.x/lua/neo-tree/defaults.lua).
 
-A few keys are modified for convenience:
+A few keys are added for convenience:
 
-- `h` 🄽 - Collapse current directory. `C` is removed for close node.
-- `l` 🄽 - Expand directory or open file. `w` is removed for open node with window picker. `<Space>` is removed for (toggle current directory).
-- `<C-s>` 🄽 - Open in a split window. `S` is removed for open in split.
-- `<C-v>` 🄽 - Open in a vsplit window. `s` is removed for open in vsplit.
-- `<C-t>` 🄽 - Open in a new tab window. `t` is removed for open in tabnew.
-- `]h` 🄽 - Navigate to next(👇) git item, `]g` is still enabled.
-- `[h` 🄽 - Navigate to previous(👆) git item. `[g` is still enabled.
-
-Resize explorer width:
-
+- `h` 🄽 - Collapse current directory.
+- `l` 🄽 - Expand directory or open file.
+- `s` 🄽 - Open in split, instead of `S`.
+- `v` 🄽 - Open in vsplit, instead of `s`.
+- `W` 🄽 - Collapse all directories.
+- `E` 🄽 - Expand all directories.
 - `<Leader>>` 🄽 - Resize explorer width bigger.
 - `<Leader><` 🄽 - Resize explorer width smaller.
+
+A few keys are removed:
+
+- `C` 🄽 - Close node, replaced by `h`.
+- `<Space>` 🄽 - Toggle current directory, replaced by `l`/`h`.
+- `w` 🄽 - Open node with window picker, replaced by `l`.
+- `z` 🄽 - Collapse all directories, replaced by `W`.
+- `e` 🄽 - Toggle width, replaced by `<Leader>>`/`<Leader><`.
 
 ### Tabline
 
@@ -225,21 +255,20 @@ Supported by [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [null-ls.nvim](htt
 
 ### Navigation
 
-Navigate with a floating window to preview and edit, supported by [glance.nvim](https://github.com/DNLHC/glance.nvim).
+Navigate with a preview window, supported by [glance.nvim](https://github.com/DNLHC/glance.nvim).
 
-A few keys are modified for better user experience:
+A few keys are added for convenience:
 
-List window keys:
+1. Preview window:
+   - `q` 🄽 - Close window.
 
-- `<C-s>` 🄽 - Open preview window in split. `s` is removed for open split.
-- `<C-v>` 🄽 - Open preview window in vsplit. `v` is removed for open vsplit.
-- `<C-t>` 🄽 - Open preview window in new tab. `t` is removed for open new tab.
-- `<C-c>`/`<C-[>` 🄽 - Close navigation window. `Q` is removed for close list window.
+A few keys are removed:
 
-Preview window keys:
-
-- `<Tab>`/`<S-Tab>` are removed for jump to next/previous navigation location.
-- `<C-c>`/`<C-[>` 🄽 - Close preview window. `Q` is removed for close preview window.
+1. List window:
+   - `Q` 🄽 - Close.
+2. Preview window:
+   - `<Tab>`/`<S-Tab>` 🄽 - Jump to next/previous location, you need to go back to list window before jump to other location.
+   - `Q` 🄽 - Close window, replaced by `q`.
 
 ### Symbols
 
