@@ -48,23 +48,22 @@ has_toc: false
 
 ## Principle
 
-### Key Mapping Principle
+### Key Mapping
 
-1. First letter of words as a key mapping sequence, unless it conflicts.
-2. Same prefix keys for same functionality.
-3. Shorter keys for higher usage frequency.
-4. Unified design and experience.
-5. Map less editing modes(mostly normal mode), unless it make sense.
-6. Following Vim's classical mappings, popular editor's behavior, or plugin's recommendation.
+1. First letter of words as a mapping sequence, unless it conflicts.
+2. Same prefix for same functionality.
+3. Shorter keys for higher frequency.
+4. Map less editing modes(mostly normal mode), unless it make sense.
+5. Following classic, popular behavior, or plugin author's recommendation.
 
-Specifically, we use below prefix keys in common:
+Specifically, we have below rules:
 
-- `<Leader>` as a prefix for commands mappings.
-- `g` as a prefix of LSP navigation mappings.
-- `<Space>` as a prefix of fzf commands mappings.
-- `]`/`[` as prefixes of next/previous navigation mappings.
-- `<Down>`/`<Up>`(`>`/`<`, `.`/`,`) as direction of next/previous(down/up or right/left) position mappings.
-- Capitalized last letter as a bang for command, or a lower frequency variant.
+- `<Leader>` as a prefix for commands.
+- `g` as a prefix for LSP navigations.
+- `<Space>` as a prefix for fzf commands.
+- `]`/`[` as prefix for next/previous navigations.
+- `<Down>`/`<Up>`(`>`/`<` or `.`/`,`) for directions of next/previous(down/up or right/left).
+- Capitalized last letter for a command bang, or a lower frequency.
 
 ---
 
