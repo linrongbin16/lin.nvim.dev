@@ -106,6 +106,7 @@ Plugins:
 - `<Leader>ms` 🄽 - `:Mason<CR>`.
 - `<Leader>lz` 🄽 - `:Lazy<CR>`.
 - `<Leader>wk` 🄽 - `:WhichKey`.
+- `<Leader>gd` 🄽 - `:DogeGenerate`.
 
 Save file without formatting:
 

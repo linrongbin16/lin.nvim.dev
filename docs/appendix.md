@@ -21,6 +21,7 @@ nav_order: 5
   - [Key Bindings](#key-bindings)
   - [Cursor Motion](#cursor-motion)
   - [Editing Enhancement](#editing-enhancement)
+- [LSP Server Candidates](#lsp-server-candidates)
 - [Reference](#reference)
 
 ---
@@ -206,11 +207,20 @@ nav_order: 5
 - [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [ruifm/gitlinker.nvim](https://github.com/ruifm/gitlinker.nvim)
+- [kkoomen/vim-doge](https://github.com/kkoomen/vim-doge)
 - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 - [mbbill/undotree](https://github.com/mbbill/undotree)
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
 - [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
 - [editorconfig/editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
+
+---
+
+## LSP Server Candidates
+
+TODO
+
+---
 
 ## Reference
 

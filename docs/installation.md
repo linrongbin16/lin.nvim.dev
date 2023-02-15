@@ -118,7 +118,9 @@ And more options:
 - `--no-plug`: disable specific plugin in format _org/repo_, this can be provided multiple times. For example: `--no-plug=RRethy/vim-hexokinase --no-plug=alvan/vim-closetag`.
 - `--no-ctrl`: disable Windows ctrl+{c,v,s,x,a,...}(macOS cmd+{c,v,s,x,a,...}) keys behavior.
 
-Please checkout [Plugins](/lin.nvim.dev/docs/appendix/#plugins) to find out how these options affect a plugin.
+And a powerful option to interactively install lsp servers based on programming languages detected in your environment:
+
+- `--ext-lsp`: detect any language compiler/interpreter installed(based on environment), and interactively install lsp server for you.
 
 {: .note}
 
@@ -160,3 +162,5 @@ See [Improve Git monorepo performance with a file system monitor](https://github
 ## Next
 
 - Checkout [user guide](/lin.nvim.dev/docs/user-guide).
+- Checkout [Plugins](/lin.nvim.dev/docs/appendix/#plugins) to find out how these options affect a plugin.
+- Checkout [LSP Server Candidates](/lin.nvim.dev/docs/appendix/#lsp-server-candidates) to find out supported lsp servers list.
