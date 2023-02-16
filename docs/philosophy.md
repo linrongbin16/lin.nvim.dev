@@ -9,6 +9,8 @@ parent: Home
 
 # Philosophy
 
+---
+
 ## No-Manual
 
 All done by one-line command(not for windows now):

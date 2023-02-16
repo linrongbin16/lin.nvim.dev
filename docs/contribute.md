@@ -10,6 +10,8 @@ has_toc: false
 
 # Contribute
 
+---
+
 Please open [issue](https://github.com/linrongbin16/lin.nvim/issues/new)/[PR](https://github.com/linrongbin16/lin.nvim/pulls) for anything about lin.nvim.
 
 Like lin.nvim? Consider

@@ -10,8 +10,6 @@ has_toc: false
 
 # lin.nvim: Lin Rongbin's Neovim Distribution
 
-> Leave Vim behind, this is the next generation of [lin.vim](https://github.com/linrongbin16/lin.vim).
-
 ---
 
 - [Introduction](#introduction)
@@ -25,6 +23,8 @@ has_toc: false
 ---
 
 ## Introduction
+
+> Leave Vim behind, this is the next generation of [lin.vim](https://github.com/linrongbin16/lin.vim).
 
 A highly configured [Neovim](https://neovim.io/) distribution integrated with tons of utilities for development, inspired by [spf13-vim](https://github.com/spf13/spf13-vim).
 
