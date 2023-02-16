@@ -108,8 +108,7 @@ nav_order: 5
 
 ### UI
 
-- [nvim-neo-tree/neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
-- [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim)
+- [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
 - [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 - [moll/vim-bbye](https://github.com/moll/vim-bbye)

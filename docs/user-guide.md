@@ -168,26 +168,21 @@ Copy/paste across different vim instances through remote ssh could be difficult,
 
 ### File Explorer
 
-Supported by [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim).
-Please use _?_ to toggle help in neo-tree, or refer to [neo-tree's default configs](https://github.com/nvim-neo-tree/neo-tree.nvim/blob/v2.x/lua/neo-tree/defaults.lua).
+Supported by [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua).
+Please use _g?_ to toggle help in nvim-tree, or refer to nvim-tree's default key mappings: `:h nvim-tree-mappings`.
 
 A few keys are added for convenience:
 
 - `h` 🄽 - Collapse current directory.
 - `l` 🄽 - Expand directory or open file.
-- `s` 🄽 - Open in split, instead of `S`.
-- `v` 🄽 - Open in vsplit, instead of `s`.
-- `W` 🄽 - Collapse all directories.
-- `E` 🄽 - Expand all directories.
+- `]d` 🄽 - Next(👉) diagnostic item.
+- `[d` 🄽 - Previous(👈) diagnostic item.
 - `<Leader>.`/`<Leader>,` 🄽 - Resize explorer width bigger/smaller.
 
 A few keys are removed:
 
-- `C` 🄽 - Close node, replaced by `h`.
-- `<Space>` 🄽 - Toggle current directory, replaced by `l`/`h`.
-- `w` 🄽 - Open node with window picker, replaced by `l`.
-- `z` 🄽 - Collapse all directories, replaced by `W`.
-- `e` 🄽 - Toggle width, replaced by `<Leader>.`/`<Leader>,`.
+- `]e` 🄽 - Next(👉) diagnostic item, replaced by `]d`.
+- `[e` 🄽 - Previous(👈) diagnostic item, replaced by `[d`.
 
 ### Tabline
 
@@ -198,8 +193,8 @@ Supported by [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) and [
    - `<Leader>0` 🄽 - Go to the last buffer.
    - `]b` 🄽 - Go to next(👉) buffer.
    - `[b` 🄽 - Go to previous(👈) buffer.
-   - `<Leader>bd` 🄽 - Close current buffer without closing vim window by command `:Bdelete`.
-   - `<Leader>bD` 🄽 - Forcibly close current buffer without closing vim window by command `:Bdelete!`.
+   - `<Leader>bd` 🄽 - Close current buffer by `:Bdelete`.
+   - `<Leader>bD` 🄽 - Forcibly close current buffer by `:Bdelete!`.
 2. Move/re-order:
    - `<Leader>.`/`<Leader>,` 🄽 - Move(re-order) current buffer to next(👉)/previous(👈) position.
 3. Mouse:
@@ -247,18 +242,16 @@ Please see [Manage LSP Servers](/lin.nvim.dev/docs/manage-lsp-servers) for more 
 
 Navigate with a preview window, supported by [glance.nvim](https://github.com/DNLHC/glance.nvim).
 
-A few keys are added for convenience:
-
-1. Preview window:
-   - `q` 🄽 - Close window.
-
-A few keys are removed:
+A few keys are changed for convenience:
 
 1. List window:
-   - `Q` 🄽 - Close.
+   - `s`(jump in split) 🄽 - Re-mapped to `<C-s>`.
+   - `v`(jump in vsplit) 🄽 - Re-mapped to `<C-v>`.
+   - `t`(jump in new tab) 🄽 - Re-mapped to `<C-t>`.
+   - `Q`(close window) 🄽 - Removed for duplicated with `q`.
 2. Preview window:
-   - `<Tab>`/`<S-Tab>` 🄽 - Jump to next/previous location, you need to go back to list window before jump to other location.
-   - `Q` 🄽 - Close window, replaced by `q`.
+   - `<Tab>`/`<S-Tab>`(jump to next/previous location) 🄽 - Removed, you need to go back to list window before jump to other locations.
+   - `Q`(close window) 🄽 - Re-mapped to `q`.
 
 ### Symbols
 
@@ -302,20 +295,20 @@ Supported by [fzf.vim](https://github.com/junegunn/fzf.vim). All fzf commands ar
 ### Text Search
 
 - `<Space>r` 🄽 - Live grep by `FzfRg`, by default filter ignored and hidden files.
-  - `<Space>ur` 🄽 - Unrestricted(`--no-ignore --hidden`) live grep by extend command `FzfUnrestrictedRg`.
-  - `<Space>pr` 🄽 - Precise(no fuzzy) live grep by extend command `FzfPrecisedRg`.
-  - `<Space>upr` 🄽 - Unrestricted(`--no-ignore --hidden`) precise(no fuzzy) live grep by extend command `FzfUnrestrictedPrecisedRg`.
+  - `<Space>ur` 🄽 - Unrestricted(`--no-ignore --hidden`) live grep by `FzfUnrestrictedRg`.
+  - `<Space>pr` 🄽 - Precise(no fuzzy) live grep by `FzfPrecisedRg`.
+  - `<Space>upr` 🄽 - Unrestricted(`--no-ignore --hidden`) precise(no fuzzy) live grep by `FzfUnrestrictedPrecisedRg`.
   - `<Space>wr` 🄽 - Search cursor word by `FzfCWordRg`, by default filter ignored and hidden files.
-  - `<Space>uwr` 🄽 - Unrestricted(`--no-ignore --hidden`) search cursor word by extend command `FzfUnrestrictedCWordRg`.
+  - `<Space>uwr` 🄽 - Unrestricted(`--no-ignore --hidden`) search cursor word by `FzfUnrestrictedCWordRg`.
 - `<Space>ln` 🄽 - Search lines in current buffer by `FzfLines`.
 - `<Space>tg` 🄽 - Search tags by `FzfTags`.
 
 ### File Search
 
 - `<Space>f` 🄽 - Search files by `FzfFiles`, by default filter ignored and hidden files.
-  - `<Space>uf` 🄽 - Unrestricted(`--no-ignore --hidden`) search files by extend command `FzfUnrestrictedFiles`.
-  - `<Space>wf` 🄽 - Search files by cursor word by extend command `FzfCWordFiles`.
-  - `<Space>uwf` 🄽 - Unrestricted(`--no-ignore --hidden`) search files by cursor word by extend command `FzfUnrestrictedCWordFiles`.
+  - `<Space>uf` 🄽 - Unrestricted(`--no-ignore --hidden`) search files by `FzfUnrestrictedFiles`.
+  - `<Space>wf` 🄽 - Search files by cursor word by `FzfCWordFiles`.
+  - `<Space>uwf` 🄽 - Unrestricted(`--no-ignore --hidden`) search files by cursor word by `FzfUnrestrictedCWordFiles`.
 - `<Space>b` 🄽 - Search opened buffers by `FzfBuffers`.
 - `<Space>hf` 🄽 - Search history files (v:oldfiles) and opened buffers by `FzfHistory`.
 
