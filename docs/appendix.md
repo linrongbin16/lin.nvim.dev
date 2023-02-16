@@ -23,7 +23,7 @@ nav_order: 5
   - [Key Bindings](#key-bindings)
   - [Cursor Motion](#cursor-motion)
   - [Editing Enhancement](#editing-enhancement)
-- [LSP Server Candidates](#lsp-server-candidates)
+- [Available LSP Servers](#available-lsp-servers)
 - [Reference](#reference)
 
 ---
@@ -228,7 +228,7 @@ nav_order: 5
 
 ---
 
-## LSP Server Candidates
+## Available LSP Servers
 
 - assembly:
   - lsp servers: `asm_lsp`

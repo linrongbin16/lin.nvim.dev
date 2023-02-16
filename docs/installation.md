@@ -14,8 +14,12 @@ has_toc: false
 - [Linux/macOS](#linuxmacos)
 - [Windows](#windows)
 - [Options](#options)
+  - [Install Mode](#install-mode)
+  - [More Options](#more-options)
+  - [Auto-Detect Available Languages](#auto-detect-available-languages)
 - [Upgrade](#upgrade)
 - [Optimization](#optimization)
+  - [Git Performance](#git-performance)
 
 ---
 
@@ -166,4 +170,4 @@ See [Improve Git monorepo performance with a file system monitor](https://github
 
 - Checkout [user guide](/lin.nvim.dev/docs/user-guide).
 - Checkout [Plugins](/lin.nvim.dev/docs/appendix/#plugins) to find out how these options affect a plugin.
-- Checkout [LSP Server Candidates](/lin.nvim.dev/docs/appendix/#lsp-server-candidates) to find out supported lsp servers list.
+- Checkout [Available LSP Servers](/lin.nvim.dev/docs/appendix/#available-lsp-servers) to find out available lsp servers.
