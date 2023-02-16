@@ -118,9 +118,9 @@ And more options:
 - `--no-plug`: disable specific plugin in format _org/repo_, this can be provided multiple times. For example: `--no-plug=RRethy/vim-hexokinase --no-plug=alvan/vim-closetag`.
 - `--no-ctrl`: disable Windows ctrl+{c,v,s,x,a,...}(macOS cmd+{c,v,s,x,a,...}) keys behavior.
 
-And a powerful option to interactively install lsp servers based on programming languages detected in your environment:
+And a real powerful option to quickly install lsp servers:
 
-- `--ext-lsp`: detect any language compiler/interpreter installed(based on environment), and interactively install lsp server for you.
+- `--with-lsp`: detect any language installed(based on compiler/interpreter), and interactively provide candidates for you.
 
 {: .note}
 

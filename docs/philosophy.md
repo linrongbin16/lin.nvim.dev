@@ -49,7 +49,5 @@ Focus on and only on editing, no compiling/packaging/debugging:
 
 ## Compatibility
 
-No effort is spent on maintaining backward compatibility.
-
-- Neovim's [Latest stable version](https://github.com/neovim/neovim/wiki/Installing-Neovim) is always recommended.
-- OS in last 2 years(latest Ubuntu-LTS) are supported.
+1. No effort is spent on maintaining Neovim's backward compatibility, assume always running on the [latest stable version](https://github.com/neovim/neovim/wiki/Installing-Neovim).
+2. Try to support most popular OS in 2 years(e.g. latest ubuntu-lts).
