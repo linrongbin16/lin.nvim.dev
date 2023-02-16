@@ -11,6 +11,13 @@ parent: Home
 
 ---
 
+- [No-Manual](#no-manual)
+- [IDE Features](#ide-features)
+- [Focus](#focus)
+- [Compatibility](#compatibility)
+
+---
+
 ## No-Manual
 
 All done by one-line command(not for windows now):
