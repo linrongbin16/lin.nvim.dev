@@ -6,6 +6,8 @@ has_children: true
 has_toc: false
 ---
 
+<!-- markdownlint-disable MD013 MD025 -->
+
 # Contribute
 
 Please open [issue](https://github.com/linrongbin16/lin.nvim/issues/new)/[PR](https://github.com/linrongbin16/lin.nvim/pulls) for anything about lin.nvim.

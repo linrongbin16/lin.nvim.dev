@@ -6,6 +6,8 @@ has_children: true
 has_toc: false
 ---
 
+<!-- markdownlint-disable MD013 MD025 -->
+
 # lin.nvim: Lin Rongbin's Neovim Distribution
 
 > Leave Vim behind, this is the next generation of [lin.vim](https://github.com/linrongbin16/lin.vim).

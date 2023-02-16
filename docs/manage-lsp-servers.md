@@ -6,6 +6,8 @@ parent: User Guide
 has_toc: false
 ---
 
+<!-- markdownlint-disable MD013 MD025 -->
+
 # Manage LSP Servers
 
 ---

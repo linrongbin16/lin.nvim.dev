@@ -5,6 +5,8 @@ nav_order: 1
 parent: Home
 ---
 
+<!-- markdownlint-disable MD013 MD025 -->
+
 # Philosophy
 
 ## No-Manual

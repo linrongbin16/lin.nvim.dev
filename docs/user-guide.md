@@ -6,6 +6,8 @@ has_children: true
 has_toc: false
 ---
 
+<!-- markdownlint-disable MD013 MD025 -->
+
 # User Guide
 
 ---
@@ -50,20 +52,20 @@ has_toc: false
 
 ### Key Mapping
 
-1. First letter of words as a mapping sequence, unless it conflicts.
+1. First letter of each words as a mapping sequence, unless it conflicts.
 2. Same prefix for same functionality.
 3. Shorter keys for higher frequency.
-4. Map less editing modes(mostly normal mode), unless it make sense.
+4. Map less editing modes(mostly normal mode), unless it makes sense.
 5. Following classic, popular behavior, or plugin author's recommendation.
 
 Specifically, we have below rules:
 
 - `<Leader>` as a prefix for commands.
-- `g` as a prefix for LSP navigations.
 - `<Space>` as a prefix for fzf commands.
+- `g` as a prefix for LSP navigations.
 - `]`/`[` as prefix for next/previous navigations.
-- `<Down>`/`<Up>`(`>`/`<` or `.`/`,`) for directions of next/previous(down/up or right/left).
-- Capitalized last letter for a command bang, or a lower frequency.
+- `.`/`,`(or `>`/`<`) for right/left(or down/up) directions.
+- Capitalized last letter for a command bang, or a lower frequency variant.
 
 ---
 

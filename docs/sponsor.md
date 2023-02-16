@@ -4,6 +4,8 @@ title: Sponsor
 parent: Contribute
 ---
 
+<!-- markdownlint-disable MD013 MD025 -->
+
 <p align="center">
 
 <img

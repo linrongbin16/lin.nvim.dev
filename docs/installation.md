@@ -5,6 +5,8 @@ nav_order: 3
 has_toc: false
 ---
 
+<!-- markdownlint-disable MD013 MD025 -->
+
 # Installation
 
 ---
@@ -65,10 +67,7 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.nvim && cd ~/.nvim && ./in
    - [Node.js](https://nodejs.org/en/download/): add _node.exe_, _npm.exe_ to $env:PATH.
    - [7-zip](https://www.7-zip.org/): add _7z.exe_ to $env:PATH.
    - [Universal-ctags](https://github.com/universal-ctags/ctags-win32/releases): add _ctags.exe_, _readtags.exe_ to $env:PATH.
-   - [Ripgrep](https://github.com/BurntSushi/ripgrep): add _rg.exe_ to $env:PATH.
-   - [fd](https://github.com/sharkdp/fd): add _fd.exe_ to $env:PATH.
-   - (Optional) [bat](https://github.com/sharkdp/bat): add _bat.exe_ to $env:PATH.
-   - (Optional) [delta](https://github.com/dandavison/delta): add _delta.exe_ to $env:PATH.
+   - [Rust](https://www.rust-lang.org/)(or [rg](https://github.com/BurntSushi/ripgrep), [fd](https://github.com/sharkdp/fd), [bat](https://github.com/sharkdp/bat), [delta](https://github.com/dandavison/delta)): add _rustc.exe_ and _cargo.exe_(or _rg.exe_, _fd.exe_, _bat.exe_, _delta.exe_) to $env:PATH. Notice bat and delta are optional.
 
    {: .note}
 
@@ -102,13 +101,15 @@ cd $env:USERPROFILE\.nvim
 
 ## Options
 
+### Install Mode
+
 The installer provides 3 installation modes:
 
 - Full mode: default mode, it installs all features for the best experience, while consuming unignorable CPU, memory, disk and graphics.
 - Limit mode: use `--limit` for low-performance devices such as old PC, which disables most plugins and extensions.
 - Basic mode: use `--basic` for restricted environments such as production servers, which only installs a pure basic vim setting file(_~/.nvim/conf/basic.vim_).
 
-And more options:
+### More Options
 
 - `--use-color`: use a static color scheme, instead of random selection on startup. For example: `--use-color=darkblue`.
 - `--no-color`: disable color schemes, and random selection on startup.
@@ -118,7 +119,9 @@ And more options:
 - `--no-plug`: disable specific plugin in format _org/repo_, this can be provided multiple times. For example: `--no-plug=RRethy/vim-hexokinase --no-plug=alvan/vim-closetag`.
 - `--no-ctrl`: disable Windows ctrl+{c,v,s,x,a,...}(macOS cmd+{c,v,s,x,a,...}) keys behavior.
 
-And a real powerful option to quickly install lsp servers:
+### Auto-Detect Available Languages
+
+There's a real powerful option to quickly install lsp servers:
 
 - `--with-lsp`: detect any language installed(based on compiler/interpreter), and interactively provide candidates for you.
 

@@ -4,6 +4,8 @@ title: Appendix
 nav_order: 5
 ---
 
+<!-- markdownlint-disable MD013 MD025 -->
+
 # Appendix
 
 ---
@@ -59,6 +61,7 @@ nav_order: 5
 >
 > Option `--no-color` could disable all these plugins.
 
+- [folke/lsp-colors.nvim](https://github.com/folke/lsp-colors.nvim)
 - [bluz71/vim-nightfly-colors](https://github.com/bluz71/vim-nightfly-colors)
 - [bluz71/vim-moonfly-colors](https://github.com/bluz71/vim-moonfly-colors)
 - [catppuccin/nvim](https://github.com/catppuccin/nvim)
@@ -115,7 +118,6 @@ nav_order: 5
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [linrongbin16/lsp-progress.nvim](https://github.com/linrongbin16/lsp-progress.nvim)
-<!-- - [itchyny/vim-gitbranch](https://github.com/itchyny/vim-gitbranch) -->
 - [utilyre/barbecue.nvim](https://github.com/utilyre/barbecue.nvim)
 - [SmiteshP/nvim-navic](https://github.com/SmiteshP/nvim-navic)
 - [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
@@ -126,7 +128,7 @@ nav_order: 5
 - [junegunn/fzf](https://github.com/junegunn/fzf)
 - [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
 
-### Tags
+### Ctags
 
 {: .important-title}
 
@@ -157,6 +159,7 @@ nav_order: 5
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
 - [DNLHC/glance.nvim](https://github.com/DNLHC/glance.nvim)
+- [onsails/lspkind.nvim](https://github.com/onsails/lspkind.nvim)
 
 ### Specific Language Support
 
@@ -180,7 +183,7 @@ nav_order: 5
 >
 > Option `--no-edit` could disable all these plugins.
 
-- [folke/which-key.nvim](https://github.com/folke/which-key.nvim).
+- [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
 ### Cursor Motion
 
@@ -221,6 +224,7 @@ nav_order: 5
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat)
 - [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
 - [editorconfig/editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
+- [axieax/urlview.nvim](https://github.com/axieax/urlview.nvim)
 
 ---
 
@@ -300,7 +304,10 @@ nav_order: 5
   - null-ls sources: `proselint`, `vale`
 - lua:
   - lsp servers: `lua_ls`
-  - null-ls sources: `luacheck`, `selene`, `stylua`
+  - null-ls sources: `selene`, `stylua`
+- luarocks:
+  - lsp servers: empty
+  - null-ls sources: `luacheck`
 - markdown:
   - lsp servers: `marksman`, `prosemd_lsp`, `remark_ls`, `zk`
   - null-ls sources: `alex`, `markdownlint`, `write_good`, `cbfmt`, `proselint`, `vale`
