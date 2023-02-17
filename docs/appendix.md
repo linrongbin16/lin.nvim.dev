@@ -17,12 +17,15 @@ nav_order: 5
   - [Highlight](#highlight)
   - [UI](#ui)
   - [Search Engine](#search-engine)
-  - [Tags](#tags)
-  - [LSP](#lsp)
-  - [Specific Language Support](#specific-language-support)
-  - [Key Bindings](#key-bindings)
-  - [Cursor Motion](#cursor-motion)
-  - [Editing Enhancement](#editing-enhancement)
+  - [Language](#language)
+    - [Tags](#tags)
+    - [LSP](#lsp)
+    - [Specific Language Support](#specific-language-support)
+  - [Editing](#editing)
+    - [Key Bindings](#key-bindings)
+    - [Cursor Motion](#cursor-motion)
+    - [Git](#git)
+    - [Enhancements](#enhancements)
 - [Available LSP Servers](#available-lsp-servers)
 - [Reference](#reference)
 
@@ -128,7 +131,9 @@ nav_order: 5
 - [junegunn/fzf](https://github.com/junegunn/fzf)
 - [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
 
-### Ctags
+### Language
+
+#### Tags
 
 {: .important-title}
 
@@ -139,7 +144,7 @@ nav_order: 5
 - [liuchengxu/vista.vim](https://github.com/liuchengxu/vista.vim)
 - [ludovicchabant/vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 
-### LSP
+#### LSP
 
 {: .important-title}
 
@@ -161,7 +166,7 @@ nav_order: 5
 - [DNLHC/glance.nvim](https://github.com/DNLHC/glance.nvim)
 - [onsails/lspkind.nvim](https://github.com/onsails/lspkind.nvim)
 
-### Specific Language Support
+#### Specific Language Support
 
 {: .important-title}
 
@@ -175,7 +180,9 @@ nav_order: 5
 - [zebradil/hive.vim](https://github.com/zebradil/hive.vim)
 - [slim-template/vim-slim](https://github.com/slim-template/vim-slim)
 
-### Key Bindings
+### Editing
+
+#### Key Bindings
 
 {: .important-title}
 
@@ -185,7 +192,7 @@ nav_order: 5
 
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
 
-### Cursor Motion
+#### Cursor Motion
 
 {: .important-title}
 
@@ -196,7 +203,7 @@ nav_order: 5
 - [phaazon/hop.nvim](https://github.com/phaazon/hop.nvim)
 - [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim)
 
-### Git
+#### Git
 
 {: .important-title}
 
@@ -207,7 +214,7 @@ nav_order: 5
 - [f-person/git-blame.nvim](https://github.com/f-person/git-blame.nvim)
 - [ruifm/gitlinker.nvim](https://github.com/ruifm/gitlinker.nvim)
 
-### Editing Enhancement
+#### Enhancements
 
 {: .important-title}
 
