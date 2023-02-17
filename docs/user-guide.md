@@ -365,7 +365,7 @@ While keys for hop are mapped following its predecessor [vim-easymotion](https:/
 - `]c` 🄽 - Go to next(👇) git hunk in current buffer.
 - `[c` 🄽 - Go to previous(👆) git hunk in current buffer.
 - `<Leader>gb` 🄽 - Toggle git blame info on current line.
-- `<Leader>gl` 🄽 🅇 - Open git link in current line.
+- `<Leader>gl`/`<Leader>gl` 🄽 🅅 - Open git link in browser/copy to clipboard.
 
 ### Easy Comment
 
