@@ -456,8 +456,9 @@ The config entry `init.vim` will load below components:
 3. `colorscheme.vim` - Colors.
 4. `settings.vim` - Other settings.
 
-Each plugin's configs are in `repo/{org}{repo}/` folder(written in vim), or `lua/repo/{org}/{repo}` folder(written in lua).
-Each plugin configs contains below sections:
+Each plugin's configs are in `repo/{org}{repo}/` folder(written in vim), or `lua/repo/{org}/{repo}` folder(written in lua). Choose any one of them according to your preference.
+
+A plugin's config contains below sections:
 
 - `init.vim`/`init.lua` - Used by _lazy.nvim_ `init` property. Global variables defined here, executed before loading so the plugin could see them.
 - `config.vim`/`config.lua` - Used by _lazy.nvim_ `config` property. Lua plugin's `setup` and other related things.
@@ -468,7 +469,8 @@ Each plugin configs contains below sections:
 > Notice
 >
 > Since `.`(dot) in lua require means path separator, so we translate all path's `.`(dot) to `-`(hyphen) in `lua/repo`.
-> For example: `lua/repo/junegunn/fzf-vim`.
+>
+> For example: `lua/repo/junegunn/fzf-vim` and `repo/junegunn/fzf.vim`.
 
 ---
 
