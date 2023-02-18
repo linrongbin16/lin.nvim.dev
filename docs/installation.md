@@ -72,7 +72,7 @@ Install [Visual Studio](https://www.visualstudio.com/) with below 2 components:
 
 ### Git
 
-Install [64-bit Git for Windows Setup](https://git-scm.com/downloads) with below 3 options:
+Install [Git for Windows Setup](https://git-scm.com/downloads) with below 3 options:
 
 - In **Select Components**, select **Associate .sh files to be run with Bash**.
 
