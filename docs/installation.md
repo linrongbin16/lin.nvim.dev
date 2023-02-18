@@ -13,6 +13,12 @@ has_toc: false
 
 - [Linux/macOS](#linuxmacos)
 - [Windows](#windows)
+  - [Windows Developer Mode](#windows-developer-mode)
+  - [Visual Studio](#visual-studio)
+  - [Git](#git)
+  - [Third-Party Dependencies](#third-party-dependencies)
+  - [Patched GUI Font](#patched-gui-font)
+  - [PowerShell Command](#powershell-command)
 - [Options](#options)
   - [Install Mode](#install-mode)
   - [More Options](#more-options)
@@ -45,41 +51,62 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.nvim && cd ~/.nvim && ./in
 
 ## Windows
 
-0. [Enable Windows Developer Mode](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development#activate-developer-mode).
+{: .important-title}
 
-1. Install [Visual Studio](https://www.visualstudio.com/) with below 2 components:
+> Notice
+>
+> Please use either x64(recommended) or x86 for all below dependencies.
 
-   - .NET Desktop Development
-   - Desktop development with C++
-     {% include nest-image.html src="/assets/installations/install-windows-visual-studio2.png" alt="install-windows-visual-studio2.png" width="95%" %}
+### Windows Developer Mode
 
-2. Install [64-bit Git for Windows Setup](https://git-scm.com/downloads) with below 3 options:
+Please check: <https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development#activate-developer-mode>.
 
-   - In **Select Components**, select **Associate .sh files to be run with Bash**.
-     {% include nest-image.html src="/assets/installations/install-windows-git1.png" alt="install-windows-git1.png" width="70%" %}
-   - In **Adjusting your PATH environment**, select **Use Git and optional Unix tools from the Command Prompt**.
-     {% include nest-image.html src="/assets/installations/install-windows-git2.png" alt="install-windows-git2.png" width="70%" %}
-   - In **Configuring the terminal emulator to use with Git Bash**, select **Use Windows's default console window**. After this step, _git.exe_ and Linux built-in commands(such as _bash.exe_, _cp.exe_, _mv.exe_, _ls.exe_) will be available in $env:PATH.
-     {% include nest-image.html src="/assets/installations/install-windows-git3.png" alt="install-windows-git3.png" width="70%" %}
+### Visual Studio
 
-3. Install other 64-bit dependencies:
+Install [Visual Studio](https://www.visualstudio.com/) with below 2 components:
 
-   - [Neovim](https://github.com/neovim/neovim/releases/latest): add _nvim.exe_ to $env:PATH.
-   - [CMake](https://github.com/Kitware/CMake/releases/latest): add _cmake.exe_ to $env:PATH.
-   - [Make-for-win32](https://sourceforge.net/projects/gnuwin32/files/make): add _make.exe_ to $env:PATH.
-   - [Python3](https://www.python.org/downloads/windows/): manually copy _python.exe_ as _python3.exe_, then add _python3.exe_ to $env:PATH (since windows python3 installer only provide _python.exe_).
-   - [Node.js](https://nodejs.org/en/download/): add _node.exe_, _npm.exe_ to $env:PATH.
-   - [7-zip](https://www.7-zip.org/): add _7z.exe_ to $env:PATH.
-   - [Universal-ctags](https://github.com/universal-ctags/ctags-win32/releases): add _ctags.exe_, _readtags.exe_ to $env:PATH.
-   - [Rust](https://www.rust-lang.org/)(or [rg](https://github.com/BurntSushi/ripgrep), [fd](https://github.com/sharkdp/fd), [bat](https://github.com/sharkdp/bat), [delta](https://github.com/dandavison/delta)): add _rustc.exe_ and _cargo.exe_(or _rg.exe_, _fd.exe_, _bat.exe_, _delta.exe_) to $env:PATH. Notice bat and delta are optional.
+- .NET Desktop Development
+- Desktop development with C++
 
-   {: .note}
+{% include image.html src="/assets/installations/install-windows-visual-studio2.png" alt="install-windows-visual-studio2.png" width="95%" %}
 
-   > Use a package manager (such as [chocolatey](https://chocolatey.org/) and [scoop](https://scoop.sh/)) could be a better choice, just make sure they're available in $env:PATH.
+### Git
 
-4. Install [Hack NFM](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip) font.
+Install [64-bit Git for Windows Setup](https://git-scm.com/downloads) with below 3 options:
 
-5. Run PowerShell command as Administrator:
+- In **Select Components**, select **Associate .sh files to be run with Bash**.
+
+{% include image.html src="/assets/installations/install-windows-git1.png" alt="install-windows-git1.png" width="70%" %}
+
+- In **Adjusting your PATH environment**, select **Use Git and optional Unix tools from the Command Prompt**.
+
+{% include image.html src="/assets/installations/install-windows-git2.png" alt="install-windows-git2.png" width="70%" %}
+
+- In **Configuring the terminal emulator to use with Git Bash**, select **Use Windows's default console window**. After this step, _git.exe_ and Linux built-in commands(such as _bash.exe_, _cp.exe_, _mv.exe_, _ls.exe_) will be available in $env:PATH.
+
+{% include image.html src="/assets/installations/install-windows-git3.png" alt="install-windows-git3.png" width="70%" %}
+
+### Third-Party Dependencies
+
+- [Neovim](https://github.com/neovim/neovim/releases/latest): add _nvim.exe_ to $env:PATH.
+- [CMake](https://github.com/Kitware/CMake/releases/latest): add _cmake.exe_ to $env:PATH.
+- [Python3](https://www.python.org/downloads/windows/): manually copy _python.exe_ as _python3.exe_, then add _python3.exe_ to $env:PATH (since windows python3 installer only provide _python.exe_).
+- [Node.js](https://nodejs.org/en/download/): add _node.exe_, _npm.exe_ to $env:PATH.
+- [7-zip](https://www.7-zip.org/): add _7z.exe_ to $env:PATH.
+- [Universal-ctags](https://github.com/universal-ctags/ctags-win32/releases): add _ctags.exe_, _readtags.exe_ to $env:PATH.
+- [Rust](https://www.rust-lang.org/)(or [rg](https://github.com/BurntSushi/ripgrep), [fd](https://github.com/sharkdp/fd), [bat](https://github.com/sharkdp/bat), [delta](https://github.com/dandavison/delta)): add _rustc.exe_ and _cargo.exe_(or _rg.exe_, _fd.exe_, _bat.exe_, _delta.exe_) to $env:PATH. Notice bat and delta are optional.
+
+{: .note}
+
+> Use a package manager([chocolatey](https://chocolatey.org/) or [scoop](https://scoop.sh/)) may be a better choice, just make sure they're available in $env:PATH.
+
+### Patched GUI Font
+
+- [Hack NFM](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip) font.
+
+### PowerShell Command
+
+Run PowerShell command as Administrator:
 
 ```powershell
 git clone https://github.com/linrongbin16/lin.nvim $env:USERPROFILE\.nvim

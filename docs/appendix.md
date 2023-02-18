@@ -163,6 +163,7 @@ nav_order: 5
 - [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+- [quangnguyen30192/cmp-nvim-tags](https://github.com/quangnguyen30192/cmp-nvim-tags)
 - [DNLHC/glance.nvim](https://github.com/DNLHC/glance.nvim)
 - [onsails/lspkind.nvim](https://github.com/onsails/lspkind.nvim)
 

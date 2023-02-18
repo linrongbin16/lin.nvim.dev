@@ -351,21 +351,21 @@ Supported by [leap.nvim](https://github.com/ggandor/leap.nvim) and [hop.nvim](ht
 Leap keeps its default key mappings: `s`/`S` (🄽), `x`/`X` (🅇).
 While keys for hop are mapped following its predecessor [vim-easymotion](https://github.com/easymotion/vim-easymotion):
 
-- `<Leader><Leader>f{char}` 🄽 🅇 - Move forward by a single {char}.
-- `<Leader><Leader>F{char}` 🄽 🅇 - Move backward by a single {char}.
-- `<Leader><Leader>s{char}{char}` 🄽 🅇 - Move forward by two consequent {char}{char}.
-- `<Leader><Leader>S{char}{char}` 🄽 🅇 - Move backward by two consequent {char}{char}.
-- `<Leader><Leader>w` 🄽 🅇 - Move forward by word.
-- `<Leader><Leader>W` 🄽 🅇 - Move backward by word.
-- `<Leader><Leader>l` 🄽 🅇 - Move forward by line.
-- `<Leader><Leader>L` 🄽 🅇 - Move backward by line.
+- `<Leader>f{char}` 🄽 🅇 - Move forward by a single {char}.
+- `<Leader>F{char}` 🄽 🅇 - Move backward by a single {char}.
+- `<Leader>s{char}{char}` 🄽 🅇 - Move forward by two consequent {char}{char}.
+- `<Leader>S{char}{char}` 🄽 🅇 - Move backward by two consequent {char}{char}.
+- `<Leader>wd` 🄽 🅇 - Move forward by word.
+- `<Leader>wD` 🄽 🅇 - Move backward by word.
+- `<Leader>ln` 🄽 🅇 - Move forward by line.
+- `<Leader>lN` 🄽 🅇 - Move backward by line.
 
 ### Git
 
 - `]c` 🄽 - Go to next(👇) git hunk in current buffer.
 - `[c` 🄽 - Go to previous(👆) git hunk in current buffer.
 - `<Leader>gb` 🄽 - Toggle git blame info on current line.
-- `<Leader>gl`/`<Leader>gl` 🄽 🅅 - Open git link in browser/copy to clipboard.
+- `<Leader>gl`/`<Leader>gL` 🄽 🅅 - Open git link in browser/copy to clipboard.
 
 ### Easy Comment
 
