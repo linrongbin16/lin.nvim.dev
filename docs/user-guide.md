@@ -93,15 +93,6 @@ Meta-key (_M_), alt-key (_A_) on Windows/Linux, and command-key (_D_) on macOS a
 
 ## Key Mappings
 
-### Hot Keys
-
-- `F1` 🄽 - Toggle file explorer.
-- `F2` 🄽 - Toggle undo-tree.
-- `F3` 🄽 - Toggle structure outlines(tags).
-- `F4` 🄽 - Switch between C/C++ header and source.
-- `F9` 🄽 - Open markdown preview.
-- `F10` 🄽 - Toggle terminal.
-
 ### Ctrl+? Cmd+? Keys
 
 Ctrl+? follows the classic behavior under Windows:
@@ -129,10 +120,16 @@ For macOS, cmd+? follows the same behavior(ctrl+? works as well):
 
 Plugins:
 
-- `<Leader>ms` 🄽 - `:Mason<CR>`.
-- `<Leader>lz` 🄽 - `:Lazy<CR>`.
-- `<Leader>wk` 🄽 - `:WhichKey`.
-- `<Leader>gd` 🄽 - `:DogeGenerate`.
+- `<Leader>nt` 🄽 - Toggle file explorer by `NvimTreeFindFileToggle`.
+- `<Leader>ut` 🄽 - Toggle undo-tree by `UndotreeToggle`.
+- `<Leader>vt` 🄽 - Toggle structure outlines(tags) by `Vista!!`.
+- `<Leader>cs` 🄽 - Switch between C/C++ header and source by `ClangdSwitchSourceHeader`(only enabled when lsp client attached).
+- `<Leader>mp` 🄽 - Open markdown preview by `MarkdownPreview`.
+- `<Leader>tt` 🄽 - Toggle float terminal by `ToggleTerm`.
+- `<Leader>ms` 🄽 - Open lsp server manager by `Mason`.
+- `<Leader>lz` 🄽 - Open plugin manager by `Lazy`.
+- `<Leader>wk` 🄽 - Open key binding cheat sheet by `WhichKey`.
+- `<Leader>gd` 🄽 - Generate document(comment) for class/api by `DogeGenerate`.
 
 Save file without formatting:
 
