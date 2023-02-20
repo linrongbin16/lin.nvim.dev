@@ -213,7 +213,7 @@ nav_order: 5
 > Option `--no-edit` could disable all these plugins.
 
 - [f-person/git-blame.nvim](https://github.com/f-person/git-blame.nvim)
-- [ruifm/gitlinker.nvim](https://github.com/ruifm/gitlinker.nvim)
+- [linrongbin16/gitlinker.nvim](https://github.com/linrongbin16/gitlinker.nvim)
 
 #### Enhancements
 
