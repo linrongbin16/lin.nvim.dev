@@ -129,7 +129,7 @@ Plugins:
 - `<Leader>ms` 🄽 - Open lsp server manager by `Mason`.
 - `<Leader>lz` 🄽 - Open plugin manager by `Lazy`.
 - `<Leader>wk` 🄽 - Open key binding cheat sheet by `WhichKey`.
-- `<Leader>gd` 🄽 - Generate document(comment) for class/api by `DogeGenerate`.
+- `<Leader>dg` 🄽 - Document(annotation) generation by `DogeGenerate`.
 
 Save file without formatting:
 
