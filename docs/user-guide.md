@@ -388,6 +388,10 @@ Auto-pair braces/parentheses, auto-close html/xml tags, auto-end if-endif/functi
 
 ## Customization
 
+Configs are structured as below:
+
+{% include image.html src="/assets/user-guide/project-structure.png" alt="project-structure.png" width="40%" %}
+
 - Config entry: _init.vim_, it loads all components for nvim.
 - Plugins list: _lua/cfg/plugins.lua_, used by [lazy.nvim](https://github.com/folke/lazy.nvim), it loads all plugins for nvim.
 - Specific plugin configs: _repo/{org}/{repo}/\*.vim_ or _lua/repo/{org}/{repo}/\*.lua_, a plugin config could either written with vim or lua.
