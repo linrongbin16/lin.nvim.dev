@@ -396,6 +396,7 @@ Configs are structured as below:
 - Plugins list: _lua/cfg/plugins.lua_, used by [lazy.nvim](https://github.com/folke/lazy.nvim), it loads all plugins for nvim.
 - Specific plugin configs: _repo/{org}/{repo}/\*.vim_ or _lua/repo/{org}/{repo}/\*.lua_, a plugin config could either written with vim or lua.
 - Lsp config: _lua/cfg/lsp.lua_, lsp configs for nvim.
+- Lsp servers config: _lua/cfg/lspservers.lua_, dynamic generated lsp servers for nvim.
 - Color schemes: _lua/cfg/color.lua_.
 - Other settings: _lua/cfg/other.lua_.
 
