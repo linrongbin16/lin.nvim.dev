@@ -189,5 +189,4 @@ See [Improve Git monorepo performance with a file system monitor](https://github
 ## Next
 
 - Checkout [user guide](/lin.nvim.dev/docs/user-guide).
-- Checkout [Plugins](/lin.nvim.dev/docs/appendix/#plugins) to find out how these options affect a plugin.
 - Checkout [Available LSP Servers](/lin.nvim.dev/docs/appendix/#available-lsp-servers) to find out available lsp servers.
