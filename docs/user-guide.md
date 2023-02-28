@@ -159,7 +159,7 @@ Copy/paste across different vim instances through remote ssh could be difficult,
 > - 🅅 - `:WhichKey '' v`.
 > - 🄸 - `:WhichKey '' i`.
 >
-> Configure these key mappings in _~/.nvim/settings.vim_.
+> Configure these key mappings in _~/.nvim/cfg/other.vim_.
 
 ---
 
@@ -217,7 +217,7 @@ Patched-fonts [Hack Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/rele
 
 {: .note}
 
-> Configure GUI font in _~/.nvim/settings.vim_.
+> Configure GUI font in _~/.nvim/cfg/other.vim_.
 
 ---
 
@@ -283,7 +283,7 @@ Code format runs on file save asynchronous by default. To forcibly trigger code 
 
 {: .note}
 
-> Configure these key mappings in _~/.nvim/lua/conf/lsp.lua_.
+> Configure these key mappings in _~/.nvim/lua/cfg/lsp.lua_.
 
 ---
 
@@ -388,88 +388,15 @@ Auto-pair braces/parentheses, auto-close html/xml tags, auto-end if-endif/functi
 
 ## Customization
 
-The configs are structured as(`+` for folder, `*` for file):
-
-```
-+ ~/.nvim
-  + conf                    - basic configs
-  |  * basic.vim
-  + deps                    - installer (third-party dependencies)
-  |  * apt.sh
-  |  * brew.sh
-  |  * brew.sh
-  + lazy (generated)        - all plugins metadata(git repository), managed by lazy.nvim
-  + lua
-  |  + conf                 - lua configs/utils
-  |  |  * constants.lua     - global configs across multiple plugins
-  |  |  * keymap.lua        - keymap utils
-  |  |  * lsp.lua           - lsp configs
-  |  + repo                 - plugin configs, written in lua
-  |  |  + airblade
-  |  |  |  + vim-gitgutter  - plugin: https://github.com/airblade/vim-gitgutter
-  |  |  |  |  * keys.lua    - `keys` property for lazy
-  |  |  + akinsho
-  |  |  |  + bufferline-nvim
-  |  |  |  |  * config.lua  - `config` property for lazy
-  |  |  |  |  * keys.lua
-  |  |  + junegunn
-  |  |  |  + fzf-vim
-  |  |  |  |  * keys.lua
-  |  |  ...
-  |  * lspservers.lua (generated)       - ensure installed lsp servers and lspconfig setups
-  |  * plugins.lua (generated)          - plugins list, managed by lazy.nvim
-  + mason (generated)       - all lsp server metadata(installed files), managed by mason.nvim
-  + repo                    - plugin configs, written in vim
-  |  + airblade
-  |  |  + vim-gitgutter     - plugin: https://github.com/airblade/vim-gitgutter
-  |  |  |  * init.vim       - `init` property for lazy
-  |  ...
-  |  + junegunn
-  |  |  + fzf.vim           - plugin: https://github.com/junegunn/fzf.vim
-  |  |  |  * config.vim     - `config` property for lazy
-  |  |  |  * init.vim       - `init` property for lazy
-  |  ...
-  + temp                    - installer (generator templates)
-  |  * colorschemes-footer.vim
-  |  * colorschemes-header.vim
-  |  ...
-  * colorschemes.vim (generated)        - colorscheme
-  * generator.py                        - installer (generator)
-  * init.vim (generated)                - config entry
-  * install.ps1                         - installer (for windows)
-  * install.sh                          - installer (for unix)
-  * LICENSE
-  * README.md
-  * settings.vim (generated)            - other settings
-```
-
-The config entry `init.vim` will load below components:
-
-1. `conf/*` and `lua/conf/*` - The very basic and common configs.
-2. `repo/**/*` and `lua/repo/**/*` - All plugins and their configs. Besides:
-   - `lua/plugins.lua` - The plugins list. _Lazy.nvim_ use it to load all plugins and their configs.
-   - `lua/lspservers.lua` - Lsp servers(and null-ls sources) list. _Mason.nvim_ use it to manage all ensure installed lsp servers and their setups.
-3. `colorscheme.vim` - Colors.
-4. `settings.vim` - Other settings.
-
-Each plugin's configs are in `repo/{org}{repo}/` folder(written in vim), or `lua/repo/{org}/{repo}` folder(written in lua). Choose any one of them according to your preference.
-
-A plugin's config contains below sections:
-
-- `init.vim`/`init.lua` - Used by _lazy.nvim_ `init` property. Global variables defined here, executed before loading so the plugin could see them.
-- `config.vim`/`config.lua` - Used by _lazy.nvim_ `config` property. Lua plugin's `setup` and other related things.
-- `keys.vim`/`keys.lua` - Used by _lazy.nvim_ `keys` property. Key mappings defined here.
-
-{: .important-title}
-
-> Notice
->
-> Since `.`(dot) in lua require means path separator, so we translate all path's `.`(dot) to `-`(hyphen) in `lua/repo`.
->
-> For example: `lua/repo/junegunn/fzf-vim` and `repo/junegunn/fzf.vim`.
+- Config entry: _init.vim_, it loads all components for nvim.
+- Plugins list: _lua/cfg/plugins.lua_, used by [lazy.nvim](https://github.com/folke/lazy.nvim), it loads all plugins for nvim.
+- Specific plugin configs: _repo/{org}/{repo}/\*.vim_ or _lua/repo/{org}/{repo}/\*.lua_, a plugin config could either written with vim or lua.
+- Lsp config: _lua/cfg/lsp.lua_, lsp configs for nvim.
+- Color schemes: _lua/cfg/color.lua_.
+- Other settings: _lua/cfg/other.lua_.
 
 ---
 
 ## Next
 
-- See [complete list of installed colorschemes/plugins/lsps](/lin.nvim.dev/docs/appendix).
+- See [Appendix](/lin.nvim.dev/docs/appendix) for more.

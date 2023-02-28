@@ -11,6 +11,7 @@ has_toc: false
 
 ---
 
+- [Basic Mode](#basic-mode)
 - [Linux/macOS](#linuxmacos)
 - [Windows](#windows)
   - [Windows Developer Mode](#windows-developer-mode)
@@ -20,12 +21,19 @@ has_toc: false
   - [Patched GUI Font](#patched-gui-font)
   - [PowerShell Command](#powershell-command)
 - [Options](#options)
-  - [Install Mode](#install-mode)
-  - [More Options](#more-options)
   - [Auto-Detect Available Languages](#auto-detect-available-languages)
 - [Upgrade](#upgrade)
+- [Uninstall](#uninstall)
 - [Optimization](#optimization)
   - [Git Performance](#git-performance)
+
+---
+
+## Basic Mode
+
+If you want a basic installation, without any third-party dependencies or plugins(just like [sensible.vim](https://github.com/tpope/vim-sensible)). Just copy [cfg/basic.vim](https://github.com/linrongbin16/lin.nvim/blob/main/cfg/basic.vim) to your _~/.config/nvim/init.vim_, and that's all.
+
+If you want a fully installation, go on with below steps.
 
 ---
 
@@ -132,33 +140,11 @@ cd $env:USERPROFILE\.nvim
 
 ## Options
 
-### Install Mode
-
-The installer provides 3 installation modes:
-
-- Full mode: default mode, it installs all features for the best experience, while consuming unignorable CPU, memory, disk and graphics.
-- Limit mode: use `--limit` for low-performance devices such as old PC, which disables most plugins and extensions.
-- Basic mode: use `--basic` for restricted environments such as production servers, which only installs a pure basic vim setting file(_~/.nvim/conf/basic.vim_).
-
-### More Options
-
-- `--use-color`: use a static color scheme, instead of random selection on startup. For example: `--use-color=darkblue`.
-- `--no-color`: disable color schemes, and random selection on startup.
-- `--no-hilight`: disable highlights, such as RGB color, cursor word, etc.
-- `--no-lang`: disable language support, such as auto-complete, code format, lint, diagnostics, etc.
-- `--no-edit`: disable editing enhancements, such as easy comments, cursor movement, etc.
-- `--no-plug`: disable specific plugin in format _org/repo_, this can be provided multiple times. For example: `--no-plug=RRethy/vim-hexokinase --no-plug=alvan/vim-closetag`.
-- `--no-ctrl`: disable Windows ctrl+{c,v,s,x,a,...}(macOS cmd+{c,v,s,x,a,...}) keys behavior.
-
 ### Auto-Detect Available Languages
 
 There's a real powerful option to quickly install lsp servers:
 
 - `--with-lsp`: detect any language installed(based on compiler/interpreter), and interactively provide candidates for you.
-
-{: .note}
-
-> Option `--limit` is equivalent to `--no-hilight --no-color --no-lang --no-edit`.
 
 ---
 
@@ -174,6 +160,13 @@ For vim plugins, please update in neovim:
 
 ```vim
 :Lazy! sync
+```
+
+## Uninstall
+
+```bash
+rm -rf ~/.nvim
+rm -rf ~/.config/nvim
 ```
 
 ---

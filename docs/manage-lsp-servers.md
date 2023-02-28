@@ -154,4 +154,4 @@ And for some specific language customization/enhancement, please add configs to 
 
 {: .note}
 
-> Configure these LSP servers in _~/.nvim/lua/lspservers.lua_.
+> Configure these LSP servers in _~/.nvim/lua/cfg/lspservers.lua_.
