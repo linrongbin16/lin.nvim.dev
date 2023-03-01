@@ -43,11 +43,9 @@ Feed with IDE features that are in a chronic of starvation:
 
 > Most popurlar color schemes are picked from [vimcolorschemes.com/top](https://vimcolorschemes.com/top) and [awesome-neovim#colorscheme](https://www.trackawesomelist.com/rockerBOO/awesome-neovim/readme/#colorscheme), following below rules:
 >
-> 1. &ge; 500 stars.
-> 2. Last commit in 1 year.
-> 3. For multiple ports/variants, keep more stars or updates, even lower standards to &ge; 100 stars if has below features:
->    - Modern features: LSP/treesitter/etc.
->    - Plugins integration: tabline/statusline/etc.
+> 1. &ge; 400 stars.
+> 2. Last commit in 2 year.
+> 3. For multiple ports/variants, keep more stars or updates, or more plugins support.
 
 ## Focus
 
