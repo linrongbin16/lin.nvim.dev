@@ -164,10 +164,11 @@ For vim plugins, please update in neovim:
 
 ## Uninstall
 
-```bash
-rm -rf ~/.nvim
-rm -rf ~/.config/nvim
-```
+Remove below directories:
+
+- `~/.nvim`, for Windows it's `$env:USERPROFILE\.nvim`.
+- `~/.config/nvim`, for Windows it's `$env:USERPROFILE\AppData\Local\nvim`(verify it in neovim `:lua print(vim.fn.stdpath('config'))`).
+- `~/.local/share/nvim`, for Windows it's `$env:USERPROFILE\AppData\Local\nvim-data`(verify it in neovim `:lua print(vim.fn.stdpath('data'))`).
 
 ---
 
