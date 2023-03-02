@@ -168,10 +168,6 @@ class PluginData:
         return f"https://github.com/{self.url}"
 
     def lazy_branch(self):
-        branch = self._get_branch()
-        return f"branch = '{branch}'" if branch != "master" else None
-
-    def _get_branch(self):
         try:
             with make_driver() as driver:
                 driver.get(self.github_url() + "/branches")
@@ -330,10 +326,12 @@ class Acs:
 
 
 def format_lua(repo):
-    branch = repo.lazy_branch()
-    optional_branch = (INDENT * 2 + branch + "\n") if branch else ""
     name = repo.lazy_name()
-    optional_name = name if name else ""
+    optional_name = f"{INDENT * 2}name = '{name}',\n" if name else ""
+    branch = repo.lazy_branch()
+    optional_branch = (
+        f"{INDENT * 2}branch = '{branch}',\n" if branch != "master" else ""
+    )
     return f"""{INDENT}{{
 {INDENT*2}-- stars:{int(repo.stars)}, repo:{repo.github_url()}
 {INDENT*2}'{repo.url}',
