@@ -165,8 +165,8 @@ class PluginData:
         return isinstance(other, PluginData) and self.url.lower() == other.url.lower()
 
     def retrieve_extra_data(self):
-        self.branch = self._get_branch()
         self.colorscheme_names = self._get_colorscheme_names()
+        self.branch = self._get_branch()
 
     def github_url(self):
         return f"https://github.com/{self.url}"
@@ -175,13 +175,17 @@ class PluginData:
         return f"branch = '{self.branch}'" if self.branch != "master" else None
 
     def _get_branch(self):
-        with make_driver() as driver:
-            driver.get(self.github_url() + "/branches")
-            branches = find_elements(driver, "//branch-filter-item")
-            for b in branches:
-                if b.get_attribute("branch") == "main":
-                    return "main"
-        return "master"
+        try:
+            with make_driver() as driver:
+                driver.get(self.github_url() + "/branches")
+                branches = find_elements(driver, "//branch-filter-item")
+                for b in branches:
+                    if b.get_attribute("branch") == "main":
+                        return "main"
+            return "master"
+        except Exception as e:
+            logging.error(e)
+            return "master"
 
     def _get_colorscheme_names(self):
         url_splits = self.url.split("/")
@@ -315,7 +319,7 @@ def format_lazy(repo, duplicated_repo):
     )
     return f"""{INDENT}{{
 {INDENT*2}-- stars:{int(repo.stars)}
-{INDENT*2}-- repo:{repo.github_url()}, {' (duplicated with repo:' + duplicated_repo.github_url() + ')' if duplicated_repo else ''}
+{INDENT*2}-- repo:{repo.github_url()},{' (duplicated with repo:' + duplicated_repo.github_url() + ')' if duplicated_repo else ''}
 {INDENT*2}-- colorscheme names:{' '.join(repo.colorscheme_names)}
 {INDENT*2}'{repo.url}',
 {INDENT*2}lazy = true,
