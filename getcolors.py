@@ -101,6 +101,8 @@ def blacklist(repo):
         return True
     if repo.url.find("mini.nvim#minischeme") >= 0:
         return True
+    if repo.url.find("olimorris/onedarkpro.nvim") >= 0:
+        return True
     return False
 
 
@@ -152,8 +154,6 @@ class PluginData:
         self.url = url
         self.stars = int(stars)
         self.last_update = last_update
-        self.branch = None
-        self.colorscheme_names = []
 
     def __str__(self):
         return f"<PluginData url:{self.url}, stars:{self.stars}, last_update:{self.last_update.isoformat() if isinstance(self.last_update, datetime.datetime) else None}>"
@@ -164,15 +164,12 @@ class PluginData:
     def __eq__(self, other):
         return isinstance(other, PluginData) and self.url.lower() == other.url.lower()
 
-    def retrieve_extra_data(self):
-        self.colorscheme_names = self._get_colorscheme_names()
-        self.branch = self._get_branch()
-
     def github_url(self):
         return f"https://github.com/{self.url}"
 
     def lazy_branch(self):
-        return f"branch = '{self.branch}'" if self.branch != "master" else None
+        branch = self._get_branch()
+        return f"branch = '{branch}'" if branch != "master" else None
 
     def _get_branch(self):
         try:
@@ -187,7 +184,27 @@ class PluginData:
             logging.error(e)
             return "master"
 
-    def _get_colorscheme_names(self):
+    def lazy_name(self):
+        url_splits = self.url.split("/")
+        org = url_splits[0]
+        repo = url_splits[1]
+
+        def name_in_blacklist(n):
+            return n == "vim" or n == "nvim" or n == "neovim"
+
+        def preprocess(name):
+            if name.find("-") > 0:
+                name_splits = name.split("-")
+                return [n for n in name_splits if not name_in_blacklist(n)]
+            elif name.find(".") > 0:
+                name_splits = name.split(".")
+                return [n for n in name_splits if not name_in_blacklist(n)]
+            else:
+                return [name]
+
+        return org if name_in_blacklist(repo) else None
+
+    def color_names(self):
         url_splits = self.url.split("/")
         org = url_splits[0]
         repo = url_splits[1]
@@ -312,50 +329,71 @@ class Acs:
         return repositories
 
 
-def format_lazy(repo, duplicated_repo):
-    repo.retrieve_extra_data()
-    optional_branch = (
-        (INDENT * 2 + repo.lazy_branch() + "\n") if repo.lazy_branch() else ""
-    )
+def format_lua(repo):
+    branch = repo.lazy_branch()
+    optional_branch = (INDENT * 2 + branch + "\n") if branch else ""
+    name = repo.lazy_name()
+    optional_name = name if name else ""
     return f"""{INDENT}{{
-{INDENT*2}-- stars:{int(repo.stars)}
-{INDENT*2}-- repo:{repo.github_url()},{' (duplicated with repo:' + duplicated_repo.github_url() + ')' if duplicated_repo else ''}
-{INDENT*2}-- colorscheme names:{' '.join(repo.colorscheme_names)}
+{INDENT*2}-- stars:{int(repo.stars)}, repo:{repo.github_url()}
 {INDENT*2}'{repo.url}',
 {INDENT*2}lazy = true,
 {INDENT*2}priority = 1000,
-{optional_branch}{INDENT}}},
+{optional_name}{optional_branch}{INDENT}}},
 """
 
 
+def format_vim(repo):
+    color_names = ", ".join(repo.color_names())
+    return f"{INDENT*3}\\ '{color_names}',\n"
+
+
 if __name__ == "__main__":
+    log_level = logging.WARNING
+    if "--debug" in sys.argv:
+        log_level = logging.DEBUG
+    if "--info" in sys.argv:
+        log_level = logging.INFO
     logging.basicConfig(
         format="%(asctime)s %(levelname)s [%(filename)s:%(lineno)d](%(funcName)s) %(message)s",
-        level=logging.DEBUG if "--debug" in sys.argv else logging.INFO,
+        level=log_level,
     )
 
     vcs = Vcs().parse()
     acs = Acs().parse()
     cs = []
-    with open("get-colors-list.lua", "w") as fp:
-        fp.writelines("return {\n")
-        fp.writelines(
+    with open("get-colors-list.lua", "w") as luafp, open(
+        "get-colors-list.vim", "w"
+    ) as vimfp:
+        luafp.writelines("return {\n")
+        luafp.writelines(
             f"{INDENT}-- https://www.trackawesomelist.com/rockerBOO/awesome-neovim/readme/#colorscheme\n"
         )
+        vimfp.writelines("let s:colors=[\n")
         for repo in sorted(acs, key=lambda r: r.stars, reverse=True):
             if blacklist(repo):
-                logging.debug("acs repo:{repo} in blacklist, skip")
+                logging.debug(f"acs repo:{repo} in blacklist, skip")
+                continue
             dup = duplicate_color(cs, repo)
-            fp.writelines(format_lazy(repo, dup))
+            if dup:
+                logging.warning(f"acs repo:{repo} is duplicated, skip")
+                continue
+            luafp.writelines(format_lua(repo))
+            vimfp.writelines(format_vim(repo))
             cs.append(repo)
-        fp.writelines(f"\n{INDENT}-- https://vimcolorschemes.com/\n")
+        luafp.writelines(f"\n{INDENT}-- https://vimcolorschemes.com/\n")
         for repo in sorted(vcs, key=lambda r: r.stars, reverse=True):
             if repo_exist(acs, repo):
-                logging.debug("vcs repo:{repo} already exist in acs, skip")
+                logging.debug(f"vcs repo:{repo} already exist in acs, skip")
             elif blacklist(repo):
-                logging.debug("vcs repo:{repo} in blacklist, skip")
+                logging.debug(f"vcs repo:{repo} in blacklist, skip")
             else:
                 dup = duplicate_color(cs, repo)
-                fp.writelines(format_lazy(repo, dup))
-                cs.append(repo)
-        fp.writelines("}\n")
+                if dup:
+                    logging.warning(f"acs repo:{repo} is duplicated, skip")
+                else:
+                    luafp.writelines(format_lua(repo))
+                    vimfp.writelines(format_vim(repo))
+                    cs.append(repo)
+        luafp.writelines("}\n")
+        vimfp.writelines(f"{INDENT*3}\]\n")
