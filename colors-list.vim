@@ -21,7 +21,7 @@ let s:colors=[
             \ 'nord',
             \ 'moonfly',
             \ 'embark',
-            \ 'Papercolor',
+            \ 'papercolor',
             \ 'iceberg',
             \ 'seoul256',
             \ 'monokai',

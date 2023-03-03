@@ -1,11 +1,10 @@
 return {
-    -- https://www.trackawesomelist.com/rockerBOO/awesome-neovim/readme/#colorscheme
+    -- awesome-neovim#colorscheme
     {
         -- stars:3200, repo:https://github.com/folke/tokyonight.nvim
         "folke/tokyonight.nvim",
         lazy = true,
         priority = 1000,
-        branch = "main",
     },
     {
         -- stars:2300, repo:https://github.com/catppuccin/nvim
@@ -13,7 +12,6 @@ return {
         lazy = true,
         priority = 1000,
         name = "catppuccin",
-        branch = "main",
     },
     {
         -- stars:2000, repo:https://github.com/rebelot/kanagawa.nvim
@@ -26,7 +24,6 @@ return {
         "EdenEast/nightfox.nvim",
         lazy = true,
         priority = 1000,
-        branch = "main",
     },
     {
         -- stars:1700, repo:https://github.com/sainnhe/everforest
@@ -71,7 +68,6 @@ return {
         "ellisonleao/gruvbox.nvim",
         lazy = true,
         priority = 1000,
-        branch = "main",
     },
     {
         -- stars:858, repo:https://github.com/navarasu/onedark.nvim
@@ -91,24 +87,18 @@ return {
         lazy = true,
         priority = 1000,
         name = "rose-pine",
-        branch = "main",
-        config = function()
-            require("rose-pine").setup()
-        end,
     },
     {
         -- stars:717, repo:https://github.com/marko-cerovac/material.nvim
         "marko-cerovac/material.nvim",
         lazy = true,
         priority = 1000,
-        branch = "main",
     },
     {
         -- stars:698, repo:https://github.com/sainnhe/edge
         "sainnhe/edge",
         lazy = true,
         priority = 1000,
-        branch = "master",
     },
     {
         -- stars:624, repo:https://github.com/fenetikm/falcon
@@ -121,14 +111,12 @@ return {
         "nyoom-engineering/oxocarbon.nvim",
         lazy = true,
         priority = 1000,
-        branch = "main",
     },
     {
         -- stars:577, repo:https://github.com/bluz71/vim-nightfly-colors
         "bluz71/vim-nightfly-colors",
         lazy = true,
         priority = 1000,
-        name = "nightfly",
     },
     {
         -- stars:571, repo:https://github.com/shaunsingh/nord.nvim
@@ -141,18 +129,16 @@ return {
         "bluz71/vim-moonfly-colors",
         lazy = true,
         priority = 1000,
-        name = "moonfly",
     },
     {
         -- stars:527, repo:https://github.com/embark-theme/vim
         "embark-theme/vim",
         lazy = true,
         priority = 1000,
-        name = "embark",
-        branch = "main",
+        name = "embark-theme",
     },
 
-    -- https://vimcolorschemes.com/
+    -- vimcolorschemes.com
     {
         -- stars:2440, repo:https://github.com/nlknguyen/papercolor-theme
         "nlknguyen/papercolor-theme",
@@ -176,7 +162,6 @@ return {
         "sickill/vim-monokai",
         lazy = true,
         priority = 1000,
-        branch = "master",
     },
     {
         -- stars:1018, repo:https://github.com/jacoborus/tender.vim
@@ -185,7 +170,7 @@ return {
         priority = 1000,
     },
     {
-        -- stars:912, repo:https://github.com/lifepillar/vim-solarized8
+        -- stars:913, repo:https://github.com/lifepillar/vim-solarized8
         "lifepillar/vim-solarized8",
         lazy = true,
         priority = 1000,
@@ -197,7 +182,7 @@ return {
         priority = 1000,
     },
     {
-        -- stars:826, repo:https://github.com/romainl/apprentice
+        -- stars:827, repo:https://github.com/romainl/apprentice
         "romainl/apprentice",
         lazy = true,
         priority = 1000,
@@ -213,17 +198,15 @@ return {
         "srcery-colors/srcery-vim",
         lazy = true,
         priority = 1000,
-        name = "srcery",
     },
     {
         -- stars:705, repo:https://github.com/pineapplegiant/spaceduck
         "pineapplegiant/spaceduck",
         lazy = true,
         priority = 1000,
-        branch = "main",
     },
     {
-        -- stars:673, repo:https://github.com/ajmwagar/vim-deus
+        -- stars:672, repo:https://github.com/ajmwagar/vim-deus
         "ajmwagar/vim-deus",
         lazy = true,
         priority = 1000,
@@ -258,7 +241,6 @@ return {
         "wadackel/vim-dogrun",
         lazy = true,
         priority = 1000,
-        branch = "main",
     },
     {
         -- stars:428, repo:https://github.com/jaredgorski/spacecamp
