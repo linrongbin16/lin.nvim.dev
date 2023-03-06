@@ -222,7 +222,7 @@ return {
         "challenger-deep-theme/vim",
         lazy = true,
         priority = 1000,
-        name = "challenger-deep-theme",
+        name = "challenger-deep",
     },
     {
         -- stars:488, repo:https://github.com/rigellute/rigel
