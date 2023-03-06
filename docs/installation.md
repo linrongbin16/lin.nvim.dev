@@ -20,8 +20,6 @@ has_toc: false
   - [Third-Party Dependencies](#third-party-dependencies)
   - [Patched GUI Font](#patched-gui-font)
   - [PowerShell Command](#powershell-command)
-- [Options](#options)
-  - [Auto-Detect Available Languages](#auto-detect-available-languages)
 - [Upgrade](#upgrade)
 - [Uninstall](#uninstall)
 - [Optimization](#optimization)
@@ -67,7 +65,7 @@ git clone https://github.com/linrongbin16/lin.nvim ~/.nvim && cd ~/.nvim && ./in
 
 ### Windows Developer Mode
 
-Please check: <https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development#activate-developer-mode>.
+Enable windows developer mode: <https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development#activate-developer-mode>.
 
 ### Visual Studio
 
@@ -138,29 +136,18 @@ cd $env:USERPROFILE\.nvim
 
 ---
 
-## Options
-
-### Auto-Detect Available Languages
-
-There's a real powerful option to quickly install lsp servers:
-
-- `--with-lsp`: detect any language installed(based on compiler/interpreter), and interactively provide candidates for you.
-
----
-
 ## Upgrade
 
-For distribution, please re-install by:
+Please re-install by:
 
 ```bash
+rm -rf ~/.local/share/nvim/lazy     # for Windows it's $env:USERPROFILE\AppData\Local\nvim-data\lazy
+rm -rf ~/.local/share/nvim/mason    # for Windows it's $env:USERPROFILE\AppData\Local\nvim-data\mason
 cd ~/.nvim && git pull origin main && ./install.sh
-```
-
-For vim plugins, please update in neovim:
-
-```vim
 :Lazy! sync
 ```
+
+---
 
 ## Uninstall
 
