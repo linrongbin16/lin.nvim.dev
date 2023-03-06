@@ -178,11 +178,6 @@ A few keys are added for convenience:
 - `[d` 🄽 - Previous(👈) diagnostic item.
 - `<Leader>.`/`<Leader>,` 🄽 - Resize explorer width bigger/smaller.
 
-A few keys are removed:
-
-- `]e` 🄽 - Next(👉) diagnostic item, replaced by `]d`.
-- `[e` 🄽 - Previous(👈) diagnostic item, replaced by `[d`.
-
 ### Tabline
 
 Supported by [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) and [vim-bbye](https://github.com/moll/vim-bbye).
