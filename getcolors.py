@@ -175,8 +175,6 @@ class PluginData:
             return preprocess(repo)
 
     def lazy_config(self) -> Optional[str]:
-        if self.path == "rose-pine/neovim":
-            return 'require("rose-pine").setup()'
         return None
 
 
