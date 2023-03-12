@@ -43,7 +43,7 @@ Feed with IDE features that are in a chronic of starvation:
 
 > Most popurlar color schemes are picked from [vimcolorschemes.com/top](https://vimcolorschemes.com/top) and [awesome-neovim#colorscheme](https://www.trackawesomelist.com/rockerBOO/awesome-neovim/readme/#colorscheme), following below rules:
 >
-> 1. &ge; 400 stars.
+> 1. &ge; 500 stars.
 > 2. Last commit in 2 year.
 > 3. For multiple ports/variants, keep more stars or updates, or more plugins support.
 
