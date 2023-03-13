@@ -2,15 +2,13 @@
 
 import datetime
 import logging
-import os
 import pathlib
 import shutil
-from dataclasses import is_dataclass
 
 from colorutil import INDENT, GitObject, Repo, init_logging, parse_options
 
 
-def dedup() -> set[Repo]:
+def dedup() -> list[Repo]:
     def greater_than(a: Repo, b: Repo) -> bool:
         if a.priority != b.priority:
             return a.priority > b.priority
@@ -47,7 +45,7 @@ def dedup() -> set[Repo]:
                     # add new color
                     colors[color] = repo
                     repos.add(repo)
-    return repos
+    return sorted(list(repos), key=lambda r: (r.stars, r.url), reverse=True)
 
 
 def path2str(p: pathlib.Path) -> str:
@@ -66,6 +64,8 @@ def dump_color(luafp, vimfp, repo: Repo) -> None:
     ]
     colors = [str(c.name)[:-4] for c in colors_files]
     for c in colors:
+        if c.lower().find("light") >= 0:
+            continue
         vimfp.writelines(f"{INDENT*3}\\ '{c}',\n")
     name = repo.name()
     optional_name = f"{INDENT * 2}name = '{name}',\n" if name else ""
