@@ -39,13 +39,12 @@ More UI improve plugins leave to you to find out.
 
 ## Use Cases
 
-You could install new LSP servers by manual commands `:Mason`/`:LspInstall`/`:NullLsInstall`, but that's only recommended when the server cannot be ensure-installed by mason-lspconfig or mason-null-ls. _~/.nvim/lua/lspservers.lua_ provides two groups of lua tables:
+By default, You could just install new LSP servers by `:LspInstall`, and manage/remove them by `:Mason`, and that's all!
+
+But if you want to customize setups, _~/.nvim/lua/lspservers.lua_ provides two groups of lua tables:
 
 - `embeded_servers`/`embeded_servers_setups`: Former setup mason's LSP servers, latter setup LSP configs.
 - `embeded_nullls`/`embeded_nullls_setups`: Former setup null-ls sources, latter setup null-ls configs.
-
-Since we're using mason-lspconfig and mason-null-ls, both setup could be done automatically by the **default setup handler**.
-So simply add/remove the items in `embeded_servers` and `embeded_nullls` can meet most needs, or specific setup handlers for customization.
 
 Here's an example:
 
@@ -124,23 +123,7 @@ local embeded_nullls_setups = {
   end,
 }
 -- }
-
 ```
-
-Each item of `embeded_servers` or `embeded_nullls` is a name of _mason_ package or _null-ls_ source.
-
-For most cases, just add your LSP server name to `embeded_servers` should do the job. But some formatter/linter/etc is not even a LSP server, so use _null-ls_ to register it(here we call it a source) through `embeded_nullls`.
-
-And for some specific language customization/enhancement, please add configs to `embeded_servers_setups`(for `embeded_servers`) and `embeded_nullls_setups`(for `embeded_nullls`).
-
-## Embeded LSP Servers
-
-- Mason servers:
-  - Lua: lua_ls
-  - VimScript: vimls
-- Null-ls sources:
-  - Lua: stylua
-  - VimScript: vint
 
 ## Reference
 
