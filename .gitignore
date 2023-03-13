@@ -17,3 +17,9 @@ Gemfile.lock
 
 # Jetbrains
 /.idea
+
+# Colors
+/candidate
+
+# Python
+/__pycache__
