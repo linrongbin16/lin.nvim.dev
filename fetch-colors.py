@@ -2,6 +2,8 @@
 
 import datetime
 import logging
+import pathlib
+import shutil
 from typing import Iterable
 
 from selenium.webdriver import Chrome, ChromeOptions, DesiredCapabilities
@@ -10,18 +12,8 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 
-from colorutil import (
-    HEADLESS,
-    LASTCOMMIT,
-    STARS,
-    TIMEOUT,
-    DataStore,
-    Repo,
-    blacklist,
-    init_logging,
-    parse_number,
-    parse_options,
-)
+from colorutil import (DATA_FILE, HEADLESS, LASTCOMMIT, STARS, TIMEOUT, Repo,
+                       blacklist, init_logging, parse_number, parse_options)
 
 
 def find_element(driver: Chrome, xpath: str) -> WebElement:
@@ -166,6 +158,8 @@ class AwesomeNeovim:
 if __name__ == "__main__":
     options = parse_options()
     init_logging(options)
-    DataStore.reset()
+    data_path = pathlib.Path(DATA_FILE)
+    if data_path.exists() and data_path.is_file():
+        data_path.unlink()
     AwesomeNeovim().fetch()
     Vimcolorscheme().fetch()
