@@ -64,7 +64,7 @@ def dump_color(luafp, vimfp, repo: Repo) -> None:
     ]
     colors = [str(c.name)[:-4] for c in colors_files]
     for c in colors:
-        if c.lower().find("light") >= 0:
+        if c.lower().find("light") >= 0 or c.lower().find("day") >= 0:
             continue
         vimfp.writelines(f"{INDENT*3}\\ '{c}',\n")
     name = repo.name()
