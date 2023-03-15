@@ -5,14 +5,8 @@ import logging
 import pathlib
 import shutil
 
-from colorutil import (
-    CANDIDATE_OBJECT_DIR,
-    INDENT,
-    GitObject,
-    Repo,
-    init_logging,
-    parse_options,
-)
+from colorutil import (CANDIDATE_OBJECT_DIR, INDENT, GitObject, Repo,
+                       init_logging, parse_options)
 
 
 def dedup() -> list[Repo]:
@@ -62,7 +56,7 @@ def path2str(p: pathlib.Path) -> str:
     return result
 
 
-def dump_color(luafp, vimfp, repo: Repo) -> None:
+def dump_color(luafp, prifp, darkfp, repo: Repo) -> None:
     colors_dir = pathlib.Path(f"{CANDIDATE_OBJECT_DIR}/{repo.url}/colors")
     colors_files = [
         f
@@ -82,7 +76,16 @@ def dump_color(luafp, vimfp, repo: Repo) -> None:
         for c in colors:
             if primary_color is None or len(c) < len(primary_color):
                 primary_color = c
-    vimfp.writelines(f"{INDENT*3}\\ '{primary_color}',\n")
+    prifp.writelines(f"{INDENT*3}\\ '{primary_color}',\n")
+    dark_colors = [
+        c
+        for c in colors
+        if c.lower().find("light") < 0
+        and c.lower().find("day") < 0
+        and c.lower().find("dawn") < 0
+    ]
+    for c in dark_colors:
+        darkfp.writelines(f"{INDENT*3}\\ '{c}',\n")
     name = repo.name()
     optional_name = f"{INDENT * 2}name = '{name}',\n" if name else ""
     branch = repo.config.branch if repo.config and repo.config.branch else None
@@ -112,13 +115,17 @@ def build() -> None:
     deduped_repos = dedup()
 
     # dump colors
-    with open("colors.lua", "w") as luafp, open("colors.vim", "w") as vimfp:
+    with open("colors.lua", "w") as luafp, open(
+        "primary-colors.vim", "w"
+    ) as prifp, open("dark-colors.vim", "w") as darkfp:
         luafp.writelines("return {\n")
-        vimfp.writelines("let s:colors=[\n")
+        prifp.writelines("let s:colors=[\n")
+        darkfp.writelines("let s:colors=[\n")
         for repo in deduped_repos:
-            dump_color(luafp, vimfp, repo)
+            dump_color(luafp, prifp, darkfp, repo)
         luafp.writelines("}\n")
-        vimfp.writelines(f"{INDENT*3}\\]\n")
+        prifp.writelines(f"{INDENT*3}\\]\n")
+        darkfp.writelines(f"{INDENT*3}\\]\n")
 
 
 if __name__ == "__main__":
