@@ -4,7 +4,7 @@ let s:colors=[
             \ 'catppuccin',
             \ 'kanagawa',
             \ 'iceberg',
-            \ 'dayfox',
+            \ 'nightfox',
             \ 'everforest',
             \ 'seoul256',
             \ 'monokai',
