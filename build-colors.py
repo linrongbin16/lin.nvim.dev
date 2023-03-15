@@ -5,7 +5,14 @@ import logging
 import pathlib
 import shutil
 
-from colorutil import INDENT, GitObject, Repo, init_logging, parse_options
+from colorutil import (
+    CANDIDATE_OBJECT_DIR,
+    INDENT,
+    GitObject,
+    Repo,
+    init_logging,
+    parse_options,
+)
 
 
 def dedup() -> list[Repo]:
@@ -56,17 +63,26 @@ def path2str(p: pathlib.Path) -> str:
 
 
 def dump_color(luafp, vimfp, repo: Repo) -> None:
-    colors_dir = pathlib.Path(f"candidate/{repo.url}/colors")
+    colors_dir = pathlib.Path(f"{CANDIDATE_OBJECT_DIR}/{repo.url}/colors")
     colors_files = [
         f
         for f in colors_dir.iterdir()
         if f.is_file() and (str(f).endswith(".vim") or str(f).endswith(".lua"))
     ]
     colors = [str(c.name)[:-4] for c in colors_files]
-    for c in colors:
-        if c.lower().find("light") >= 0 or c.lower().find("day") >= 0:
-            continue
-        vimfp.writelines(f"{INDENT*3}\\ '{c}',\n")
+    primary_color = None
+    if repo.url.lower() in [
+        "EdenEast/nightfox.nvim".lower(),
+        "projekt0n/github-nvim-theme".lower,
+    ]:
+        for c in colors:
+            if c in ["nightfox", "github_dark"]:
+                primary_color = c
+    else:
+        for c in colors:
+            if primary_color is None or len(c) < len(primary_color):
+                primary_color = c
+    vimfp.writelines(f"{INDENT*3}\\ '{primary_color}',\n")
     name = repo.name()
     optional_name = f"{INDENT * 2}name = '{name}',\n" if name else ""
     branch = repo.config.branch if repo.config and repo.config.branch else None

@@ -6,7 +6,7 @@ return {
         priority = 1000,
     },
     {
-        -- stars:2455, repo:https://github.com/nlknguyen/papercolor-theme
+        -- stars:2457, repo:https://github.com/nlknguyen/papercolor-theme
         'nlknguyen/papercolor-theme',
         lazy = true,
         priority = 1000,
@@ -25,7 +25,7 @@ return {
         priority = 1000,
     },
     {
-        -- stars:1977, repo:https://github.com/cocopon/iceberg.vim
+        -- stars:1978, repo:https://github.com/cocopon/iceberg.vim
         'cocopon/iceberg.vim',
         lazy = true,
         priority = 1000,
@@ -43,13 +43,13 @@ return {
         priority = 1000,
     },
     {
-        -- stars:1562, repo:https://github.com/junegunn/seoul256.vim
+        -- stars:1564, repo:https://github.com/junegunn/seoul256.vim
         'junegunn/seoul256.vim',
         lazy = true,
         priority = 1000,
     },
     {
-        -- stars:1377, repo:https://github.com/sickill/vim-monokai
+        -- stars:1379, repo:https://github.com/sickill/vim-monokai
         'sickill/vim-monokai',
         lazy = true,
         priority = 1000,
@@ -87,7 +87,7 @@ return {
         priority = 1000,
     },
     {
-        -- stars:1021, repo:https://github.com/jacoborus/tender.vim
+        -- stars:1022, repo:https://github.com/jacoborus/tender.vim
         'jacoborus/tender.vim',
         lazy = true,
         priority = 1000,
@@ -111,19 +111,19 @@ return {
         priority = 1000,
     },
     {
-        -- stars:831, repo:https://github.com/jnurmine/zenburn
-        'jnurmine/zenburn',
-        lazy = true,
-        priority = 1000,
-    },
-    {
         -- stars:830, repo:https://github.com/tomasiser/vim-code-dark
         'tomasiser/vim-code-dark',
         lazy = true,
         priority = 1000,
     },
     {
-        -- stars:828, repo:https://github.com/romainl/apprentice
+        -- stars:830, repo:https://github.com/jnurmine/zenburn
+        'jnurmine/zenburn',
+        lazy = true,
+        priority = 1000,
+    },
+    {
+        -- stars:829, repo:https://github.com/romainl/apprentice
         'romainl/apprentice',
         lazy = true,
         priority = 1000,
@@ -136,7 +136,7 @@ return {
         name = 'rose-pine',
     },
     {
-        -- stars:759, repo:https://github.com/raphamorim/lucario
+        -- stars:761, repo:https://github.com/raphamorim/lucario
         'raphamorim/lucario',
         lazy = true,
         priority = 1000,
@@ -166,7 +166,7 @@ return {
         priority = 1000,
     },
     {
-        -- stars:675, repo:https://github.com/ajmwagar/vim-deus
+        -- stars:676, repo:https://github.com/ajmwagar/vim-deus
         'ajmwagar/vim-deus',
         lazy = true,
         priority = 1000,
@@ -178,7 +178,7 @@ return {
         priority = 1000,
     },
     {
-        -- stars:580, repo:https://github.com/nyoom-engineering/oxocarbon.nvim
+        -- stars:593, repo:https://github.com/nyoom-engineering/oxocarbon.nvim
         'nyoom-engineering/oxocarbon.nvim',
         lazy = true,
         priority = 1000,
